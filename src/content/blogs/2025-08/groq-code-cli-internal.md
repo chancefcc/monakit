@@ -4,6 +4,7 @@ pubDate: "2025-08-16T05:58:17.000Z"
 author: foxgem
 description: "How Groq Code CLI works internally."
 tags: [coding-cli, how-it-works, agent]
+image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=450&fit=crop"
 ---
 
 I'm always curious about how a coding cli like Claude Code or Gemini Cli works internally. But I couldn't find enough time to spend on it since I have been busy with my own projects.

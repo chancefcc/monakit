@@ -1,49 +1,72 @@
 [
   {
-    "collection": "Fruity Mood Crew",
-    "description": "Playful fruit pals for LINE — stickers and emojis made for everyday moods and chats.",
+    "id": "investor-portal",
+    "title": "For Investors & Stakeholders",
+    "description": "Trade RWA assets with confidence through the Tikoly.com platform",
     "items": [
       {
-        "name": "Fruity Life Stickers Vol.1",
-        "description": "Cheerful fruit characters expressing everyday emotions - from the shy Banana-san to the sassy Ichigo-chan. Perfect for fun, daily chats!",
-        "cover": "https://stickershop.line-scdn.net/stickershop/v1/product/31905320/LINEStorePC/main.png?v=1",
-        "link": "https://store.line.me/stickershop/product/31905320/en?from=sticker"
+        "name": "Asset Verification Portal",
+        "description": "Browse AI-notarized RWA assets with complete audit trails and settlement graph trust scores",
+        "features": ["AI-Verified Assets", "Oracle-Validated", "Peer Trust Network"]
       },
       {
-        "name": "Autumn Delights",
-        "description": "Embrace the cozy warmth and vibrant beauty of autumn with Mama Orange and her adorable fruit babies!",
-        "cover": "https://stickershop.line-scdn.net/stickershop/v1/product/32020948/LINEStorePC/main.png?v=1",
-        "link": "https://store.line.me/stickershop/product/32020948/en?from=sticker"
+        "name": "Wallet Integration",
+        "description": "Secure Logto-authenticated wallet for $TIK/$TAG trading with real-time settlement tracking",
+        "features": ["Instant Settlement", "Audit Trail Access", "Settlement Graph"]
       },
       {
-        "name": "Cozy Winter Fun",
-        "description": "Step into a joyful winter wonderland with this adorable Orange Jam sticker set!",
-        "cover": "https://stickershop.line-scdn.net/stickershop/v1/product/32168063/LINEStorePC/main.png?v=1",
-        "link": "https://store.line.me/stickershop/product/32168063/en?from=sticker"
+        "name": "Asset Explorer",
+        "description": "Discover verified energy, precious metals, and real-estate assets with full provenance tracking",
+        "features": ["Multi-Asset Classes", "Real-Time Updates", "Performance Metrics"]
+      }
+    ]
+  },
+  {
+    "id": "institutional-solutions",
+    "title": "For Financial Institutions",
+    "description": "Enterprise-grade settlement infrastructure for RWA trading and asset auditing",
+    "items": [
+      {
+        "name": "NATS Micro Services API",
+        "description": "Programmatic access to asset notarization and settlement via RESTful endpoints",
+        "features": ["Asset Notarization", "Automated Settlement", "SBAC Security"]
       },
       {
-        "name": "Watermelon Mama's Daily Life",
-        "description": "Super adorable Watermelon Mama is here! With her glasses and apron, she's every family's superhero mom!",
-        "cover": "https://stickershop.line-scdn.net/stickershop/v1/product/31984876/LINEStorePC/main.png?v=1",
-        "link": "https://store.line.me/stickershop/product/31984876/en?from=sticker"
+        "name": "Enterprise Dashboard",
+        "description": "Comprehensive management interface for asset listing, monitoring, and settlement operations",
+        "features": ["Real-Time Sync", "Ledger Integration", "Workflow Automation"]
       },
       {
-        "name": "Orange Buddy's Amusing Expressions",
-        "description": "This sticker pack stars the lively and adorable \"Orange Buddy,\" capturing a series of its vivid and entertaining moments.",
-        "cover": "https://stickershop.line-scdn.net/stickershop/v1/product/32046263/LINEStorePC/main.png?v=1",
-        "link": "https://store.line.me/stickershop/product/32046263/en?from=sticker"
+        "name": "n8n Workflow Bridge",
+        "description": "Custom validation workflows for external telemetry verification and business automation",
+        "features": ["Flexible Logic", "Timeout & Retry", "External Integrations"]
       },
       {
-        "name": "Starfruit Expressions Pack",
-        "description": "This is a set of emoji stickers featuring a cute cartoon starfruit character.",
-        "cover": "https://stickershop.line-scdn.net/sticonshop/v1/product/693a2a8b90cb9127a369c89e/iPhone/main.png?v=1",
-        "link": "https://store.line.me/emojishop/product/693a2a8b90cb9127a369c89e/en"
+        "name": "EVM Bridge Integration",
+        "description": "Secure $TIK burn and $TAG mint operations via local Geth node with type-safe Go bindings",
+        "features": ["Atomic Settlement", "Transaction Finality", "Error Handling"]
+      }
+    ]
+  },
+  {
+    "id": "regulatory-tools",
+    "title": "For Regulators",
+    "description": "Regulatory-grade compliance monitoring and audit tools for RWA market supervision",
+    "items": [
+      {
+        "name": "Compliance Monitor",
+        "description": "Real-time monitoring dashboard for settlement events, ledger transactions, and agent activities",
+        "features": ["Stream Monitoring", "Alert Rules", "Report Generation"]
       },
       {
-        "name": "Cute Orange Emoticons",
-        "description": "A vibrant collection of adorable orange-themed emojis! These charming citrus characters express a range of moods.",
-        "cover": "https://stickershop.line-scdn.net/sticonshop/v1/product/692005ce015cb339ae4ca734/iPhone/main.png?v=1",
-        "link": "https://store.line.me/emojishop/product/692005ce015cb339ae4ca734/en"
+        "name": "Audit Explorer",
+        "description": "Comprehensive investigation toolset for examining settlement records, asset proofs, and transaction history",
+        "features": ["Event Filtering", "Historical Queries", "Export Capabilities"]
+      },
+      {
+        "name": "Telemetry Verification",
+        "description": "Verify external data sources (NREL, IoT sensors, property records) used in asset notarization",
+        "features": ["Source Validation", "Real-Time Checks", "Compliance Flags"]
       }
     ]
   }

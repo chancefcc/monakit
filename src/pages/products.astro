@@ -4,168 +4,248 @@ import MainLayout from "@/layouts/MainLayout.astro";
 
 const metadata = {
   title: `Products | ${SITE_TITLE}`,
-  description: SITE_DESCRIPTION,
+  description: "The sovereign settlement layer for RWA Oracle Networks. AI-verified asset notarization, transparent token settlement, and regulatory-grade audit trails for energy, precious metals, and real-estate assets.",
 };
 ---
 
 <MainLayout title={metadata.title} description={metadata.description}>
   <div class="w-full px-4 md:px-6 py-16">
-    <!-- For Installers Section -->
+    <!-- Hero Section -->
     <div class="max-w-7xl mx-auto mb-20">
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Installers</h1>
-        <p class="text-lg leading-relaxed text-teahouse-text-secondary">
-          Discover validated renewable energy systems that guarantee compatibility and performance.
+      <div class="text-center max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-teahouse-dark mb-6">
+          The Sovereign Settlement Layer for Real World Assets
+        </h1>
+        <p class="text-xl leading-relaxed text-teahouse-text-secondary mb-10">
+          AI-verified asset notarization, transparent token settlement, and regulatory-grade audit trails for the RWA ecosystem. Energy, precious metals, real-estate, and more.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#systems"
+            href="#investors"
             class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
           >
-            Browse Validated Systems
+            For Investors & Stakeholders
           </a>
           <a
-            href="#how-it-works"
+            href="#institutions"
             class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
           >
-            How It Works
+            For Financial Institutions
+          </a>
+          <a
+            href="#regulators"
+            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            For Regulators
           </a>
         </div>
       </div>
+    </div>
 
-      <div id="systems" class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="text-xl font-bold text-teahouse-dark">Solar + Battery System</div>
-                <div class="text-sm text-teahouse-text-secondary">10kW Solar + 20kWh Battery</div>
-              </div>
-              <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Validated</div>
+    <!-- Technical Architecture Overview -->
+    <div class="max-w-7xl mx-auto mb-20">
+      <div class="bg-gradient-to-r from-teahouse-primary/10 to-teahouse-primary/5 rounded-xl p-8 md:p-12 border border-teahouse-border">
+        <div class="text-center max-w-3xl mx-auto">
+          <h2 class="text-3xl font-bold text-teahouse-dark mb-4">Built on Trust, Verified by AI, Secured by Design</h2>
+          <p class="text-lg text-teahouse-text-secondary mb-8">
+            Our Clearing & Settlement House leverages NATS Micro Services, embedded EVM Bridge, and oracle-validated telemetry to provide the most secure and transparent RWA settlement infrastructure.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
             </div>
-            <div class="space-y-2">
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Manufacturer</span>
-                <span class="text-sm font-medium text-teahouse-dark">NextG Power</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Inverter</span>
-                <span class="text-sm font-medium text-teahouse-dark">SunPower</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Compatibility</span>
-                <span class="text-sm font-medium text-teahouse-dark">98% Verified</span>
-              </div>
+            <h3 class="text-lg font-semibold text-teahouse-dark mb-2">AI-Verified Notarization</h3>
+            <p class="text-sm text-teahouse-text-secondary">Oracle-validated external telemetry with n8n workflow automation</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
             </div>
-            <div class="mt-6">
-              <a
-                href="#"
-                class="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
-              >
-                View Details
-              </a>
+            <h3 class="text-lg font-semibold text-teahouse-dark mb-2">Instant Settlement</h3>
+            <p class="text-sm text-teahouse-text-secondary">Atomic $TIK burn → $TAG mint transactions via EVM Bridge</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+              </svg>
             </div>
+            <h3 class="text-lg font-semibold text-teahouse-dark mb-2">Immutable Audit Trails</h3>
+            <p class="text-sm text-teahouse-text-secondary">JetStream streams with complete transaction history and cold archival</p>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="text-xl font-bold text-teahouse-dark">Commercial Solar System</div>
-                <div class="text-sm text-teahouse-text-secondary">50kW Solar Array</div>
-              </div>
-              <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Validated</div>
-            </div>
-            <div class="space-y-2">
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Manufacturer</span>
-                <span class="text-sm font-medium text-teahouse-dark">SunEdison</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Inverter</span>
-                <span class="text-sm font-medium text-teahouse-dark">SMA</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Compatibility</span>
-                <span class="text-sm font-medium text-teahouse-dark">99% Verified</span>
-              </div>
-            </div>
-            <div class="mt-6">
-              <a
-                href="#"
-                class="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
-              >
-                View Details
-              </a>
-            </div>
+    <!-- For Investors Section -->
+    <div id="investors" class="max-w-7xl mx-auto mb-24">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-medium mb-4">
+          WALLET USERS ON TIKOLY.COM
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Investors & Stakeholders</h2>
+        <p class="text-lg leading-relaxed text-teahouse-text-secondary">
+          Trade RWA assets with confidence through Tikoly.com. Every asset is AI-notarized, every settlement is transparent, and your portfolio is protected by the Settlement Graph.
+        </p>
+      </div>
+
+      <!-- Value Propositions -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
           </div>
+          <h3 class="text-xl font-semibold text-teahouse-dark mb-2">AI-Verified Asset Integrity</h3>
+          <p class="text-teahouse-text-secondary mb-4">
+            All assets undergo oracle-verified notarization before tokenization. Energy systems validated against NREL data, precious metals via supply chain records, real-estate through property registries.
+          </p>
+          <ul class="text-sm text-teahouse-text-secondary space-y-2">
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              External telemetry validation
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Cryptographic asset proofs
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Peer validation network
+            </li>
+          </ul>
         </div>
 
-        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="text-xl font-bold text-teahouse-dark">Residential Solar Package</div>
-                <div class="text-sm text-teahouse-text-secondary">7kW Solar System</div>
-              </div>
-              <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Validated</div>
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-teahouse-dark mb-2">Transparent Settlement Records</h3>
+          <p class="text-teahouse-text-secondary mb-4">
+            Every $TIK burn and $TAG mint transaction is immutably recorded. Access complete audit trails through your wallet and verify settlement status in real-time.
+          </p>
+          <ul class="text-sm text-teahouse-text-secondary space-y-2">
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Real-time audit trails
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              SettlementAudit stream access
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Geth transaction hashes
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-teahouse-dark mb-2">Settlement Graph Trust Network</h3>
+          <p class="text-teahouse-text-secondary mb-4">
+            Follow trusted nodes to filter asset provenance. Leverage peer validation and decentralized reputation to make informed investment decisions.
+          </p>
+          <ul class="text-sm text-teahouse-text-secondary space-y-2">
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              P2P trust relationships
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Decentralized reputation
+            </li>
+            <li class="flex items-start">
+              <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Community-driven validation
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- How It Works -->
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-teahouse-dark text-center mb-12">How Trading Works on Tikoly.com</h3>
+        <div class="space-y-8">
+          <div class="flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">1</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Connect Your Wallet</h4>
+              <p class="text-teahouse-text-secondary">
+                Link your Logto-authenticated wallet to Tikoly.com. Secure, seamless, and ready for RWA trading with $TIK and $TAG tokens.
+              </p>
             </div>
-            <div class="space-y-2">
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Manufacturer</span>
-                <span class="text-sm font-medium text-teahouse-dark">Tesla Energy</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Inverter</span>
-                <span class="text-sm font-medium text-teahouse-dark">Tesla Inverter</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-sm text-teahouse-text-secondary">Compatibility</span>
-                <span class="text-sm font-medium text-teahouse-dark">100% Verified</span>
-              </div>
+          </div>
+          <div class="flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">2</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Browse Verified Assets</h4>
+              <p class="text-teahouse-text-secondary">
+                Explore AI-notarized RWA assets across energy systems, precious metals, and real-estate. Each asset comes with complete audit trails, settlement graph trust scores, and oracle-verified telemetry.
+              </p>
             </div>
-            <div class="mt-6">
-              <a
-                href="#"
-                class="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
-              >
-                View Details
-              </a>
+          </div>
+          <div class="flex gap-6 items-start">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">3</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Execute Settlement</h4>
+              <p class="text-teahouse-text-secondary">
+                Instant atomic settlement with $TIK burn → $TAG mint transactions. All settlements are recorded on the SettlementAudit stream with Geth transaction hashes for complete transparency.
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="how-it-works" class="max-w-3xl mx-auto">
-        <h2 class="text-3xl font-bold text-teahouse-dark text-center mb-12">How It Works</h2>
-        <div class="space-y-8">
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">1</div>
-            <div>
-              <h3 class="text-lg font-medium text-teahouse-dark mb-2">Tell Us About Your Project</h3>
-              <p class="text-teahouse-text-secondary">
-                Provide your project's load profile, location, and requirements to our AI project matchmaker.
-              </p>
-            </div>
+      <!-- Supported Asset Types -->
+      <div class="mt-16 max-w-5xl mx-auto">
+        <h3 class="text-2xl font-bold text-teahouse-dark text-center mb-8">Supported Asset Classes</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-lg p-6 border border-yellow-200">
+            <div class="text-3xl mb-3">⚡</div>
+            <h4 class="font-semibold text-gray-900 mb-2">Energy Systems</h4>
+            <p class="text-sm text-gray-800">Solar arrays, wind farms, battery storage with NREL telemetry validation</p>
           </div>
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">2</div>
-            <div>
-              <h3 class="text-lg font-medium text-teahouse-dark mb-2">Get AI-Matched Systems</h3>
-              <p class="text-teahouse-text-secondary">
-                Our AI instantly proposes compatible systems that have been simulated and verified to work.
-              </p>
-            </div>
+          <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-6 border border-gray-200">
+            <div class="text-3xl mb-3">🥇</div>
+            <h4 class="font-semibold text-gray-900 mb-2">Precious Metals</h4>
+            <p class="text-sm text-gray-800">Gold, silver, platinum with supply chain provenance and assay certificates</p>
           </div>
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">3</div>
-            <div>
-              <h3 class="text-lg font-medium text-teahouse-dark mb-2">Install with Confidence</h3>
-              <p class="text-teahouse-text-secondary">
-                Buy hardware and validated Flow, then deploy it directly to your on-site device.
-              </p>
-            </div>
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-6 border border-blue-200">
+            <div class="text-3xl mb-3">🏠</div>
+            <h4 class="font-semibold text-gray-900 mb-2">Real Estate</h4>
+            <p class="text-sm text-gray-800">Commercial and residential properties with registry verification and IoT monitoring</p>
           </div>
         </div>
       </div>
@@ -173,140 +253,478 @@ const metadata = {
 
     <div class="border-t border-teahouse-border my-20"></div>
 
-    <!-- For Manufacturers Section -->
-    <div class="max-w-7xl mx-auto">
+    <!-- For Financial Institutions Section -->
+    <div id="institutions" class="max-w-7xl mx-auto mb-24">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Manufacturers</h2>
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-xs font-medium mb-4">
+          ASSET AUDITING & TRADING
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Financial Institutions</h2>
         <p class="text-lg leading-relaxed text-teahouse-text-secondary">
-          Reach global installers and prove your hardware compatibility with AI-verified executable spec sheets.
+          Enterprise-grade settlement infrastructure for RWA trading and asset auditing. Programmatic API access, automated settlement, and compliance-ready audit trails.
         </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#list-hardware"
-            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
-          >
-            List Your Hardware
-          </a>
-          <a
-            href="#benefits"
-            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
-          >
-            View Benefits
-          </a>
+      </div>
+
+      <!-- Core Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-teahouse-dark">NATS Micro Services API</h3>
+                <div class="text-sm text-teahouse-text-secondary">Programmatic Settlement Layer</div>
+              </div>
+              <div class="bg-teahouse-primary text-white px-3 py-1 rounded-full text-xs font-medium">Core</div>
+            </div>
+            <p class="text-teahouse-text-secondary mb-4">
+              Access asset notarization and settlement operations via RESTful endpoints. Integrate seamlessly with your existing trading systems.
+            </p>
+            <div class="bg-teahouse-bg rounded-lg p-4 mb-4">
+              <code class="text-xs text-teahouse-dark font-mono">
+                $SRV.SETTLE.PROVE → Asset Notarization<br>
+                $SRV.SETTLE.LIST → Registry Query<br>
+                $SRV.LEDGER.SYNC → Balance Sync
+              </code>
+            </div>
+            <ul class="text-sm text-teahouse-text-secondary space-y-2 mb-4">
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Asset Notarization workflow
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Automated settlement execution
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                SBAC security at server level
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-teahouse-dark">Enterprise Dashboard</h3>
+                <div class="text-sm text-teahouse-text-secondary">Management Interface</div>
+              </div>
+              <div class="bg-teahouse-primary text-white px-3 py-1 rounded-full text-xs font-medium">Core</div>
+            </div>
+            <p class="text-teahouse-text-secondary mb-4">
+              Comprehensive management interface for asset listing, monitoring, and settlement operations. Real-time sync with ledger and workflow automation.
+            </p>
+            <div class="bg-teahouse-bg rounded-lg p-4 mb-4">
+              <code class="text-xs text-teahouse-dark font-mono">
+                Asset Listing → Notarization → Settlement → Audit
+              </code>
+            </div>
+            <ul class="text-sm text-teahouse-text-secondary space-y-2 mb-4">
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Real-time ledger sync
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Agent authorization management
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Settlement reporting API
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-teahouse-dark">n8n Workflow Bridge</h3>
+                <div class="text-sm text-teahouse-text-secondary">Validation Automation</div>
+              </div>
+              <div class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs font-medium">Advanced</div>
+            </div>
+            <p class="text-teahouse-text-secondary mb-4">
+              Custom validation workflows for external telemetry verification and business automation. Trigger workflows for NREL data, IoT sensors, or any API endpoint.
+            </p>
+            <div class="bg-teahouse-bg rounded-lg p-4 mb-4">
+              <code class="text-xs text-teahouse-dark font-mono">
+                NotarizeRequest → n8n Workflow → Validated/Rejected
+              </code>
+            </div>
+            <ul class="text-sm text-teahouse-text-secondary space-y-2 mb-4">
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Flexible business logic
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Timeout and retry mechanisms
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                External API integrations
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <h3 class="text-xl font-bold text-teahouse-dark">EVM Bridge Integration</h3>
+                <div class="text-sm text-teahouse-text-secondary">Token Settlement Engine</div>
+              </div>
+              <div class="bg-teahouse-primary text-white px-3 py-1 rounded-full text-xs font-medium">Core</div>
+            </div>
+            <p class="text-teahouse-text-secondary mb-4">
+              Secure $TIK burn and $TAG mint operations via local Geth node. Type-safe Go bindings for ERC-20 contract interactions with atomic settlement guarantees.
+            </p>
+            <div class="bg-teahouse-bg rounded-lg p-4 mb-4">
+              <code class="text-xs text-teahouse-dark font-mono">
+                $TIK Burn → Settlement Record → $TAG Mint
+              </code>
+            </div>
+            <ul class="text-sm text-teahouse-text-secondary space-y-2 mb-4">
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Atomic settlement transactions
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Transaction finality via Geth
+              </li>
+              <li class="flex items-start">
+                <svg class="h-4 w-4 text-teahouse-primary mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Type-safe Go bindings (abigen)
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div id="benefits" class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Integration Workflow -->
+      <div class="max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-teahouse-dark text-center mb-12">Settlement Integration Workflow</h3>
+        <div class="space-y-6">
+          <div class="flex gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">1</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Request Notarization</h4>
+              <p class="text-teahouse-text-secondary">
+                Submit <code class="bg-teahouse-bg px-2 py-1 rounded text-xs">NotarizeRequest</code> to <code class="bg-teahouse-bg px-2 py-1 rounded text-xs">$SRV.SETTLE.PROVE</code> with asset telemetry data (NREL readings, supply chain records, property registry data).
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">2</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Oracle Validation</h4>
+              <p class="text-teahouse-text-secondary">
+                n8n workflow validates external telemetry against trusted data sources (Solar NREL, IoT sensors, property records). Custom business logic can be configured for any validation scenario.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">3</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Asset Notarization</h4>
+              <p class="text-teahouse-text-secondary">
+                On successful validation, <code class="bg-teahouse-bg px-2 py-1 rounded text-xs">AssetProof</code> is created with cryptographic signature (Merkle root hash) and stored in <code class="bg-teahouse-bg px-2 py-1 rounded text-xs">Settlement_Registry</code> KV bucket.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold text-lg">4</div>
+            <div class="flex-1">
+              <h4 class="text-xl font-semibold text-teahouse-dark mb-2">Settlement Execution</h4>
+              <p class="text-teahouse-text-secondary">
+                EVM Bridge executes atomic $TIK burn → $TAG mint transaction. <code class="bg-teahouse-bg px-2 py-1 rounded text-xs">SettlementRecord</code> with Geth transaction hash is published to <code class="bg-teahouse-bg px-2 py-1 rounded text-xs">SettlementAudit</code> stream.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-teahouse-border my-20"></div>
+
+    <!-- For Regulators Section -->
+    <div id="regulators" class="max-w-7xl mx-auto mb-20">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-medium mb-4">
+          COMPLIANCE CHECK & SUPERVISION
+        </div>
+        <h2 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Regulators</h2>
+        <p class="text-lg leading-relaxed text-teahouse-text-secondary">
+          Regulatory-grade compliance monitoring and audit tools for RWA market supervision. Immutable audit trails, complete transaction transparency, and cold data archival for long-term compliance.
+        </p>
+      </div>
+
+      <!-- Regulatory Value Propositions -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
         <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+          <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Reach Global Installers</h3>
-          <p class="text-teahouse-text-secondary">
-            Get your hardware discovered by installers worldwide looking for validated solutions.
+          <h3 class="text-lg font-semibold text-teahouse-dark mb-2">Immutable Audit Trails</h3>
+          <p class="text-sm text-teahouse-text-secondary">
+            All settlement events published to streams with cryptographic proofs and timestamps
           </p>
         </div>
 
         <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Executable Spec Sheets</h3>
-          <p class="text-teahouse-text-secondary">
-            Prove hardware compatibility with validated Flows that installers can trust.
+          <h3 class="text-lg font-semibold text-teahouse-dark mb-2">Complete Transparency</h3>
+          <p class="text-sm text-teahouse-text-secondary">
+            Access all transaction streams: SettlementAudit, LedgerEvents, AgentEvents, SocialEvents
           </p>
         </div>
 
         <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-teahouse-dark mb-2">24/7 AI Sales Agents</h3>
-          <p class="text-teahouse-text-secondary">
-            Answer installer questions automatically with AI trained on your technical documentation.
+          <h3 class="text-lg font-semibold text-teahouse-dark mb-2">External Telemetry Verification</h3>
+          <p class="text-sm text-teahouse-text-secondary">
+            Verify data sources: NREL, IoT sensors, property records, supply chain databases
           </p>
         </div>
 
         <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          <div class="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4" />
             </svg>
           </div>
-          <h3 class="text-lg font-medium text-teahouse-dark mb-2">AI Simulation Verification</h3>
-          <p class="text-teahouse-text-secondary">
-            Your hardware is tested against real-world scenarios to ensure performance.
+          <h3 class="text-lg font-semibold text-teahouse-dark mb-2">Cold Data Archival</h3>
+          <p class="text-sm text-teahouse-text-secondary">
+            Historical settlement data preserved for long-term compliance and regulatory audits
           </p>
         </div>
       </div>
 
-      <div id="list-hardware" class="mt-16 max-w-4xl mx-auto">
-        <h3 class="text-3xl font-bold text-teahouse-dark text-center mb-12">How to List Your Hardware</h3>
-        <div class="space-y-8">
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">1</div>
-            <div class="flex-1">
-              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Create an Account</h4>
-              <p class="text-teahouse-text-secondary">
-                Sign up and provide your manufacturer details to get started.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">2</div>
-            <div class="flex-1">
-              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Upload Hardware Specs</h4>
-              <p class="text-teahouse-text-secondary">
-                Provide technical documentation and hardware specifications.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">3</div>
-            <div class="flex-1">
-              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Create Validated Flow</h4>
-              <p class="text-teahouse-text-secondary">
-                Build or generate a validated Flow that proves hardware compatibility.
-              </p>
-            </div>
-          </div>
-          <div class="flex gap-6">
-            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">4</div>
-            <div class="flex-1">
-              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Publish to Marketplace</h4>
-              <p class="text-teahouse-text-secondary">
-                Your executable spec sheet is now available to global installers.
-              </p>
+      <!-- Regulatory Tools Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-teahouse-dark mb-4">Compliance Monitor</h3>
+            <p class="text-teahouse-text-secondary mb-6">
+              Real-time monitoring dashboard for settlement events, ledger transactions, and agent activities.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Stream Monitoring</h4>
+                <p class="text-xs text-teahouse-text-secondary">Live view of all settlement, ledger, and agent events with filtering capabilities</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Alert Rules</h4>
+                <p class="text-xs text-teahouse-text-secondary">Configurable alerts for unusual settlement patterns, failed notarizations, or compliance violations</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Report Generation</h4>
+                <p class="text-xs text-teahouse-text-secondary">Automated regulatory reports with CSV/PDF exports for audit submissions</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="mt-12 text-center">
-          <a
-            href="#"
-            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
-          >
-            Start Listing Your Hardware
-          </a>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-teahouse-dark mb-4">Audit Explorer</h3>
+            <p class="text-teahouse-text-secondary mb-6">
+              Comprehensive investigation toolset for examining settlement records, asset proofs, and transaction history.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Event Filtering</h4>
+                <p class="text-xs text-teahouse-text-secondary">Query events by asset ID, agent, timestamp, transaction hash, or custom criteria</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Historical Queries</h4>
+                <p class="text-xs text-teahouse-text-secondary">Access cold archival data for long-term compliance and forensic investigations</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Export Capabilities</h4>
+                <p class="text-xs text-teahouse-text-secondary">Export audit data in multiple formats for internal or external review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-teahouse-dark mb-4">Telemetry Verification</h3>
+            <p class="text-teahouse-text-secondary mb-6">
+              Verify external data sources used in asset notarization for regulatory compliance.
+            </p>
+            <div class="space-y-4">
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Source Validation</h4>
+                <p class="text-xs text-teahouse-text-secondary">Confirm data source integrity: NREL, IoT sensors, property registries, supply chain records</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Real-Time Checks</h4>
+                <p class="text-xs text-teahouse-text-secondary">Validate telemetry data against live external sources for ongoing compliance</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark text-sm mb-2">Compliance Flags</h4>
+                <p class="text-xs text-teahouse-text-secondary">Automatic flagging of assets with inconsistent or unverified telemetry data</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="mt-16 bg-teahouse-primary/10 rounded-xl p-8 max-w-4xl mx-auto border border-teahouse-border">
-        <div class="text-center">
-          <h3 class="text-2xl font-bold text-teahouse-dark mb-4">Ready to Scale Your Sales?</h3>
-          <p class="text-teahouse-text-secondary mb-8">
-            Join our AI-verified marketplace and connect with installers looking for your hardware.
-          </p>
+      <!-- Audit Streams Overview -->
+      <div class="max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold text-teahouse-dark text-center mb-8">Audit Streams Overview</h3>
+        <div class="bg-teahouse-bg-secondary rounded-lg border border-teahouse-border overflow-hidden">
+          <div class="grid grid-cols-4 bg-teahouse-bg px-6 py-3 text-sm font-semibold text-teahouse-dark">
+            <div>Stream Name</div>
+            <div>Purpose</div>
+            <div>Retention</div>
+            <div>Access</div>
+          </div>
+          <div class="divide-y divide-teahouse-border">
+            <div class="grid grid-cols-4 px-6 py-4 text-sm">
+              <div class="font-mono text-teahouse-primary font-semibold">SettlementAudit</div>
+              <div class="text-teahouse-text-secondary">All settlement events and transaction records</div>
+              <div class="text-teahouse-text-secondary">Limits → Cold Archive</div>
+              <div class="text-teahouse-text-secondary">Regulators + Institutions</div>
+            </div>
+            <div class="grid grid-cols-4 px-6 py-4 text-sm">
+              <div class="font-mono text-teahouse-primary font-semibold">LedgerEvents</div>
+              <div class="text-teahouse-text-secondary">$TIK/$TAG token movements and balances</div>
+              <div class="text-teahouse-text-secondary">Limits → Cold Archive</div>
+              <div class="text-teahouse-text-secondary">Regulators + Institutions</div>
+            </div>
+            <div class="grid grid-cols-4 px-6 py-4 text-sm">
+              <div class="font-mono text-teahouse-primary font-semibold">AgentEvents</div>
+              <div class="text-teahouse-text-secondary">Agent lifecycle (authorize/revoke)</div>
+              <div class="text-teahouse-text-secondary">Limits → Cold Archive</div>
+              <div class="text-teahouse-text-secondary">Regulators + Institutions</div>
+            </div>
+            <div class="grid grid-cols-4 px-6 py-4 text-sm">
+              <div class="font-mono text-teahouse-primary font-semibold">SocialEvents</div>
+              <div class="text-teahouse-text-secondary">Settlement Graph trust relationships</div>
+              <div class="text-teahouse-text-secondary">Limits → Cold Archive</div>
+              <div class="text-teahouse-text-secondary">Regulators + Public</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance Features -->
+      <div class="mt-16 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold text-teahouse-dark text-center mb-8">Regulatory Compliance Features</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-teahouse-primary/5 to-teahouse-bg rounded-lg p-6 border border-teahouse-border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark mb-2">AML/KYC Ready</h4>
+                <p class="text-sm text-teahouse-text-secondary">Logto authentication with NKey mapping for identity verification and jurisdictional compliance in Virgin Islands</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-teahouse-primary/5 to-teahouse-bg rounded-lg p-6 border border-teahouse-border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark mb-2">Trade Surveillance</h4>
+                <p class="text-sm text-teahouse-text-secondary">Real-time monitoring of settlement patterns, anomaly detection, and automated alerts for suspicious activity</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-teahouse-primary/5 to-teahouse-bg rounded-lg p-6 border border-teahouse-border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark mb-2">Audit Trail Completeness</h4>
+                <p class="text-sm text-teahouse-text-secondary">No transaction modifications possible. All data is immutable with complete chain of custody from notarization to settlement</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gradient-to-br from-teahouse-primary/5 to-teahouse-bg rounded-lg p-6 border border-teahouse-border">
+            <div class="flex items-start gap-4">
+              <div class="flex-shrink-0 w-10 h-10 rounded-full bg-teahouse-primary/20 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold text-teahouse-dark mb-2">Data Sovereignty</h4>
+                <p class="text-sm text-teahouse-text-secondary">Embedded server with SBAC ensures controlled access. Jurisdictional compliance maintained within Virgin Islands legal framework</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-gradient-to-r from-teahouse-primary to-teahouse-primary/80 rounded-xl p-8 md:p-12 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Experience the Future of RWA Settlement?</h2>
+        <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          Join our newsletter to stay updated on launch announcements and ecosystem developments.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#"
-            class="inline-flex items-center justify-center px-8 py-4 border-2 border-teahouse-primary text-base font-medium rounded-md shadow-sm text-teahouse-primary bg-white hover:bg-teahouse-primary/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+            href="/#"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-colors"
           >
-            Contact Sales
+            Subscribe Newsletter
           </a>
         </div>
       </div>

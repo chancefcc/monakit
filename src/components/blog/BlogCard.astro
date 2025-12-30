@@ -62,13 +62,22 @@ const formatDate = (date: Date | string) => {
       <div class="aspect-video w-full bg-teahouse-light relative">
         {
           blog.image ? (
-            <Image
-              src={blog.image}
-              alt={blog.title}
-              width={800}
-              height={450}
-              class="w-full h-full object-cover"
-            />
+            blog.image.startsWith('http://') || blog.image.startsWith('https://') ? (
+              <img
+                src={blog.image}
+                alt={blog.title}
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            ) : (
+              <Image
+                src={blog.image}
+                alt={blog.title}
+                width={800}
+                height={450}
+                class="w-full h-full object-cover"
+              />
+            )
           ) : (
             <div class="flex h-full items-center justify-center">
               <div
@@ -81,7 +90,7 @@ const formatDate = (date: Date | string) => {
     </header>
     <div class="p-4">
       <h3
-        class="mt-2 line-clamp-2 font-noto-serif text-xl text-slate-300 font-bold"
+        class="mt-2 line-clamp-2 text-xl text-slate-300 font-bold font-['Play',_serif]"
       >
         {blog.title}
       </h3>

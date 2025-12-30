@@ -45,11 +45,11 @@ export interface SlideTheme {
   overlayColor: string;
 }
 
-export const SITE_TITLE = "Tiktag";
+export const SITE_TITLE = "tiktag";
 export const SITE_DESCRIPTION =
   "Settlement and Verification Service for Agentic Commerce";
 
-export const PROD_URL = "https://www.mymona.xyz";
+export const PROD_URL = "https://tiktag.app";
 
 export const isProdEnv = () => {
   if (import.meta.env?.PROD || import.meta.env?.MODE === "production") {
@@ -112,9 +112,9 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: "slides",
-    label: "Slides",
+    label: "Case Study",
     href: "/slides",
-    title: "Slides",
+    title: "Case Study",
     description: "Interactive presentations crafted for developers.",
   },
   {
