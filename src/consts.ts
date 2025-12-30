@@ -45,7 +45,7 @@ export interface SlideTheme {
   overlayColor: string;
 }
 
-export const SITE_TITLE = "tiktag";
+export const SITE_TITLE = "tiktag.app";
 export const SITE_DESCRIPTION =
   "Settlement and Verification Service for Agentic Commerce";
 
@@ -104,18 +104,11 @@ export const MENU_ITEMS: MenuItem[] = [
       "tiktag bridges gaps between data oracle networks and settlement layers.",
   },
   {
-    id: "cards",
-    label: "Cards",
-    href: "/cards",
-    title: "Cards",
-    description: "Knowledge cards and research summaries",
-  },
-  {
     id: "slides",
     label: "Case Study",
     href: "/slides",
     title: "Case Study",
-    description: "Interactive presentations crafted for developers.",
+    description: "Use cases of tiktag.app in real-life.",
   },
   {
     id: "about",

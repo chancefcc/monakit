@@ -24,7 +24,7 @@ const visibleMenuItems = getNavigationItems();
         />
         <div>
           <div
-            class="text-xl font-bold text-teahouse-dark font-['Play',_serif]"
+            class="text-xl font-bold text-teahouse-dark font-['Plus Jakarta Sans',sans-serif]"
           >
             {SITE_TITLE}
           </div>
@@ -94,12 +94,12 @@ const visibleMenuItems = getNavigationItems();
     >
       {
         visibleMenuItems.map((item) => (
-          <a
-            href={item.href}
-            class="block px-3 py-2 rounded-md text-xl font-medium text-white hover:text-primary"
-          >
-            {item.label}
-          </a>
+        <a
+          href={item.href}
+          class="block px-3 py-2 rounded-md text-xl font-medium text-white hover:text-primary font-['Plus Jakarta Sans',sans-serif]"
+        >
+          {item.label}
+        </a>
         ))
       }
       <div class="px-3 py-2">
