@@ -7,17 +7,29 @@
       {
         "name": "Asset Verification Portal",
         "description": "Browse AI-notarized RWA assets with complete audit trails and settlement graph trust scores",
-        "features": ["AI-Verified Assets", "Oracle-Validated", "Peer Trust Network"]
+        "features": [
+          "AI-Verified Assets",
+          "Oracle-Validated",
+          "Peer Trust Network"
+        ]
       },
       {
         "name": "Wallet Integration",
         "description": "Secure Logto-authenticated wallet for $TIK/$TAG trading with real-time settlement tracking",
-        "features": ["Instant Settlement", "Audit Trail Access", "Settlement Graph"]
+        "features": [
+          "Instant Settlement",
+          "Audit Trail Access",
+          "Settlement Graph"
+        ]
       },
       {
         "name": "Asset Explorer",
         "description": "Discover verified energy, precious metals, and real-estate assets with full provenance tracking",
-        "features": ["Multi-Asset Classes", "Real-Time Updates", "Performance Metrics"]
+        "features": [
+          "Multi-Asset Classes",
+          "Real-Time Updates",
+          "Performance Metrics"
+        ]
       }
     ]
   },
@@ -29,22 +41,38 @@
       {
         "name": "NATS Micro Services API",
         "description": "Programmatic access to asset notarization and settlement via RESTful endpoints",
-        "features": ["Asset Notarization", "Automated Settlement", "SBAC Security"]
+        "features": [
+          "Asset Notarization",
+          "Automated Settlement",
+          "SBAC Security"
+        ]
       },
       {
         "name": "Enterprise Dashboard",
         "description": "Comprehensive management interface for asset listing, monitoring, and settlement operations",
-        "features": ["Real-Time Sync", "Ledger Integration", "Workflow Automation"]
+        "features": [
+          "Real-Time Sync",
+          "Ledger Integration",
+          "Workflow Automation"
+        ]
       },
       {
         "name": "n8n Workflow Bridge",
         "description": "Custom validation workflows for external telemetry verification and business automation",
-        "features": ["Flexible Logic", "Timeout & Retry", "External Integrations"]
+        "features": [
+          "Flexible Logic",
+          "Timeout & Retry",
+          "External Integrations"
+        ]
       },
       {
         "name": "EVM Bridge Integration",
         "description": "Secure $TIK burn and $TAG mint operations via local Geth node with type-safe Go bindings",
-        "features": ["Atomic Settlement", "Transaction Finality", "Error Handling"]
+        "features": [
+          "Atomic Settlement",
+          "Transaction Finality",
+          "Error Handling"
+        ]
       }
     ]
   },
@@ -61,12 +89,20 @@
       {
         "name": "Audit Explorer",
         "description": "Comprehensive investigation toolset for examining settlement records, asset proofs, and transaction history",
-        "features": ["Event Filtering", "Historical Queries", "Export Capabilities"]
+        "features": [
+          "Event Filtering",
+          "Historical Queries",
+          "Export Capabilities"
+        ]
       },
       {
         "name": "Telemetry Verification",
         "description": "Verify external data sources (NREL, IoT sensors, property records) used in asset notarization",
-        "features": ["Source Validation", "Real-Time Checks", "Compliance Flags"]
+        "features": [
+          "Source Validation",
+          "Real-Time Checks",
+          "Compliance Flags"
+        ]
       }
     ]
   }

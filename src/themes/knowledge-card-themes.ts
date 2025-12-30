@@ -28,7 +28,8 @@ export const KNOWLEDGE_CARD_THEME: Record<string, CardTheme> = {
     decorativeLineWidth: "4px",
     decorativeLineHeight: "80px",
     linkColor: "#ffffff",
-    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    fontFamily:
+      "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
   },
   blackWhite: {
     textColor: "#000000",
@@ -112,7 +113,8 @@ export const KNOWLEDGE_CARD_THEME: Record<string, CardTheme> = {
     decorativeLineWidth: "4px",
     decorativeLineHeight: "80px",
     linkColor: "#ffffff",
-    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    fontFamily:
+      "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
   },
   freshNature: {
     textColor: "#1f2937",
@@ -140,6 +142,7 @@ export const KNOWLEDGE_CARD_THEME: Record<string, CardTheme> = {
     decorativeLineWidth: "4px",
     decorativeLineHeight: "80px",
     linkColor: "#1f2937",
-    fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+    fontFamily:
+      "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
   },
 };
