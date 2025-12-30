@@ -1,0 +1,189 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const metadata = {
+  title: `About | ${SITE_TITLE}`,
+  description: SITE_DESCRIPTION,
+};
+---
+
+<MainLayout title={metadata.title} description={metadata.description}>
+  <div class="w-full px-4 md:px-6 py-16">
+    <!-- Hero Section -->
+    <div class="text-center max-w-4xl mx-auto mb-16">
+      <h1 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-6">
+        Driving Innovation in <br />
+        <span class="text-teahouse-primary">Sustainable Marketplaces</span>
+      </h1>
+      <p class="text-lg leading-relaxed text-teahouse-text-secondary max-w-3xl mx-auto">
+        Tiktag is a venture-backed startup under incubation, pioneering an Agentic E-commerce platform for the global energy transition. Based in Manila and supported by <a href="https://sbv.one/" target="_blank" class="text-teahouse-primary hover:underline">Starting Block Ventures</a>, we are transforming how Distributed Energy Resources (DERs) are designed, validated, and traded. Our core mission is to replace complexity with confidence.
+      </p>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="max-w-6xl mx-auto mb-16">
+      <h2 class="text-3xl font-bold text-teahouse-dark text-center mb-8">Tiktag Stats</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <div class="text-4xl font-bold text-teahouse-primary mb-2">3</div>
+          <div class="text-teahouse-text-secondary">Offices</div>
+        </div>
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <div class="text-4xl font-bold text-teahouse-primary mb-2">15</div>
+          <div class="text-teahouse-text-secondary">Members</div>
+        </div>
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <div class="text-4xl font-bold text-teahouse-primary mb-2">1</div>
+          <div class="text-teahouse-text-secondary">On-going Projects</div>
+        </div>
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <div class="text-4xl font-bold text-teahouse-primary mb-2">30+</div>
+          <div class="text-teahouse-text-secondary">Product SKU</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tiktagDAO Section -->
+    <div class="max-w-6xl mx-auto mb-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-teahouse-dark mb-4">tiktagDAO</h2>
+        <p class="text-lg text-teahouse-text-secondary max-w-3xl mx-auto">
+          tiktagDAO is a DAO, Decentralized Autonomous Organization, guiding the development of tiktag.app with a vision for a future where resource accounting is data-oracle driven. We believe that starting with the critical needs of renewable energy systems will pave the way for broader adoption across various RWA applications.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 16a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zM14 16a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1v-2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Dual Utility for Resource Accounting</h3>
+          <p class="text-teahouse-text-secondary">
+            The system utilizes two distinct utility tokens, TIK and TAG, exclusively for resource accounting within the market network. This approach links cost directly to usage and value, functioning as a decentralized price system that aggregates knowledge held by individual participants.
+          </p>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Service Accounting with TIK Token</h3>
+          <p class="text-teahouse-text-secondary">
+            The TIK utility token is consumed ("burned") for each solution run or simulation initiated by an installer. This mechanism provides a decentralized price signal for experimentation, allowing individual installers to conduct their own economic experiments without a single, central AI dictating all possible outcomes.
+          </p>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Knowledge Validation with TAG Token</h3>
+          <p class="text-teahouse-text-secondary">
+            The TAG solution token is only consumed when a generated solution is confirmed by a vendor team and stored persistently. The consumption of a TAG token acts as a knowledge stamp for verified value, converting a decentralized experiment into a proven fragment of knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agent-Driven Value Section -->
+    <div class="max-w-6xl mx-auto mb-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-teahouse-dark mb-4">Agent-Driven Value</h2>
+        <p class="text-lg text-teahouse-text-secondary max-w-3xl mx-auto">
+          We have built a proprietary system that fuses AI Simulation, Telemetry Validation, and a Frictionless Marketplace to deliver an unprecedented user experience. We accelerate the journey from design to confirmed deployment for homeowners, installers, co-ops, and energy enterprises, ensuring that capital is deployed only when electrons start moving.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <div class="flex flex-col md:flex-row gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">1</div>
+          <div class="flex-1">
+            <h3 class="text-lg font-medium text-teahouse-dark mb-2">Tiktag Studio (AI Design & Simulation)</h3>
+            <p class="text-teahouse-text-secondary">
+              Our flagship design environment is powered by AI agents that go beyond simple modeling. Users instantly simulate complex renewable energy flows (solar inverters, batteries, smart breakers) and receive an outcome-based Deep Report on projected ROI and performance certainty. We charge for confidence, not compute.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">2</div>
+          <div class="flex-1">
+            <h3 class="text-lg font-medium text-teahouse-dark mb-2">MatchMaker Marketplace (Frictionless Trading)</h3>
+            <p class="text-teahouse-text-secondary">
+              Once a design is validated, our MatchMaker AI broker silently connects to snapshot to real hardware, watching bids, inventory, and weather to float optimal buy/sell suggestions. The transaction is escrowed via a 5% commission that only confirms after deployed telemetry confirms 24 hours of successful uptime—ensuring payment is tied directly to physical, measurable performance.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 items-start bg-teahouse-bg-secondary rounded-lg p-6 border border-teahouse-border">
+          <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">3</div>
+          <div class="flex-1">
+            <h3 class="text-lg font-medium text-teahouse-dark mb-2">Real-World Asset (RWA) Accounting</h3>
+            <p class="text-teahouse-text-secondary">
+              We utilize agentic services for Resource Accounting and Billing, providing automated, real-time proof of energy generation and consumption. This creates a traceable, auditable ledger for DER performance, transforming physical assets into tradable, verified data streams.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teams & Communities Section -->
+    <div class="max-w-6xl mx-auto mb-16">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-teahouse-dark">Where Are We</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">ASEAN</h3>
+          <p class="text-teahouse-text-secondary">sbv.one, Manila, Philippines</p>
+        </div>
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">China</h3>
+          <p class="text-teahouse-text-secondary">Future Maker Hub, Zhuhai, Guangdong</p>
+        </div>
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Africa</h3>
+          <p class="text-teahouse-text-secondary">Abuja, Nigeria</p>
+        </div>
+        <div class="bg-teahouse-bg-secondary rounded-lg p-6 text-center border border-teahouse-border">
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">S. America</h3>
+          <p class="text-teahouse-text-secondary">Guyana</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Get Involved Section -->
+    <div class="max-w-4xl mx-auto bg-teahouse-primary/10 rounded-xl p-8 border border-teahouse-border">
+      <div class="text-center">
+        <h2 class="text-2xl font-bold text-teahouse-dark mb-4">Get Involved</h2>
+        <p class="text-teahouse-text-secondary mb-8">
+          Join our community and help build the future of sustainable energy marketplaces.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://x.com/i/chat/group_join/g1974175261756399642/pmCcQarIdH"
+            target="_blank"
+            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary transition-colors"
+          >
+            Join X Chat Group
+          </a>
+          <a
+            href="https://github.com/tiktagapp/"
+            target="_blank"
+            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
+          >
+            Build with Tiktag
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>

@@ -45,8 +45,9 @@ export interface SlideTheme {
   overlayColor: string;
 }
 
-export const SITE_TITLE = "MONA";
-export const SITE_DESCRIPTION = "Mona — Learn from What We Build";
+export const SITE_TITLE = "Tiktag";
+export const SITE_DESCRIPTION =
+  "Settlement and Verification Service for Agentic Commerce";
 
 export const PROD_URL = "https://www.mymona.xyz";
 
@@ -80,19 +81,34 @@ export interface MenuItem {
 
 export const MENU_ITEMS: MenuItem[] = [
   {
-    id: "blogs",
-    label: "Articles",
-    href: "/blogs",
-    title: "Articles",
+    id: "home",
+    label: "Home",
+    href: "/",
+    title: "Home",
     description:
-      "Practical guides, in-depth technical pieces, and lessons from real projects.",
+      "Tiktag - Settlement and Verification Service for Agentic Commerce",
+  },
+  {
+    id: "products",
+    label: "Products",
+    href: "/products",
+    title: "Products",
+    description: "AI-Verified Marketplace for renewable energy systems",
+  },
+  {
+    id: "blogs",
+    label: "Blog",
+    href: "/blogs",
+    title: "Blog",
+    description:
+      "tiktag bridges gaps between data oracle networks and settlement layers.",
   },
   {
     id: "cards",
     label: "Cards",
     href: "/cards",
     title: "Cards",
-    description: "Developer-Gathered, AI-Crafted, Human-Checked.",
+    description: "Knowledge cards and research summaries",
   },
   {
     id: "slides",
@@ -102,11 +118,11 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Interactive presentations crafted for developers.",
   },
   {
-    id: "open-source",
-    label: "GitHub",
-    href: "https://github.com/monakit/monakit",
-    title: "GitHub",
-    description: "Explore our open-source projects.",
+    id: "about",
+    label: "About",
+    href: "/about",
+    title: "About",
+    description: "Learn about Tiktag and our mission",
   },
 ];
 

@@ -1,0 +1,315 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
+import MainLayout from "@/layouts/MainLayout.astro";
+
+const metadata = {
+  title: `Products | ${SITE_TITLE}`,
+  description: SITE_DESCRIPTION,
+};
+---
+
+<MainLayout title={metadata.title} description={metadata.description}>
+  <div class="w-full px-4 md:px-6 py-16">
+    <!-- For Installers Section -->
+    <div class="max-w-7xl mx-auto mb-20">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Installers</h1>
+        <p class="text-lg leading-relaxed text-teahouse-text-secondary">
+          Discover validated renewable energy systems that guarantee compatibility and performance.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#systems"
+            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            Browse Validated Systems
+          </a>
+          <a
+            href="#how-it-works"
+            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            How It Works
+          </a>
+        </div>
+      </div>
+
+      <div id="systems" class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <div class="text-xl font-bold text-teahouse-dark">Solar + Battery System</div>
+                <div class="text-sm text-teahouse-text-secondary">10kW Solar + 20kWh Battery</div>
+              </div>
+              <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Validated</div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Manufacturer</span>
+                <span class="text-sm font-medium text-teahouse-dark">NextG Power</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Inverter</span>
+                <span class="text-sm font-medium text-teahouse-dark">SunPower</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Compatibility</span>
+                <span class="text-sm font-medium text-teahouse-dark">98% Verified</span>
+              </div>
+            </div>
+            <div class="mt-6">
+              <a
+                href="#"
+                class="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <div class="text-xl font-bold text-teahouse-dark">Commercial Solar System</div>
+                <div class="text-sm text-teahouse-text-secondary">50kW Solar Array</div>
+              </div>
+              <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Validated</div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Manufacturer</span>
+                <span class="text-sm font-medium text-teahouse-dark">SunEdison</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Inverter</span>
+                <span class="text-sm font-medium text-teahouse-dark">SMA</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Compatibility</span>
+                <span class="text-sm font-medium text-teahouse-dark">99% Verified</span>
+              </div>
+            </div>
+            <div class="mt-6">
+              <a
+                href="#"
+                class="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md overflow-hidden border border-teahouse-border">
+          <div class="p-6">
+            <div class="flex items-center justify-between mb-4">
+              <div>
+                <div class="text-xl font-bold text-teahouse-dark">Residential Solar Package</div>
+                <div class="text-sm text-teahouse-text-secondary">7kW Solar System</div>
+              </div>
+              <div class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs font-medium">Validated</div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Manufacturer</span>
+                <span class="text-sm font-medium text-teahouse-dark">Tesla Energy</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Inverter</span>
+                <span class="text-sm font-medium text-teahouse-dark">Tesla Inverter</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-sm text-teahouse-text-secondary">Compatibility</span>
+                <span class="text-sm font-medium text-teahouse-dark">100% Verified</span>
+              </div>
+            </div>
+            <div class="mt-6">
+              <a
+                href="#"
+                class="block w-full text-center px-4 py-3 border border-transparent text-base font-medium rounded-md text-white bg-teahouse-primary hover:bg-teahouse-primary/90 transition-colors"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="how-it-works" class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-teahouse-dark text-center mb-12">How It Works</h2>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">1</div>
+            <div>
+              <h3 class="text-lg font-medium text-teahouse-dark mb-2">Tell Us About Your Project</h3>
+              <p class="text-teahouse-text-secondary">
+                Provide your project's load profile, location, and requirements to our AI project matchmaker.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">2</div>
+            <div>
+              <h3 class="text-lg font-medium text-teahouse-dark mb-2">Get AI-Matched Systems</h3>
+              <p class="text-teahouse-text-secondary">
+                Our AI instantly proposes compatible systems that have been simulated and verified to work.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">3</div>
+            <div>
+              <h3 class="text-lg font-medium text-teahouse-dark mb-2">Install with Confidence</h3>
+              <p class="text-teahouse-text-secondary">
+                Buy hardware and validated Flow, then deploy it directly to your on-site device.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-teahouse-border my-20"></div>
+
+    <!-- For Manufacturers Section -->
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <h2 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">For Manufacturers</h2>
+        <p class="text-lg leading-relaxed text-teahouse-text-secondary">
+          Reach global installers and prove your hardware compatibility with AI-verified executable spec sheets.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#list-hardware"
+            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            List Your Hardware
+          </a>
+          <a
+            href="#benefits"
+            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            View Benefits
+          </a>
+        </div>
+      </div>
+
+      <div id="benefits" class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Reach Global Installers</h3>
+          <p class="text-teahouse-text-secondary">
+            Get your hardware discovered by installers worldwide looking for validated solutions.
+          </p>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">Executable Spec Sheets</h3>
+          <p class="text-teahouse-text-secondary">
+            Prove hardware compatibility with validated Flows that installers can trust.
+          </p>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">24/7 AI Sales Agents</h3>
+          <p class="text-teahouse-text-secondary">
+            Answer installer questions automatically with AI trained on your technical documentation.
+          </p>
+        </div>
+
+        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
+          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-medium text-teahouse-dark mb-2">AI Simulation Verification</h3>
+          <p class="text-teahouse-text-secondary">
+            Your hardware is tested against real-world scenarios to ensure performance.
+          </p>
+        </div>
+      </div>
+
+      <div id="list-hardware" class="mt-16 max-w-4xl mx-auto">
+        <h3 class="text-3xl font-bold text-teahouse-dark text-center mb-12">How to List Your Hardware</h3>
+        <div class="space-y-8">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">1</div>
+            <div class="flex-1">
+              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Create an Account</h4>
+              <p class="text-teahouse-text-secondary">
+                Sign up and provide your manufacturer details to get started.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">2</div>
+            <div class="flex-1">
+              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Upload Hardware Specs</h4>
+              <p class="text-teahouse-text-secondary">
+                Provide technical documentation and hardware specifications.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">3</div>
+            <div class="flex-1">
+              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Create Validated Flow</h4>
+              <p class="text-teahouse-text-secondary">
+                Build or generate a validated Flow that proves hardware compatibility.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-teahouse-primary flex items-center justify-center text-white font-bold">4</div>
+            <div class="flex-1">
+              <h4 class="text-lg font-medium text-teahouse-dark mb-2">Publish to Marketplace</h4>
+              <p class="text-teahouse-text-secondary">
+                Your executable spec sheet is now available to global installers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 text-center">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            Start Listing Your Hardware
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-16 bg-teahouse-primary/10 rounded-xl p-8 max-w-4xl mx-auto border border-teahouse-border">
+        <div class="text-center">
+          <h3 class="text-2xl font-bold text-teahouse-dark mb-4">Ready to Scale Your Sales?</h3>
+          <p class="text-teahouse-text-secondary mb-8">
+            Join our AI-verified marketplace and connect with installers looking for your hardware.
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-teahouse-primary text-base font-medium rounded-md shadow-sm text-teahouse-primary bg-white hover:bg-teahouse-primary/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+          >
+            Contact Sales
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</MainLayout>
