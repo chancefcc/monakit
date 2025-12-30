@@ -10,13 +10,7 @@ import MainLayout from "@/layouts/MainLayout.astro";
 const allPosts = (await getCollection("blogs"))
   .map((post) => ({
     id: post.id,
-    title: post.data.title,
-    description: post.data.description,
-    pubDate: post.data.pubDate,
-    tags: post.data.tags,
-    updatedDate: post.data.updatedDate,
-    author: post.data.author,
-    metadata: post.data.metadata,
+    ...post.data,
   }))
   .sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
 
@@ -69,7 +63,7 @@ const activeDoodle = activeDoodleEntry
   <div class="px-4 md:px-6">
     <LatestSection
       title="Blog"
-      accentColor="text-nebula"
+      accentColor="text-primary"
       description="News and update from tiktag.app service."
       viewAllHref="/blogs"
       viewAllText="View All Blog"

@@ -1,14 +1,16 @@
 ---
+import { Image } from "astro:assets";
 import OptimizedImage from "@/components/OptimizedImage.astro";
+import logo from "@/assets/images/logo.webp";
 ---
 
 <footer class="border-t border-slate-800 bg-slate-950">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <div class="py-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
       <div class="flex items-center gap-2 text-sm text-slate-500">
-        <OptimizedImage
-          src="/logo.webp"
-          alt="Mona"
+        <Image
+          src={logo}
+          alt="tiktag"
           width={120}
           height={40}
           class="h-6 w-auto"
@@ -33,7 +35,8 @@ import OptimizedImage from "@/components/OptimizedImage.astro";
           />
           <button
             type="submit"
-            class="px-3 py-2 bg-emerald-600 text-white rounded-md font-medium hover:bg-emerald-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-slate-950 text-sm"
+            class="px-3 py-2 text-white rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-950 text-sm"
+            style="background-color: #73c732;"
           >
             Subscribe
           </button>
