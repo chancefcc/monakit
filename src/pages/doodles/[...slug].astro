@@ -6,7 +6,7 @@ import { ImageViewer } from "@/components/image-viewer";
 import ContentNavigation from "@/components/navigation/ContentNavigation.astro";
 import ShareButtons from "@/components/ShareButtons.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "@/consts";
-import MainLayout from "@/layouts/MainLayout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
 import { getAdjacentContent } from "@/lib/navigation";
 import "@/styles/article.css";
 
@@ -44,7 +44,7 @@ const allDoodles = await getCollection("doodles");
 const adjacentContent = getAdjacentContent(allDoodles, doodle.id);
 ---
 
-<MainLayout
+<PageLayout>
   title={pageTitle}
   description={description}
   type="article"
@@ -80,4 +80,4 @@ const adjacentContent = getAdjacentContent(allDoodles, doodle.id);
     </div>
   </article>
   <ImageViewer selector="article img" client:load />
-</MainLayout>
+</PageLayout>

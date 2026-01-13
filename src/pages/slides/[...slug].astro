@@ -8,7 +8,7 @@ import ContentNavigation from "@/components/navigation/ContentNavigation.astro";
 import ShareButtons from "@/components/ShareButtons.astro";
 import { SlideViewer } from "@/components/slide/slide-viewer";
 import { SITE_TITLE } from "@/consts";
-import MainLayout from "@/layouts/MainLayout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
 import { getAdjacentContent } from "@/lib/navigation";
 import { formatDate } from "@/lib/utils";
 
@@ -110,7 +110,7 @@ if (imageMap.size > 0) {
 const coverMD = `## ${slide.data.title}\n${slide.data.author}\n\n${formatDate(slide.data.pubDate)}`;
 ---
 
-<MainLayout
+<PageLayout>
   title={`${slide.data.title} | ${SITE_TITLE}`}
   description={slide.data.description}
   type="article"
@@ -149,7 +149,7 @@ const coverMD = `## ${slide.data.title}\n${slide.data.author}\n\n${formatDate(sl
   <div class="container mx-auto p-4">
     <ContentNavigation adjacentContent={adjacentContent} contentType="slides" />
   </div>
-</MainLayout>
+</PageLayout>
 
 <style>
   .slide-container {

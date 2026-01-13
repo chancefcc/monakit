@@ -1,9 +1,9 @@
 ---
 import { SITE_TITLE } from "@/consts";
-import MainLayout from "../layouts/MainLayout.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 ---
 
-<MainLayout
+<PageLayout>
   title={`Search | ${SITE_TITLE}`}
   description="Search through cards, blogs, and slides"
 >
@@ -27,7 +27,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       </div>
     </div>
   </div>
-</MainLayout>
+</PageLayout>
 
 <script is:inline type="module">
   document.addEventListener("DOMContentLoaded", async () => {

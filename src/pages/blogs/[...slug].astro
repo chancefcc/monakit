@@ -7,7 +7,7 @@ import ContentNavigation from "@/components/navigation/ContentNavigation.astro";
 import ShareButtons from "@/components/ShareButtons.astro";
 import TagFilter from "@/components/TagFilter.astro";
 import { SITE_TITLE } from "@/consts";
-import MainLayout from "@/layouts/MainLayout.astro";
+import PageLayout from "@/layouts/PageLayout.astro";
 import { getAdjacentContent } from "@/lib/navigation";
 import "@/styles/article.css";
 
@@ -45,7 +45,7 @@ const tags = post.data.tags || [];
 const pageTitle = `${post.data.title} | ${SITE_TITLE}`;
 ---
 
-<MainLayout
+<PageLayout>
   title={pageTitle}
   description={post.data.description}
   type="article"
@@ -105,4 +105,4 @@ const pageTitle = `${post.data.title} | ${SITE_TITLE}`;
     </div>
   </article>
   <ImageViewer selector="article img" client:load />
-</MainLayout>
+</PageLayout>
