@@ -7,16 +7,16 @@ import BottomLayout from "@layouts/BottomLayout.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import TopLayout from "@layouts/TopLayout.astro";
 
-const projects = (await getCollection("projects"))
-  .filter((project) => !project.data.draft)
+const sdkPages = (await getCollection("sdk"))
+  .filter((page) => !page.data.draft)
   .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
-const tags = [
-  ...new Set(projects.flatMap((project) => project.data.tags)),
-].sort((a, b) => a.localeCompare(b));
+const tags = [...new Set(sdkPages.flatMap((page) => page.data.tags))].sort(
+  (a, b) => a.localeCompare(b),
+);
 
 const estimated_initial_size =
-  28 + projects.length * 158 + (projects.length - 1) * 12;
+  28 + sdkPages.length * 158 + (sdkPages.length - 1) * 12;
 ---
 
 <PageLayout title={PROJECTS.TITLE} description={PROJECTS.DESCRIPTION}>
@@ -38,9 +38,9 @@ const estimated_initial_size =
     >
       <SearchCollection
         client:load
-        entry_name={"projects"}
+        entry_name={"sdk"}
         tags={tags}
-        data={projects}
+        data={sdkPages}
       />
     </div>
   </BottomLayout>

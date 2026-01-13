@@ -2,80 +2,74 @@ import type { Links, Page, Site, Socials } from "@types";
 
 // Global
 export const SITE: Site = {
-  TITLE: "Astro Sphere",
+  TITLE: "Tiktag",
   DESCRIPTION:
-    "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
-  AUTHOR: "Mark Horn",
+    "Settlement for Agentic Commerce. An open-source Taho-fork wallet designed for autonomous agents. Instant, private, and high-integrity settlement for the DePIN economy.",
+  AUTHOR: "Tiktag.app",
 };
 
-// Work Page
-export const WORK: Page = {
-  TITLE: "Work",
-  DESCRIPTION: "Places I have worked.",
+// Features Page
+export const FEATURES: Page = {
+  TITLE: "Features",
+  DESCRIPTION: "Core features of Tiktag's agentic settlement platform.",
 };
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: "Blog",
-  DESCRIPTION: "Writing on topics I am passionate about.",
+  DESCRIPTION: "Articles and updates from the Tiktag team.",
 };
 
 // Projects Page
 export const PROJECTS: Page = {
-  TITLE: "Projects",
-  DESCRIPTION: "Recent projects I have worked on.",
+  TITLE: "SDK",
+  DESCRIPTION: "Developer documentation and API references.",
 };
 
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Search",
-  DESCRIPTION: "Search all posts and projects by keyword.",
+  DESCRIPTION: "Search documentation and guides by keyword.",
 };
 
 // Links
 export const LINKS: Links = [
   {
-    TEXT: "Home",
-    HREF: "/",
-  },
-  {
-    TEXT: "Work",
-    HREF: "/work",
+    TEXT: "Features",
+    HREF: "/features",
   },
   {
     TEXT: "Blog",
     HREF: "/blog",
   },
   {
-    TEXT: "Projects",
-    HREF: "/projects",
+    TEXT: "SDK",
+    HREF: "/sdk",
+  },
+  {
+    TEXT: "Search",
+    HREF: "/search",
   },
 ];
 
 // Socials
 export const SOCIALS: Socials = [
   {
-    NAME: "Email",
-    ICON: "email",
-    TEXT: "markhorn.dev@gmail.com",
-    HREF: "mailto:markhorn.dev@gmail.com",
-  },
-  {
-    NAME: "Github",
+    NAME: "GitHub",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/markhorn-dev/astro-sphere",
-  },
-  {
-    NAME: "LinkedIn",
-    ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "tiktagapp/tiktag-cli",
+    HREF: "https://github.com/tiktagapp/tiktag-cli",
   },
   {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
+    TEXT: "@tiktagapp",
+    HREF: "https://twitter.com/tiktagapp",
+  },
+  {
+    NAME: "Email",
+    ICON: "email",
+    TEXT: "contact@tiktag.app",
+    HREF: "mailto:contact@tiktag.app",
   },
 ];
