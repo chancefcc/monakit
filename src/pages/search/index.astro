@@ -8,11 +8,14 @@ import TopLayout from "@layouts/TopLayout.astro";
 
 const posts = (await getCollection("blog")).filter((post) => !post.data.draft);
 
-const projects = (await getCollection("projects")).filter(
-  (post) => !post.data.draft,
-);
+let sdk: CollectionEntry<"sdk">[] = [];
+try {
+  sdk = (await getCollection("sdk")).filter((post) => !post.data.draft);
+} catch (e) {
+  // SDK collection may not exist or be empty
+}
 
-const data = [...posts, ...projects] as CollectionEntry<"blog">[];
+const data = [...posts, ...sdk] as any[];
 ---
 
 <PageLayout title={SEARCH.TITLE} description={SEARCH.DESCRIPTION}>

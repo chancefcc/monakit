@@ -5,12 +5,12 @@ import Fuse from "fuse.js";
 import { createEffect, createSignal } from "solid-js";
 
 type Props = {
-  data: CollectionEntry<"blog">[];
+  data: any[];
 };
 
 export default function Search({ data }: Props) {
   const [query, setQuery] = createSignal("");
-  const [results, setResults] = createSignal<CollectionEntry<"blog">[]>([]);
+  const [results, setResults] = createSignal<any[]>([]);
 
   const fuse = new Fuse(data, {
     keys: ["slug", "data.title", "data.summary", "data.tags"],

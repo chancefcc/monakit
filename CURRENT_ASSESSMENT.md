@@ -1,64 +1,28 @@
-# Current MonaKit Implementation Assessment
+# Current astro-sphere Implementation Status
 
 **Generated:** 2025-01-14  
-**Purpose:** Document current state before migration to astro-sphere
+**Purpose:** Document current state after migration to astro-sphere
 
 ## 1. Components Inventory
 
 ### Core Components (`src/components/`)
 - `BaseHead.astro` - HTML head with meta tags
+- `Container.astro` - Container wrapper
 - `Footer.astro` - Site footer
 - `Header.astro` - Site navigation header
-- `HeaderLink.astro` - Navigation link component
-- `BetaBadge.astro` - Beta version badge
-- `FormattedDate.astro` - Date formatting component
-- `OptimizedImage.astro` - Optimized image component
-- `copy-button.tsx` - Copy to clipboard button (React)
-- `ShareButtons.astro` - Social sharing buttons
+- `Drawer.astro` - Mobile navigation drawer
+- `ArrowCard.tsx` - Arrow card component
+- `Counter.tsx` - Counter component
+- `MeteorShower.astro` - Meteor shower animation
+- `TwinklingStars.astro` - Twinkling stars animation
 
-### Knowledge Card Components (`src/components/knowledge-card/`)
-- `CardActions.astro` - Card action buttons
-- `CardBack.astro` - Card back side (flip animation)
-- `CardContainer.astro` - Card container wrapper
-- `CardCover.astro` - Card cover image
-- `CardFront.astro` - Card front side
-- `CardLink.astro` - Card link component
-- `CardsPage.astro` - Cards listing page
-- `KnowledgeCard.astro` - Interactive flip card
-- `LinksModal.astro` - Links modal dialog
-- `StructureDisplay.astro` - Structure display component
-- `types.ts` - TypeScript types for cards
+### Search Components
+- `Search.tsx` - Main search component (SolidJS + Fuse.js)
+- `SearchBar.tsx` - Search input bar (SolidJS)
+- `SearchCollection.tsx` - Search results collection (SolidJS)
 
-### Blog Components (`src/components/blog/`)
-- `BlogCard.astro` - Blog post preview card
-- `BlogsPage.astro` - Blog listing page
-
-### Slide Components (`src/components/slide/`)
-- `SlideCard.astro` - Slide presentation card
-- `slide-viewer.tsx` - Reveal.js viewer (React)
-- `SlidesPage.astro` - Slides listing page
-
-### Landing Page Components (`src/components/landing-page/`)
-- `HeroSection.astro` - Hero section with scrolling tags
-- `LatestSection.astro` - Latest content section
-- `ScrollingTags.astro` - Animated tag cloud
-
-### Navigation Components (`src/components/navigation/`)
-- `ContentNavigation.astro` - Content navigation
-
-### Product Components
-- `ProductCard.astro` - Product showcase card
-- `ProductSection.astro` - Product showcase section
-
-### Tag Filtering
-- `TagFilter.astro` - Filter content by tags
-
-### UI Components (`src/components/ui/`)
-- `dialog.tsx` - Radix UI dialog (React)
-- `sonner.tsx` - Toast notifications (Sonner)
-
-### Image Viewer
-- `image-viewer.tsx` - React-based image viewer
+### Product/Stack Components
+- `StackCard.astro` - Stack showcase card
 
 ## 2. Content Collections & Schemas
 
@@ -72,10 +36,10 @@
 - `author` (string, optional)
 - `tags` (array of strings, optional)
 - `metadata` (array of strings, optional)
+- `draft` (boolean, optional)
 
 **Current Posts:**
-- `2025-08/groq-code-cli-internal.md`
-- `2025-09/enhance-image-rendering-in-revealjs-with-codex.md`
+- `2025-01/pivoting-tiktag.md`
 
 ### Knowledge Cards (`src/schemas/card.ts`)
 **Location:** `src/content/cards/`
@@ -84,9 +48,6 @@
 - `tags` (array of strings, optional)
 - `pubDate` (date, required)
 - `template` (string, default: "blackWhite")
-
-**Current Cards:**
-- `2025-09/how-openai-uses-codex.md`
 
 ### Slides (`src/schemas/slide.ts`)
 **Location:** `src/content/slides/`
@@ -99,10 +60,6 @@
 - `transition` (string, optional)
 - `theme` (string, optional)
 
-**Current Slides:**
-- `2025-09/agents-md-101.md`
-- `2025-12/quadratic-101.md`
-
 ### Doodles (`src/schemas/doodle.ts`)
 **Location:** `src/content/doodles/`
 **Schema Fields:**
@@ -110,10 +67,6 @@
 - `description` (string, required)
 - `pubDate` (date, required)
 - `endDate` (date, required)
-
-**Current Doodles:**
-- `2025-09/monakit-released.md`
-- `2025-10/mona-update-doodle-and-more.md`
 
 ## 3. Content Configuration
 
@@ -129,17 +82,15 @@ Uses Astro 5 glob loader pattern:
 
 ### Astro Configuration (`astro.config.mjs`)
 - **Output:** Server (SSR)
-- **Adapter:** Vercel with image service
+- **Adapter:** Vercel
 - **Integrations:**
   - MDX with rehype-sanitize
-  - React 19 (image-viewer, slide-viewer, dialog, sonner)
+  - React 19 (for compatibility)
+  - SolidJS (for interactive components)
   - Sitemap
   - TailwindCSS 4 (Vite plugin)
-  - Vercel adapter
 - **Markdown:** rehype-sanitize for security
-- **Image Domains:** public-files.gumroad.com
 - **Site URL:** From environment variable
-- **Bundle Analyzer:** Optional with ANALYZE flag
 
 ### Environment Variables (`src/env.ts`)
 - `SITE_URL` - Required site URL for production
@@ -147,57 +98,43 @@ Uses Astro 5 glob loader pattern:
 ### Constants (`src/consts.ts`)
 - `SITE_TITLE`: "tiktag.app"
 - `SITE_DESCRIPTION`: "Settlement and Verification Service for Agentic Commerce"
-- `PROD_URL`: "https://tiktag.app"
-- `MENU_ITEMS`: Navigation items (Home, Products, Blog, Case Study, About)
-- `DOODLE_EMOJIS`: List of emojis for doodles
-- Theme configurations for knowledge cards and slides
+- `LINKS`: Navigation items (Home, Features, Blog, About)
+- `FEATURES`: Features page constants
+- `SEARCH`: Search page constants
+- `SOCIALS`: Social media links
 
 ### Package.json Dependencies
 
 **Core:**
-- Astro 5.14.0
-- React 19.1.1
-- React-DOM 19.1.1
-- TailwindCSS 4.1.13 (@tailwindcss/vite)
+- Astro 5
+- React 19
+- SolidJS
+- TailwindCSS 4
 
 **Integrations:**
-- @astrojs/mdx ^4.3.6
-- @astrojs/react ^4.4.0
-- @astrojs/rss ^4.0.12
-- @astrojs/vercel ^8.2.8
-- @inox-tools/sitemap-ext ^0.7.0
+- @astrojs/mdx
+- @astrojs/react
+- @astrojs/sitemap
+- @astrojs/vercel
 
 **Special Features:**
-- reveal.js ^5.2.1 (Presentations)
-- reveal.js-mermaid-plugin ^11.6.0 (Diagrams)
-- pagefind ^1.4.0 (Search)
-- katex ^0.16.27 (Math rendering)
-- animejs ^4.1.4 (Animations)
-
-**UI Libraries:**
-- @radix-ui/react-dialog ^1.1.15
-- lucide-react ^0.544.0 (Icons)
-- sonner ^2.0.7 (Toasts)
-- clsx ^2.1.1 (Class utilities)
-- tailwind-merge ^3.3.1 (Tailwind merging)
+- fuse.js (Fuzzy search)
+- animejs (Animations)
 
 **Development:**
 - Biome (linting & formatting)
-- Husky (git hooks)
 - tsx (TypeScript execution)
-- vite-bundle-analyzer
 
 ## 5. Page Structure
 
 ### Pages (`src/pages/`)
-- `index.astro` - Landing page with HeroSection, LatestSection, ProductSection
-- `about.astro` - About page
-- `creations.astro` - Creations page
-- `products.astro` - Product showcase page
-- `search.astro` - Search page (Pagefind)
+- `index.astro` - Landing page
+- `features/index.astro` - Features page
+- `about/index.astro` - About page
+- `search/index.astro` - Search page
+- `legal/terms/index.astro` - Terms of service
+- `legal/privacy/index.astro` - Privacy policy
 - `404.astro` - Not found page
-- `rss.xml.ts` - RSS feed generator
-- `og-enhanced.ts` - OG image generator
 
 ### Blog Pages (`src/pages/blogs/`)
 - `index.astro` - Blog listing
@@ -209,7 +146,7 @@ Uses Astro 5 glob loader pattern:
 
 ### Slides Pages (`src/pages/slides/`)
 - `index.astro` - Slides listing
-- `[...slug].astro` - Individual slide presentation
+- `[...slug].astro` - Individual slide
 
 ### Doodles Pages (`src/pages/doodles/`)
 - `index.astro` - Doodles listing
@@ -217,26 +154,24 @@ Uses Astro 5 glob loader pattern:
 
 ## 6. Layouts
 
-- `MainLayout.astro` - Main site layout
-- `ContentIndexLayout.astro` - Content index layout
+- `PageLayout.astro` - Main page layout
+- `TopLayout.astro` - Top section layout
+- `BottomLayout.astro` - Bottom section layout
+- `ArticleTopLayout.astro` - Article top layout
+- `ArticleBottomLayout.astro` - Article bottom layout
 
 ## 7. Styling
 
 - `global.css` - Global styles
-- `article.css` - Article/post styles
-- `card.css` - Knowledge card styles
-- `scrolling-tags.css` - Scrolling tags animation styles
+- Utilities in TailwindCSS 4
 
 ## 8. Utility Libraries
 
-- `lib/navigation.ts` - Navigation utilities
-- `lib/pagination.ts` - Pagination utilities
 - `lib/utils.ts` - General utilities (clsx, tailwind-merge)
 
 ## 9. Theme Files
 
-- `themes/knowledge-card-themes.ts` - Card theme configurations
-- `themes/slide-card-themes.ts` - Slide theme configurations
+- `themes/` - Theme configurations
 
 ## 10. Asset Management
 
@@ -246,37 +181,22 @@ Uses Astro 5 glob loader pattern:
 
 ## 11. Special Functionality
 
-### Knowledge Cards
-- Interactive flip cards with front/back
-- Multiple theme templates
-- Card actions (copy, share)
-- Links modal for resources
-- Structure display for code snippets
-
-### Presentations (Reveal.js)
-- Full-featured slide viewer
-- Mermaid diagram support
-- Multiple themes
-- Transitions and animations
-
-### Product Showcase
-- Product cards with descriptions
-- Product section on landing page
-- Creations.json for product data
-
 ### Search
-- Pagefind integration for full-text search
-- Search page with results display
+- Client-side fuzzy search using Fuse.js
+- SolidJS for reactive search
+- Real-time results as you type
+- Search across blog and project content
 
 ### Animations
-- Scrolling tags cloud
-- Anime.js for animations
-- Custom CSS animations
+- Meteor shower background effect
+- Twinkling stars animation
+- Anime.js for custom animations
 
-### Image Optimization
-- OptimizedImage component
-- Vercel image service
-- Vercel OG image generation
+### Navigation
+- Responsive header with mobile drawer
+- Dark/light mode toggle
+- Search button
+- RSS feed link
 
 ## 12. Content Organization
 
@@ -295,47 +215,19 @@ Organized by year/month: `src/content/doodles/YYYY-MM/`
 ## 13. Current Routes
 
 - `/` - Landing page
+- `/features` - Features page
 - `/about` - About page
 - `/blogs` - Blog index
 - `/blogs/[slug]` - Individual blog post
 - `/cards` - Knowledge cards index
 - `/cards/[slug]` - Individual card
-- `/creations` - Creations page
-- `/products` - Product showcase
 - `/slides` - Slides index
-- `/slides/[slug]` - Individual slide presentation
+- `/slides/[slug]` - Individual slide
 - `/doodles` - Doodles index
 - `/doodles/[slug]` - Individual doodle
 - `/search` - Search page
-
-## 14. Migration Requirements Summary
-
-### To Keep & Migrate:
-✅ Blog posts → blog/
-✅ Knowledge cards → projects/
-✅ Product showcase → Landing page integration
-✅ RSS feed generation
-✅ Sitemap generation
-✅ MDX support
-✅ Core utilities (clsx, tailwind-merge)
-
-### To Remove:
-❌ Reveal.js slides
-❌ Doodles
-❌ Knowledge card components (flip cards)
-❌ Slide viewer
-❌ React components (replace with SolidJS)
-❌ Pagefind (replace with Fuse.js)
-❌ Vercel adapter (switch to static)
-❌ TailwindCSS 4 (downgrade to 3)
-❌ Custom themes system
-
-### To Adapt:
-🔄 Header/Footer (copy from astro-sphere)
-🔄 Navigation (update to new structure)
-🔄 Search (replace Pagefind with Fuse.js)
-🔄 Styling (use astro-sphere global.css)
-🔄 Animations (replace with meteor/stars)
+- `/legal/terms` - Terms of service
+- `/legal/privacy` - Privacy policy
 
 ---
 

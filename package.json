@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.6",
   "engines": {
-    "node": ">=18.14.1"
+    "node": ">=18.9.0"
   },
   "scripts": {
     "dev": "astro dev",
@@ -37,8 +37,9 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/node": "^24.5.2",
     "@biomejs/biome": "^2.2.4",
-    "eslint": "^8.57.0"
+    "@types/node": "^24.5.2",
+    "eslint": "^8.57.0",
+    "pagefind": "^1.4.0"
   }
 }

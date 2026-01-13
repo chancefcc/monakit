@@ -1,0 +1,19 @@
+{
+  "rootSelector": "main",
+  "ignoreSelectors": [
+    "#search-container",
+    "#search-results",
+    "nav",
+    "footer"
+  ],
+  "excludeSelectors": [
+    "[data-pagefind-ignore]",
+    "[role=navigation]"
+  ],
+  "sort": {
+    "priority": 1
+  },
+  "rank": {
+    "pageRank": 0.5
+  }
+}

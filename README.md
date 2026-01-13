@@ -1,6 +1,6 @@
 # Tiktag Web - tiktag.app Landing Site
 
-The `tiktagweb` project serves as the official landing site for tiktag.app - **"Settlement for Agentic Commerce"**. Built with the MonaKit theme and Astro 5, it acts as the front-end layer for the Tiktag ecosystem, connecting autonomous agents to the tiktag-cli settlement layer backend.
+The `tiktagweb` project serves as the official landing site for tiktag.app - **"Settlement for Agentic Commerce"**. Built with the astro-sphere theme and Astro 5, it acts as the front-end layer for the Tiktag ecosystem, connecting autonomous agents to the tiktag-cli settlement layer backend.
 
 ## Project Overview
 
@@ -9,12 +9,12 @@ The `tiktagweb` project serves as the official landing site for tiktag.app - **"
 - An **open-source Taho-fork wallet** designed for autonomous agents
 - **Instant, private, and high-integrity settlement** for the DePIN economy
 - **Developer portal** for the Agentic SDK and NATS-based wallet signature triggers
-- **Integration hub** for Tikoly ZK-proofs, TigerBeetle's Shadow Ledger, and X Layer infrastructure
+- **Integration hub** for Tikoly ZK-proofs, High-Performance Ledger's Shadow Ledger, and X Layer infrastructure
 
 **Key Value Propositions**:
 - 🤖 **Agentic SDK** - Go-based SDK for NATS-based wallet signature triggers
 - 🔒 **Privacy-First** - ZK-proofs from Tikoly keep merchant data private while ensuring agents get paid
-- ⚡ **TigerBeetle Performance** - 1,000,000+ TPS capability for micro-settlements
+- ⚡ **High-Performance Ledger** - 1,000,000+ TPS capability for micro-settlements
 - 🌐 **Open Source Heritage** - Community-driven Taho fork, non-custodial alternative to proprietary wallets
 - 💰 **ASEAN Settlement** - Native OKB gas support on X Layer for ultra-low fees
 
@@ -28,32 +28,23 @@ The website connects to the tiktag-cli daemon via documented NATS API endpoints 
 
 ---
 
-# MonaKit
-
-Multi-format content platform built with Astro, featuring knowledge cards, articles, presentations, and announcements.
-
 ## Features
 
-- **Knowledge Cards** - Research summaries with customizable themes
-- **Articles** - Long-form blog content (now repurposed as "Docs" for SDK documentation)
-- **Slide Presentations** - Interactive reveal.js presentations
-- **Doodles** - Release logs and announcements (Mona Pulse)
-- **Search** - Full-text search with Pagefind
-- **Promotion** - Product and link showcase
+- **Full-text Search** - Client-side fuzzy search using Fuse.js with SolidJS reactivity
+- **Blog/Articles** - Long-form blog content for SDK documentation and updates
+- **Presentations** - Interactive content with Mermaid diagrams
+- **Releases** - Release logs and announcements
+- **Responsive Design** - Mobile-first with TailwindCSS 4
+- **Dark Mode** - Toggle between light and dark themes
 
 ## Tech Stack
 
 - Astro 5 (SSR)
 - React 19
+- SolidJS (for interactive components)
 - TailwindCSS 4
-- Reveal.js with Mermaid plugin
-- Pagefind
-
-## Quick Start
-
-```bash
-npm create astro@latest my-astro-project -- --template monakit/monakit
-```
+- Fuse.js (fuzzy search)
+- Biome (linting and formatting)
 
 ## Development
 
@@ -66,8 +57,7 @@ pnpm dev
 
 ```bash
 pnpm dev                # Start dev server
-pnpm build              # Production build (auto-builds search index)
-pnpm build:search-index # Build search index manually
+pnpm build              # Production build
 pnpm preview            # Preview production build
 pnpm check              # Type check and lint
 pnpm fix                # Auto-fix issues
@@ -93,21 +83,20 @@ All products data is defined in `src/assets/creations.json`.
 ## Site Structure
 
 - **`/`** - Landing page with "Settlement for Agentic Commerce" hero
-- **`/features`** - Core features page (Agentic SDK, Privacy-First, TigerBeetle Performance, etc.)
+- **`/features`** - Core features page (Agentic SDK, Privacy-First, High-Performance Ledger, etc.)
 - **`/blog`** - Blog posts and updates from the Tiktag team
-- **`/sdk`** - Developer SDK documentation and API references
 - **`/search`** - Full-text search across all content
 
 ## Branding Guidelines
 
 ### Core Messaging
 - **Tagline**: "Settlement for Agentic Commerce"
-- **Description**: "An open-source Taho-fork wallet designed for autonomous agents. Instant, private, and high-integrity settlement for the DePIN economy."
+- **Description**: "An open-source Taho-fork wallet designed for autonomous agents. Instant, private, and high-integrity settlement for DePIN economy."
 
 ### Key Technologies to Highlight
 - **X Layer** - Native OKB gas support, ultra-low fees
 - **Taho** - Open-source wallet fork, community-driven
-- **TigerBeetle** - 1,000,000+ TPS, sub-millisecond double-entry accounting
+- **High-Performance Ledger** - 1,000,000+ TPS, sub-millisecond double-entry accounting
 - **NATS.io** - Micro service architecture for agent-to-settlement communication
 - **Polygon ID** - ZK-proof verification for privacy-first design
 

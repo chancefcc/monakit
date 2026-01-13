@@ -22,14 +22,6 @@ const features = [
       "Zero-knowledge proof verification with Polygon ID. No sensitive merchant data is ever exposed on-chain.",
   },
   {
-    title: "TigerBeetle Performance",
-    icon: "zap",
-    description:
-      "1,000,000+ TPS capability for micro-settlements with sub-millisecond latency.",
-    details:
-      "Financial-grade double-entry accounting. Optimized for high-frequency agentic transactions.",
-  },
-  {
     title: "Open Source Heritage",
     icon: "github",
     description:
@@ -65,7 +57,7 @@ const features = [
   <BottomLayout>
     <div class="space-y-12">
       {features.map((feature, index) => (
-        <li class={`animate border-b border-black/10 dark:border-white/25 py-8 ${index === 0 ? 'first-of-type:mt-0 first-of-type:pt-0' : ''} ${index === features.length - 1 ? 'last-of-type:border-none' : ''}`}>
+        <div class={`animate border-b border-black/10 dark:border-white/25 py-8 ${index === 0 ? 'first-of-type:mt-0 first-of-type:pt-0' : ''} ${index === features.length - 1 ? 'last-of-type:border-none' : ''}`}>
           <div class="grid md:grid-cols-3 gap-8">
             <div class="md:col-span-1">
               <div class="w-16 h-16 bg-blue-500/10 dark:bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-500 mb-4">
@@ -91,7 +83,7 @@ const features = [
               </p>
             </div>
           </div>
-        </li>
+        </div>
       ))}
     </div>
   </BottomLayout>
