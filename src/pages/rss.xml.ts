@@ -1,26 +1,32 @@
 import { getCollection } from "astro:content";
 import rss from "@astrojs/rss";
-import type { APIContext } from "astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import { SITE } from "@consts";
 
-export async function GET(context: APIContext) {
-  const posts = await getCollection("blogs");
-  const cards = await getCollection("cards");
-  const slides = await getCollection("slides");
-  const doodles = await getCollection("doodles");
-  const contents = [...posts, ...cards, ...slides, ...doodles];
+type Context = {
+  site: string;
+};
 
-  if (!context.site) {
-    throw new Error("Expected 'context.site' when generating RSS feed.");
-  }
+export async function GET(context: Context) {
+  const posts = await getCollection("blog");
+  const projects = await getCollection("projects");
+
+  const items = [...posts, ...projects];
+
+  items.sort(
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+  );
 
   return rss({
-    title: SITE_TITLE,
-    description: SITE_DESCRIPTION,
+    title: SITE.TITLE,
+    description: SITE.DESCRIPTION,
     site: context.site,
-    items: contents.map((content) => ({
-      ...content.data,
-      link: `/${content.collection}/${content.id}`,
+    items: items.map((item) => ({
+      title: item.data.title,
+      description: item.data.summary,
+      pubDate: item.data.date,
+      link: item.slug.startsWith("blog")
+        ? `/blog/${item.slug}/`
+        : `/projects/${item.slug}/`,
     })),
   });
 }

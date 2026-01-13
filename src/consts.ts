@@ -1,137 +1,81 @@
-export interface CardTheme {
-  textColor: string;
-  backgroundClass: string;
-  accentColor: string;
-  borderColor: string;
-  subtleColor: string;
-  decorativeLineColor: string;
-  numberColor: string;
-  backgroundColor: string;
-  backgroundImage?: string;
-  gradient?: string;
-  titleColor: string;
-  titleFontSize: string;
-  titleFontWeight: string;
-  titleFontFamily?: string;
-  descriptionColor: string;
-  descriptionFontSize: string;
-  descriptionFontFamily?: string;
-  sectionTitleColor: string;
-  sectionTitleFontSize: string;
-  sectionTitleFontWeight: string;
-  sectionTitleFontFamily?: string;
-  keyPointColor: string;
-  keyPointFontSize: string;
-  keyPointFontFamily?: string;
-  numberBackgroundColor: string;
-  numberTextColor: string;
-  numberFontWeight: string;
-  numberFontFamily?: string;
-  decorativeLineWidth: string;
-  decorativeLineHeight: string;
-  fontFamily?: string;
-  linkColor: string;
-}
+import type { Links, Page, Site, Socials } from "@types";
 
-export interface SlideTheme {
-  background: string;
-  type: "solid" | "gradient";
-  titleFont: string;
-  titleWeight: number | "normal" | "bold";
-  titleTransform: "uppercase" | "none" | "capitalize" | "lowercase";
-  textFont: string;
-  titleColor: string;
-  textColor: string;
-  overlayColor: string;
-}
-
-export const SITE_TITLE = "tiktag.app";
-export const SITE_DESCRIPTION =
-  "Settlement and Verification Service for Agentic Commerce";
-
-export const PROD_URL = "https://tiktag.app";
-
-export const isProdEnv = () => {
-  if (import.meta.env?.PROD || import.meta.env?.MODE === "production") {
-    return true;
-  }
-
-  if (typeof window !== "undefined") {
-    return window.location.origin === PROD_URL;
-  }
-
-  return false;
+// Global
+export const SITE: Site = {
+  TITLE: "Astro Sphere",
+  DESCRIPTION:
+    "Welcome to Astro Sphere, a portfolio and blog for designers and developers.",
+  AUTHOR: "Mark Horn",
 };
 
-export const isProd = isProdEnv();
+// Work Page
+export const WORK: Page = {
+  TITLE: "Work",
+  DESCRIPTION: "Places I have worked.",
+};
 
-export const ASSETS_IMAGES_PREFIX = "/src/assets/images";
+// Blog Page
+export const BLOG: Page = {
+  TITLE: "Blog",
+  DESCRIPTION: "Writing on topics I am passionate about.",
+};
 
-export const MERMAID_LIVE_BASE_URL = "https://mermaid.live";
+// Projects Page
+export const PROJECTS: Page = {
+  TITLE: "Projects",
+  DESCRIPTION: "Recent projects I have worked on.",
+};
 
-export interface MenuItem {
-  id: string;
-  label: string;
-  href: string;
-  showWhenLoggedOut?: boolean;
-  showWhenLoggedIn?: boolean;
-  title?: string;
-  description?: string;
-}
+// Search Page
+export const SEARCH: Page = {
+  TITLE: "Search",
+  DESCRIPTION: "Search all posts and projects by keyword.",
+};
 
-export const MENU_ITEMS: MenuItem[] = [
+// Links
+export const LINKS: Links = [
   {
-    id: "home",
-    label: "Home",
-    href: "/",
-    title: "Home",
-    description:
-      "Tiktag - Settlement and Verification Service for Agentic Commerce",
+    TEXT: "Home",
+    HREF: "/",
   },
   {
-    id: "products",
-    label: "Products",
-    href: "/products",
-    title: "Products",
-    description: "AI-Verified Marketplace for renewable energy systems",
+    TEXT: "Work",
+    HREF: "/work",
   },
   {
-    id: "blogs",
-    label: "Blog",
-    href: "/blogs",
-    title: "Blog",
-    description:
-      "tiktag bridges gaps between data oracle networks and settlement layers.",
+    TEXT: "Blog",
+    HREF: "/blog",
   },
   {
-    id: "slides",
-    label: "Case Study",
-    href: "/slides",
-    title: "Case Study",
-    description: "Use cases of tiktag.app in real-life.",
-  },
-  {
-    id: "about",
-    label: "About",
-    href: "/about",
-    title: "About",
-    description: "Learn about Tiktag and our mission",
+    TEXT: "Projects",
+    HREF: "/projects",
   },
 ];
 
-export const getNavigationItems = (): MenuItem[] => {
-  return MENU_ITEMS;
-};
-
-export const DOODLE_EMOJIS = [
-  "✨",
-  "🚀",
-  "💡",
-  "🎉",
-  "🔥",
-  "🌟",
-  "🤖",
-  "🎃",
-  "🔊",
-  "📡",
+// Socials
+export const SOCIALS: Socials = [
+  {
+    NAME: "Email",
+    ICON: "email",
+    TEXT: "markhorn.dev@gmail.com",
+    HREF: "mailto:markhorn.dev@gmail.com",
+  },
+  {
+    NAME: "Github",
+    ICON: "github",
+    TEXT: "markhorn-dev",
+    HREF: "https://github.com/markhorn-dev/astro-sphere",
+  },
+  {
+    NAME: "LinkedIn",
+    ICON: "linkedin",
+    TEXT: "markhorn-dev",
+    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+  },
+  {
+    NAME: "Twitter",
+    ICON: "twitter-x",
+    TEXT: "markhorn_dev",
+    HREF: "https://twitter.com/markhorn_dev",
+  },
 ];

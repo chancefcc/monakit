@@ -1,161 +1,105 @@
 ---
-import { Image } from "astro:assets";
-import { Search } from "lucide-react";
-import logo from "@/assets/images/logo.webp";
-import BetaBadge from "@/components/BetaBadge.astro";
-import { getNavigationItems, SITE_TITLE } from "../consts";
-import HeaderLink from "./HeaderLink.astro";
+import { LINKS, SITE } from "@consts";
+import { cn } from "@lib/utils";
 
-const visibleMenuItems = getNavigationItems();
+const { pathname } = Astro.url;
+const subpath = pathname.match(/[^/]+/g);
+
+import Container from "@components/Container.astro";
 ---
 
-<header
-  class="sticky top-0 z-50 w-full border-b border-teahouse-primary/10 bg-teahouse-bg/95 backdrop-blur supports-[backdrop-filter]:bg-teahouse-bg/60"
->
-  <div class="container flex h-16 items-center justify-between">
-    <div class="flex items-center gap-6 md:gap-8">
-      <a href="/" class="flex items-center space-x-2 md:ml-0 ml-4">
-        <Image
-          src={logo}
-          alt="tiktag"
-          width={40}
-          height={40}
-          class="h-10 w-10"
-        />
-        <div>
-          <div
-            class="text-xl font-bold text-teahouse-dark font-['Plus Jakarta Sans',sans-serif]"
-          >
-            {SITE_TITLE}
+<header id="header" class="fixed top-0 w-full h-16 z-50 ">
+  <Container size="md">
+    <div class="relative h-full w-full">
+      <div class="absolute left-0 top-1/2 -translate-y-1/2 flex gap-1 font-semibold">
+        <a href="/" class="flex gap-1 text-current hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out">
+          <svg class="size-6 fill-current">
+            <use href="/brand.svg#brand"></use>
+          </svg>
+          <div>
+            {SITE.TITLE}
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
 
-    <div class="flex items-center gap-4">
-      <button
-        id="mobile-menu-button"
-        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-300 hover:text-primary hover:bg-teahouse-primary/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teahouse-primary"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-      >
-        <span class="sr-only">Open Menu</span>
-        <svg
-          class="block h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-        <svg
-          class="hidden h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-      <nav class="hidden gap-8 md:flex items-center">
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+      <nav class="hidden md:flex items-center justify-center text-sm gap-1">
         {
-          visibleMenuItems.map((item) => (
-            <HeaderLink href={item.href}>{item.label}</HeaderLink>
+          LINKS.map((LINK) => (
+            <a href={LINK.HREF} class={cn("h-8 rounded-full px-3 text-current", "flex items-center justify-center", "transition-colors duration-300 ease-in-out", pathname === LINK.HREF || "/" + subpath?.[0] === LINK.HREF ? "bg-black dark:bg-white text-white dark:text-black" : "hover:bg-black/5 dark:hover:bg-white/20 hover:text-black dark:hover:text-white")}>
+              {LINK.TEXT}
+            </a>
           ))
         }
       </nav>
     </div>
-    <div class="hidden md:block">
-      <a
-        href="/search"
-        class="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium hover:text-primary transition-colors text-white"
-      >
-        <Search className="w-4 h-4" />
-        Search
-      </a>
-    </div>
-  </div>
 
-  <div class="md:hidden" id="mobile-menu">
-    <div
-      class="hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-teahouse-bg border-t border-slate-800"
-    >
-      {
-        visibleMenuItems.map((item) => (
-        <a
-          href={item.href}
-          class="block px-3 py-2 rounded-md text-xl font-medium text-white hover:text-primary font-['Plus Jakarta Sans',sans-serif]"
-        >
-          {item.label}
-        </a>
-        ))
-      }
-      <div class="px-3 py-2">
-        <a
-          href="/search"
-          class="flex items-center gap-2 py-2 rounded-md text-base font-medium text-white hover:text-primary"
-        >
-          <Search className="w-4 h-4" />
-          Search
-        </a>
-      </div>
+    <div class="buttons absolute right-0 top-1/2 -translate-y-1/2 flex gap-1">
+      <a href="/search" aria-label={`Search blog posts and projects on ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out", pathname === "/search" || "/" + subpath?.[0] === "/search" ? "pointer-events-none bg-black dark:bg-white text-white dark:text-black" : "")}>
+        <svg class="size-full">
+          <use href="/ui.svg#search"></use>
+        </svg>
+      </a>
+
+      <a href="/rss.xml" target="_blank" aria-label={`Rss feed for ${SITE.TITLE}`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+        <svg class="size-full">
+          <use href="/ui.svg#rss"></use>
+        </svg>
+      </a>
+
+      <button id="header-theme-button" aria-label={`Toggle light and dark theme`} class={cn("hidden md:flex", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+        <svg class="size-full block dark:hidden">
+          <use href="/ui.svg#sun"></use>
+        </svg>
+        <svg class="size-full hidden dark:block">
+          <use href="/ui.svg#moon"></use>
+        </svg>
+      </button>
+
+      <button id="header-drawer-button" aria-label={`Toggle drawer open and closed`} class={cn("flex md:hidden", "size-9 rounded-full p-2 items-center justify-center", "bg-transparent hover:bg-black/5 dark:hover:bg-white/20", "stroke-current hover:stroke-black hover:dark:stroke-white", "border border-black/10 dark:border-white/25", "transition-colors duration-300 ease-in-out")}>
+        <svg id="drawer-open" class="size-full">
+          <use href="/ui.svg#menu"></use>
+        </svg>
+        <svg id="drawer-close" class="size-full">
+          <use href="/ui.svg#x"></use>
+        </svg>
+      </button>
     </div>
   </div>
+  </Container>
 </header>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const mobileMenuButton = document.getElementById("mobile-menu-button");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const menuContent = mobileMenu?.querySelector("div");
-    const menuIcon = mobileMenuButton?.querySelector("svg:first-of-type");
-    const closeIcon = mobileMenuButton?.querySelector("svg:last-of-type");
+<style>
+  #header-drawer-button > #drawer-open {
+    @apply block;
+  }
 
-    if (
-      mobileMenuButton &&
-      mobileMenu &&
-      menuContent &&
-      menuIcon &&
-      closeIcon
-    ) {
-      mobileMenuButton.addEventListener("click", function () {
-        const isExpanded =
-          mobileMenuButton.getAttribute("aria-expanded") === "true";
+  #header-drawer-button > #drawer-close {
+    @apply hidden;
+  }
 
-        if (isExpanded) {
-          menuContent.classList.add("hidden");
-          mobileMenuButton.setAttribute("aria-expanded", "false");
-          menuIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
-        } else {
-          menuContent.classList.remove("hidden");
-          mobileMenuButton.setAttribute("aria-expanded", "true");
-          menuIcon.classList.add("hidden");
-          closeIcon.classList.remove("hidden");
-        }
-      });
+  #header-drawer-button.open > #drawer-open {
+    @apply hidden;
+  }
 
-      const menuItems = menuContent.querySelectorAll("a");
-      menuItems.forEach((item) => {
-        item.addEventListener("click", function () {
-          menuContent.classList.add("hidden");
-          mobileMenuButton.setAttribute("aria-expanded", "false");
-          menuIcon.classList.remove("hidden");
-          closeIcon.classList.add("hidden");
-        });
-      });
-    }
-  });
+  #header-drawer-button.open > #drawer-close {
+    @apply block;
+  }
+</style>
+
+<script is:inline>
+  function toggleDrawer() {
+    const drawer = document.getElementById("drawer")
+    const drawerButton = document.getElementById("header-drawer-button")
+    drawer?.classList.toggle("open")
+    drawerButton?.classList.toggle("open")
+  }
+
+  function initializeDrawerButton() {
+    const drawerButton = document.getElementById("header-drawer-button")
+    drawerButton?.addEventListener("click", toggleDrawer)
+  }
+
+  document.addEventListener("astro:after-swap", initializeDrawerButton)
+  initializeDrawerButton()
 </script>
