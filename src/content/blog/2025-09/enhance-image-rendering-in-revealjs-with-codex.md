@@ -1,10 +1,9 @@
 ---
 title: "Enhancing Image Rendering in Reveal.js Slides in Astro Sites Using Codex"
-pubDate: "2025-09-22T16:47:25+08:00"
-author: "Feng Yu, Hu Jian"
-description: "During the integration of Reveal.js in Astro, we used Codex CLI to analyze and solve the problem of making images in Markdown Slides more Astro Native."
+summary: "During integration of Reveal.js in Astro, we used Codex CLI to analyze and solve problem of making images in Markdown Slides more Astro Native."
+date: 2025-09-22
 tags: ["ai", "web", "vibe-coding", "coding-cli"]
-image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop"
+draft: false
 ---
 
 [Note: Feng Yu provided the first version, and Hu Jian supplemented the entire cause and effect of the process, reorganized the text and formatting on that basis.]
