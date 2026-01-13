@@ -2,6 +2,9 @@
   "name": "tiktagweb",
   "type": "module",
   "version": "0.1.6",
+  "engines": {
+    "node": ">=18.14.1"
+  },
   "scripts": {
     "dev": "astro dev",
     "dev:network": "astro dev --host",
