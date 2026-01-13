@@ -1,31 +1,45 @@
-import { defineCollection } from "astro:content";
-import { glob } from "astro/loaders";
-import { BlogMetadata } from "./schemas/blog";
-import { CardMetadata } from "./schemas/card";
-import { DoodleMetadata } from "./schemas/doodle";
-import { SlideMetadata } from "./schemas/slide";
+import { defineCollection, z } from "astro:content"
 
-const blogs = defineCollection({
-  loader: glob({
-    base: "./src/content/blogs",
-    pattern: "**/[0-9][0-9][0-9][0-9]-[0-9][0-9]/*.{md,mdx}",
+const work = defineCollection({
+  type: "content",
+  schema: z.object({
+    company: z.string(),
+    role: z.string(),
+    dateStart: z.coerce.date(),
+    dateEnd: z.union([z.coerce.date(), z.string()]),
   }),
-  schema: BlogMetadata,
-});
+})
 
-const cards = defineCollection({
-  loader: glob({ base: "./src/content/cards", pattern: "**/*.{md,mdx}" }),
-  schema: CardMetadata,
-});
+const blog = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()),
+    draft: z.boolean().optional(),
+  }),
+})
 
-const slides = defineCollection({
-  loader: glob({ base: "./src/content/slides", pattern: "**/*.{md,mdx}" }),
-  schema: SlideMetadata,
-});
+const projects = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.coerce.date(),
+    tags: z.array(z.string()),
+    draft: z.boolean().optional(),
+    demoUrl: z.string().optional(),
+    repoUrl: z.string().optional(),
+  }),
+})
 
-const doodles = defineCollection({
-  loader: glob({ base: "./src/content/doodles", pattern: "**/*.{md,mdx}" }),
-  schema: DoodleMetadata,
-});
+const legal = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date(),
+  }),
+})
 
-export const collections = { blogs, cards, slides, doodles };
+export const collections = { work, blog, projects, legal }
