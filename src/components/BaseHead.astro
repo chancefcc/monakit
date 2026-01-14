@@ -59,11 +59,11 @@ const ogImage = new URL(image, Astro.url);
 <link rel="alternate" type="application/rss+xml" title={`${title} - Tiktag Blog`} href={`${Astro.site}rss.xml`}/>
 
 <!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
+<script is:inline type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Tiktag",
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tiktag",
     "url": "https://tiktag.app",
     "logo": "https://tiktag.app/logo.png",
     "description": "Settlement for Agentic Commerce. Enterprise-grade real-world asset settlement for institutions and banking operations.",
@@ -79,11 +79,11 @@ const ogImage = new URL(image, Astro.url);
   }
 </script>
 
-<script type="application/ld+json">
+<script is:inline type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Tiktag",
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Tiktag",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web, Mobile",
     "offers": {
@@ -101,8 +101,8 @@ const ogImage = new URL(image, Astro.url);
 </script>
 
 <!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V740PQDZNL"></script>
-<script>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-V740PQDZNL"></script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
