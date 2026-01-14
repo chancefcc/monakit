@@ -6,6 +6,17 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        teahouse: {
+          primary: '#E91E63',
+          dark: '#1A1A1A',
+          text: '#333333',
+          'text-secondary': '#666666',
+          bg: '#FAFAFA',
+          'bg-secondary': '#F5F5F5',
+          border: '#E5E5E5',
+        },
+      },
       fontFamily: {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
         heading: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
