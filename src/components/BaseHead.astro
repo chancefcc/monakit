@@ -8,6 +8,7 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 const { title, description, image = "/open-graph.jpg" } = Astro.props;
+const ogImage = new URL(image, Astro.url);
 ---
 
 <!-- Global Metadata -->
@@ -15,6 +16,7 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props;
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+<meta name="author" content="Tiktag.app" />
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,20 +39,75 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props;
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={description} />
+<meta property="og:site_name" content="Tiktag" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:image" content={ogImage} />
 
 <!-- Sitemap -->
 <link rel="sitemap" href="/sitemap-index.xml" />
 
 <!-- RSS Feed -->
-<link rel="alternate" type="application/rss+xml" title={title} href={`${Astro.site}rss.xml`}/>
+<link rel="alternate" type="application/rss+xml" title={`${title} - Tiktag Blog`} href={`${Astro.site}rss.xml`}/>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Tiktag",
+    "url": "https://tiktag.app",
+    "logo": "https://tiktag.app/logo.png",
+    "description": "Settlement for Agentic Commerce. Enterprise-grade real-world asset settlement for institutions and banking operations.",
+    "sameAs": [
+      "https://github.com/tiktagapp",
+      "https://twitter.com/tiktagus"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@tiktag.app",
+      "contactType": "customer service"
+    }
+  }
+</script>
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Tiktag",
+    "applicationCategory": "FinanceApplication",
+    "operatingSystem": "Web, Mobile",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Settlement for Agentic Commerce. Enterprise-grade real-world asset settlement for institutions and banking operations.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "10"
+    }
+  }
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V740PQDZNL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-V740PQDZNL');
+</script>
 
 <!-- Global Scripts -->
 <script is:inline src="/js/theme.js"></script>
