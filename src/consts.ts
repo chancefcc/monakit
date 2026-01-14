@@ -4,9 +4,13 @@ import type { Links, Page, Site, Socials } from "@types";
 export const SITE: Site = {
   TITLE: "Tiktag",
   DESCRIPTION:
-    "Settlement for Agentic Commerce. An open-source Tiktag wallet designed for autonomous agents. Instant, private, and high-integrity settlement for the DePIN economy.",
+    "Settlement for Agentic Commerce. An open-source Tiktag wallet designed for autonomous agents. Instant, private, and high-integrity settlement for DePIN economy.",
   AUTHOR: "Tiktag.app",
 };
+
+// Export individual constants for easier imports
+export const SITE_TITLE = SITE.TITLE;
+export const SITE_DESCRIPTION = SITE.DESCRIPTION;
 
 // Features Page
 export const FEATURES: Page = {
