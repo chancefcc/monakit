@@ -1,4 +1,3 @@
-import type { CollectionEntry } from "astro:content";
 import ArrowCard from "@components/ArrowCard";
 import SearchBar from "@components/SearchBar";
 import Fuse from "fuse.js";

@@ -26,6 +26,8 @@ const stack = [
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
 
+  <script is:inline src="/js/bg.js"></script>
+
   <!-- Light Mode: Particles -->
   <div class='absolute inset-0 block dark:hidden'>
     <div id='particles1' class='fixed inset-0'></div>
@@ -47,8 +49,6 @@ const stack = [
       <MeteorShower/>
     </div>
   </div>
-
-  <script is:inline src="/js/bg.js"></script>
   
   <!-- HERO -->
   <section class="relative h-screen w-full">
@@ -80,8 +80,8 @@ const stack = [
             Instant, private, and high-integrity settlement for the DePIN economy.
           </p>
           <div id="ctaButtons" class='animated flex flex-col md:flex-row items-center justify-center gap-4'>
-            <a href='/blog' class='py-3 px-8 bg-white dark:bg-slate-900 text-black dark:text-white font-bold rounded-2xl hover:opacity-90 transition text-center'>
-              Explore SDK
+            <a href='/features' class='py-3 px-8 bg-white dark:bg-slate-900 text-black dark:text-white font-bold rounded-2xl hover:opacity-90 transition text-center'>
+              Explore Features
             </a>
             <a href='https://github.com/tiktagapp' target='_blank' class='py-3 px-8 border border-black/25 dark:border-white/25 font-bold rounded-2xl hover:bg-black/5 dark:hover:bg-white/15 transition text-center'>
               View on GitHub
