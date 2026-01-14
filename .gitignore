@@ -25,9 +25,7 @@ uploads/
 # jetbrains setting folder
 .idea/
 .vercel
-public/js/
 public/_pagefind/
-public/slides/
 
 .claude
 CLAUDE.md
