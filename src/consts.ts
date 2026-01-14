@@ -4,7 +4,7 @@ import type { Links, Page, Site, Socials } from "@types";
 export const SITE: Site = {
   TITLE: "tiktag",
   DESCRIPTION:
-    "Settlement for Agentic Commerce. An open-source Tiktag wallet designed for autonomous agents. Instant, private, and high-integrity settlement for DePIN economy.",
+    "Settlement for Agentic Commerce. The real-world asset wallet designed for autonomous agents. Instant, private, and high-integrity settlement for DePIN economy.",
   AUTHOR: "Tiktag.app",
 };
 
