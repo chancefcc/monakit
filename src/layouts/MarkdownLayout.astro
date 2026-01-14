@@ -1,0 +1,31 @@
+---
+import "@styles/global.css";
+import BaseHead from "@components/BaseHead.astro";
+import Drawer from "@components/Drawer.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Container from "@components/Container.astro";
+
+const { title, description } = Astro.props;
+
+import { SITE } from "@consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={`${title} | ${SITE.TITLE}`} description={description} />
+  </head>
+  <body>
+    <Header />
+    <Drawer />
+    <main>
+      <Container>
+        <article class="prose prose-lg max-w-none">
+          <slot />
+        </article>
+      </Container>
+    </main>
+    <Footer />
+  </body>
+</html>

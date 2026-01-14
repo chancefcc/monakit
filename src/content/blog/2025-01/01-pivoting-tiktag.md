@@ -70,4 +70,4 @@ This pivot is just the beginning. We're building towards a future where:
 
 Agentic Commerce is coming, and Tiktag is building the settlement infrastructure to make it secure, private, and scalable.
 
-Join us on this journey. Explore our [SDK documentation](/sdk) or check out the [GitHub repository](https://github.com/tiktagapp/tiktag-cli).
+Join us on this journey. Explore our [SDK documentation](/sdk) or check out the [GitHub repository](https://github.com/tiktagapp/).

@@ -8,7 +8,7 @@ import { createEffect, createSignal, For, onMount } from "solid-js";
 type Props = {
   entry_name: string;
   tags: string[];
-  data: CollectionEntry<"blog">[] | CollectionEntry<"projects">[];
+  data: CollectionEntry<"blog">[] | CollectionEntry<"projects">[] | CollectionEntry<"sdk">[];
 };
 
 export default function SearchCollection({ entry_name, data, tags }: Props) {
@@ -40,7 +40,7 @@ export default function SearchCollection({ entry_name, data, tags }: Props) {
         ),
       ),
     );
-    setCollection(descending() ? filtered.toReversed() : filtered);
+    setCollection(descending() ? [...filtered].reverse() : filtered);
   });
 
   function toggleDescending() {

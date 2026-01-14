@@ -149,7 +149,7 @@
   color: var(--card-title-color);
   font-size: var(--card-title-font-size);
   font-weight: var(--card-title-font-weight);
-  font-family: var(--card-title-font-family);
+  font-family: var(--card-title-font-family, "Space Grotesk", sans-serif);
   letter-spacing: -0.5px;
   line-height: 1.2;
   text-align: center;

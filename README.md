@@ -1,6 +1,6 @@
 # Tiktag Web - tiktag.app Landing Site
 
-The `tiktagweb` project serves as the official landing site for tiktag.app - **"Settlement for Agentic Commerce"**. Built with the astro-sphere theme and Astro 5, it acts as the front-end layer for the Tiktag ecosystem, connecting autonomous agents to the tiktag-cli settlement layer backend.
+The `tiktagweb` project serves as the official landing site for tiktag.app - **"Settlement for Agentic Commerce"**. Built with the [astro-sphere](https://github.com/tiktagapp/astro-sphere) theme and Astro 5, it acts as the front-end layer for the Tiktag ecosystem, connecting autonomous agents to the tiktag-cli settlement layer backend.
 
 ## Project Overview
 

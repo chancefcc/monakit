@@ -19,6 +19,7 @@
 .prose-teahouse h4,
 .prose-teahouse h5,
 .prose-teahouse h6 {
+  font-family: "Space Grotesk", sans-serif;
   /* color: var(--teahouse-dark); */
   font-weight: 600;
   line-height: 1.3;

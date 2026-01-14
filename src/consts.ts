@@ -2,7 +2,7 @@ import type { Links, Page, Site, Socials } from "@types";
 
 // Global
 export const SITE: Site = {
-  TITLE: "Tiktag",
+  TITLE: "tiktag",
   DESCRIPTION:
     "Settlement for Agentic Commerce. An open-source Tiktag wallet designed for autonomous agents. Instant, private, and high-integrity settlement for DePIN economy.",
   AUTHOR: "Tiktag.app",
@@ -39,16 +39,16 @@ export const SEARCH: Page = {
 // Links
 export const LINKS: Links = [
   {
+    TEXT: "Home",
+    HREF: "/",
+  },
+  {
     TEXT: "Features",
     HREF: "/features",
   },
   {
     TEXT: "Blog",
     HREF: "/blog",
-  },
-  {
-    TEXT: "SDK",
-    HREF: "/sdk",
   },
   {
     TEXT: "Search",
@@ -61,14 +61,14 @@ export const SOCIALS: Socials = [
   {
     NAME: "GitHub",
     ICON: "github",
-    TEXT: "tiktagapp/tiktag-cli",
-    HREF: "https://github.com/tiktagapp/tiktag-cli",
+    TEXT: "tiktagapp",
+    HREF: "https://github.com/tiktagapp",
   },
   {
     NAME: "Twitter",
     ICON: "twitter-x",
     TEXT: "@tiktagapp",
-    HREF: "https://twitter.com/tiktagapp",
+    HREF: "https://twitter.com/tiktagus",
   },
   {
     NAME: "Email",

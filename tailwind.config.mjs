@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Atkinson", ...defaultTheme.fontFamily.sans],
+        sans: ["Nunito", ...defaultTheme.fontFamily.sans],
+        heading: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
       },
       typography: {
         DEFAULT: {
