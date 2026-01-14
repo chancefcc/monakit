@@ -8,7 +8,7 @@ import { createEffect, createSignal, For, onMount } from "solid-js";
 type Props = {
   entry_name: string;
   tags: string[];
-  data: CollectionEntry<"blog">[] | CollectionEntry<"projects">[] | CollectionEntry<"sdk">[];
+  data: CollectionEntry<"blog">[] | CollectionEntry<"sdk">[];
 };
 
 export default function SearchCollection({ entry_name, data, tags }: Props) {

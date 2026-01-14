@@ -1,12 +1,14 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "solid-js",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "types": ["astro/client"]
   },
   "exclude": ["dist/", "public/"]
 }

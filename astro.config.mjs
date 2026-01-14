@@ -23,6 +23,7 @@ export default defineConfig({
         "@consts": path.resolve("./src/consts.ts"),
         "@layouts": path.resolve("./src/layouts"),
         "@styles": path.resolve("./src/styles"),
+        "@types": path.resolve("./src/types"),
       },
     },
   },

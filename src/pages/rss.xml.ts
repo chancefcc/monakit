@@ -8,11 +8,8 @@ type Context = {
 
 export async function GET(context: Context) {
   const posts = await getCollection("blog");
-  const projects = await getCollection("projects");
 
-  const items = [...posts, ...projects];
-
-  items.sort(
+  posts.sort(
     (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
   );
 
@@ -20,13 +17,11 @@ export async function GET(context: Context) {
     title: SITE.TITLE,
     description: SITE.DESCRIPTION,
     site: context.site,
-    items: items.map((item) => ({
+    items: posts.map((item) => ({
       title: item.data.title,
       description: item.data.summary,
       pubDate: item.data.date,
-      link: item.slug.startsWith("blog")
-        ? `/blog/${item.slug}/`
-        : `/projects/${item.slug}/`,
+      link: `/blog/${item.slug}/`,
     })),
   });
 }
