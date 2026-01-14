@@ -3,12 +3,12 @@ import type { CollectionEntry } from "astro:content"
 import { formatDate, readingTime } from "@lib/utils"
 
 type Props = {
-  entry: CollectionEntry<"blog">
+  entry: CollectionEntry<"blog" | "sdk">
 }
 
 const { entry } = Astro.props
 const { collection, data, body } = entry
-const { title, summary, date } = data
+const { title, summary, date } = data as { title: string; summary: string; date: Date }
 ---
 
 <div>

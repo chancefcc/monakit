@@ -13,14 +13,21 @@ export interface AdjacentContent {
   };
 }
 
+function getDate(item: CollectionEntry<"blog" | "sdk" | "legal">): Date {
+  if (typeof item.data.date === "string") {
+    return new Date(item.data.date);
+  }
+  return item.data.date as Date;
+}
+
 export function getAdjacentContent(
-  items: CollectionEntry<"blogs" | "slides" | "cards" | "doodles">[],
+  items: CollectionEntry<"blog" | "sdk" | "legal">[],
   currentId: string,
 ): AdjacentContent {
   // Sort by publication date (newest first)
-  const sortedItems = items.sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-  );
+  const sortedItems = [...items].sort((a, b) => {
+    return getDate(b).getTime() - getDate(a).getTime();
+  });
 
   const currentIndex = sortedItems.findIndex((item) => item.id === currentId);
 
@@ -36,7 +43,7 @@ export function getAdjacentContent(
     result.previous = {
       id: prev.id,
       title: prev.data.title,
-      pubDate: prev.data.pubDate,
+      pubDate: getDate(prev),
     };
   }
 
@@ -46,7 +53,7 @@ export function getAdjacentContent(
     result.next = {
       id: next.id,
       title: next.data.title,
-      pubDate: next.data.pubDate,
+      pubDate: getDate(next),
     };
   }
 

@@ -1,14 +1,19 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "jsxImportSource": "solid-js",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@types": ["src/types"],
+      "@lib/*": ["src/lib/*"],
+      "@consts": ["src/consts.ts"],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"]
     },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
     "strictNullChecks": true,
-    "types": ["astro/client"]
+    "types": ["astro/client", "solid-js", "solid-js/web"]
   },
   "exclude": ["dist/", "public/"]
 }

@@ -12,4 +12,4 @@ watch_dir = "src"
 
 [vars]
 # Environment variables can be added here if needed
-# NODE_VERSION = "20"
+NODE_VERSION = "20.19.6"
