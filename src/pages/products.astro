@@ -61,7 +61,7 @@ const metadata = {
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-black dark:text-white mb-2">Agent SOUL Identity</h3>
-            <p class="text-sm opacity-75">VKey/JWT-based sovereign identity with Ed25519 key pairs</p>
+            <p class="text-sm opacity-75">VKey/JWT-based sovereign identity with asymmetric key pairs</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
@@ -112,7 +112,7 @@ const metadata = {
             </p>
             <div class="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 mb-4">
               <code class="text-xs font-mono text-black dark:text-white">
-                vgate register --agent-id "agent-001" --key-type ed25519<br/>
+                vgate register --agent "agent-001" --key-type asymmetric<br/>
                 vgate policy create --allow-subject "a2a.&gt;"
                 vgate monitor --network-status
               </code>
@@ -154,7 +154,7 @@ const metadata = {
             </p>
             <div class="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 mb-4">
               <code class="text-xs font-mono text-black dark:text-white">
-                AgentSOUL {'{'}&#x20;id: "soul:agent-001",&#x20;publicKey: "ed25519:abc...",&#x20;issuer: "vgate.vchat.email",&#x20;scopes: ["a2a", "settle", "trust"]{'}'}
+                AgentSOUL {'{'}&#x20;id: "soul:agent-001",&#x20;publicKey: "asymmetric:abc...",&#x20;issuer: "vgate.vchat.email",&#x20;scopes: ["a2a", "settle", "trust"]{'}'}
               </code>
             </div>
             <ul class="text-sm space-y-2 mb-4">
@@ -162,13 +162,13 @@ const metadata = {
                 <svg class="h-4 w-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                Ed25519 cryptographic identity
+                Asymmetric cryptographic identity
               </li>
               <li class="flex items-start">
                 <svg class="h-4 w-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                Scoped JWT authorization
+                Scoped token authorization
               </li>
               <li class="flex items-start">
                 <svg class="h-4 w-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">

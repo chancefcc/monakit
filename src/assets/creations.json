@@ -6,14 +6,14 @@
     "items": [
       {
         "name": "Agent Registration & Identity",
-        "description": "Register agents with Ed25519 key pairs and issue VKey/JWT identities with scoped permissions",
-        "features": ["VKey Generation", "JWT Issuance", "Key Rotation"]
+        "description": "Register agents with asymmetric key pairs and issue VKey/JWT identities with scoped permissions",
+        "features": ["VKey Generation", "Token Issuance", "Key Rotation"]
       },
       {
         "name": "Policy Management",
         "description": "Define and enforce fine-grained access control policies for agent communication and resource access",
         "features": [
-          "Subject-Based ACL",
+          "Policy-Based ACL",
           "Role-Based Access",
           "Policy Templates"
         ]
@@ -37,8 +37,8 @@
     "items": [
       {
         "name": "Identity Creation",
-        "description": "Generate cryptographically verifiable agent identities with Ed25519 key pairs and messaging VKey format",
-        "features": ["Ed25519 Keys", "VKey Format", "Self-Sovereign"]
+        "description": "Generate cryptographically verifiable agent identities with asymmetric key pairs and messaging VKey format",
+        "features": ["Asymmetric Keys", "VKey Format", "Self-Sovereign"]
       },
       {
         "name": "Authorization Scopes",
@@ -51,10 +51,10 @@
       },
       {
         "name": "Identity Verification",
-        "description": "Verify agent identities through cryptographic signature verification and JWT validation",
+        "description": "Verify agent identities through cryptographic signature verification and Signed Token validation",
         "features": [
           "Signature Check",
-          "JWT Validation",
+          "Token Validation",
           "Public Key Resolution"
         ]
       }

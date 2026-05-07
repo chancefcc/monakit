@@ -19,14 +19,14 @@ draft: false
   ],
   "references": [
     "https://github.com/chance-fcc/vgate",
-    "https://nats.io/documentation/"
+    "https://docs.vchat.email/messaging"
   ],
   "tools": [
     "VGate CLI",
     "VGate SDK",
     "VGate CLI"
   ],
-  "mermaidMarkdown": "mindmap\n  root((Getting Started))\n    VGate SDK\n      Agent Lifecycle\n      Identity Issuance\n      Policy Management\n    Agent SOUL\n      messaging VKey Identity\n      JWT Authorization\n      Ed25519 Keys\n    P2P Trust\n      Verifiable Credentials\n      Reputation Scoring\n      Trust Graph\n    Distributed Ledger\n      Double-Entry Accounting\n      Agent Settlement\n      Audit Trails\n    Quick Start\n      Install VGate CLI\n      Register First Agent\n      Deploy Template",
+  "mermaidMarkdown": "mindmap\n  root((Getting Started))\n    VGate SDK\n      Agent Lifecycle\n      Identity Issuance\n      Policy Management\n    Agent SOUL\n      messaging VKey Identity\n      Signed Token Authorization\n      Asymmetric Keys\n    P2P Trust\n      Verifiable Credentials\n      Reputation Scoring\n      Trust Graph\n    Distributed Ledger\n      Double-Entry Accounting\n      Agent Settlement\n      Audit Trails\n    Quick Start\n      Install VGate CLI\n      Register First Agent\n      Deploy Template",
   "url": ""
 }
 ```

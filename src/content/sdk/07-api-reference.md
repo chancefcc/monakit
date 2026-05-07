@@ -20,7 +20,7 @@ draft: false
   "references": [
     "https://docs.vchat.email/api/rest",
     "https://docs.vchat.email/api/nats",
-    "https://distributed ledger.com/docs"
+    "https://docs.vchat.email/distributed-ledger"
   ],
   "tools": [
     "VGate REST API",

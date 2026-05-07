@@ -28,7 +28,7 @@ draft: false
     "VGate CLI",
     "Durable Workflow CLI"
   ],
-  "mermaidMarkdown": "mindmap\n  root((Tutorials & Use Cases))\n    Identity Verification\n      Agent Registration\n      Credential Issuance\n      Identity Verification\n      Trust Scoring\n    P2P Trust Network\n      Credential Exchange\n      Trust Establishment\n      Reputation Building\n      Autonomous Collaboration\n    Settlement Workflows\n      Account Setup\n      Transfer Execution\n      Balance Monitoring\n      Audit Reporting\n    Multi-Step Protocols\n      Workflow Definition\n      Activity Chaining\n      Error Recovery\n      State Persistence\n    Integration Patterns\n      messaging Bridge\n      Webhook Relay\n      External Systems\n      Event-Driven Architecture",
+  "mermaidMarkdown": "mindmap\n  root((Tutorials & Use Cases))\n    Identity Verification\n      Agent Registration\n      Credential Issuance\n      Identity Verification\n      Trust Scoring\n    P2P Trust Network\n      Credential Exchange\n      Trust Establishment\n      Reputation Building\n      Autonomous Collaboration\n    Settlement Workflows\n      Account Setup\n      Transfer Execution\n      Balance Monitoring\n      Audit Reporting\n    Multi-Step Protocols\n      Execution Definition\n      Step Chaining\n      Error Recovery\n      State Persistence\n    Integration Patterns\n      messaging Bridge\n      Webhook Relay\n      External Systems\n      Event-Driven Architecture",
   "url": ""
 }
 ```

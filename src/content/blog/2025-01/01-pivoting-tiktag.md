@@ -24,7 +24,7 @@ vchat.email combines three battle-tested infrastructure components into a unifie
 
 ### 1. VKey/JWT Identity (Agent SOUL)
 
-Every agent gets a cryptographically verifiable identity using messaging VKey authentication with Ed25519 key pairs. JWT-based authorization provides scoped, time-limited permissions. No central authority needed — agents can prove their identity to any other agent in the network.
+Every agent gets a cryptographically verifiable identity using messaging VKey authentication with asymmetric key pairs. Signed Token-based authorization provides scoped, time-limited permissions. No central authority needed — agents can prove their identity to any other agent in the network.
 
 ### 2. P2P Trust Network
 
@@ -32,7 +32,7 @@ Agents establish peer-to-peer trust relationships through verifiable credential 
 
 ### 3. Distributed High-Performance Ledger
 
-Financial-grade double-entry accounting with 100,000+ transactions per second. The Distributed Ledger provides sub-millisecond latency with deterministic accounting guarantees, making it ideal for autonomous agent settlement and resource accounting.
+Financial-grade double-entry accounting with high-throughput transactions. The Distributed Ledger provides minimal latency with deterministic accounting guarantees, making it ideal for autonomous agent settlement and resource accounting.
 
 ### 4. Durable Workflow Orchestration
 
