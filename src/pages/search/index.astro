@@ -6,11 +6,11 @@ import BottomLayout from "@layouts/BottomLayout.astro";
 import PageLayout from "@layouts/PageLayout.astro";
 import TopLayout from "@layouts/TopLayout.astro";
 
-const posts = (await getCollection("blog")).filter((post) => !post.data.draft);
+const posts = (await getCollection("blog")).filter((post) => !post.data.draft).map(({ body, rendered, ...rest }) => rest);
 
-let sdk: CollectionEntry<"sdk">[] = [];
+let sdk: any[] = [];
 try {
-  sdk = (await getCollection("sdk")).filter((post) => !post.data.draft);
+  sdk = (await getCollection("sdk")).filter((post) => !post.data.draft).map(({ body, rendered, ...rest }) => rest);
 } catch (e) {
   // SDK collection may not exist or be empty
 }

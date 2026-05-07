@@ -8,7 +8,8 @@ import TopLayout from "@layouts/TopLayout.astro";
 
 const sdkPages = (await getCollection("sdk"))
   .filter((page) => !page.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .map(({ body, rendered, ...rest }) => rest);
 
 const tags = [...new Set(sdkPages.flatMap((page) => page.data.tags))].sort(
   (a, b) => a.localeCompare(b),
