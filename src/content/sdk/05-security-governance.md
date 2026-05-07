@@ -19,7 +19,7 @@ draft: false
   ],
   "references": [
     "https://docs.vchat.email/security",
-    "https://github.com/chance-fcc/vgate-security"
+    "https://github.com/chatek/vgate-security"
   ],
   "tools": [
     "VGate CLI",

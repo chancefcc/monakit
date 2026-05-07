@@ -18,7 +18,7 @@ draft: false
     "VGate API provides unified control plane for agent lifecycle management"
   ],
   "references": [
-    "https://github.com/chance-fcc/vgate",
+    "https://github.com/chatek/vgate",
     "https://docs.vchat.email/distributed-ledger"
   ],
   "tools": [

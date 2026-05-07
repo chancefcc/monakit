@@ -65,6 +65,6 @@ vchat.email offers two deployment tracks:
 
 ## Getting Started
 
-Ready to build with agent-native identity? Check out our [GitHub repository](https://github.com/chance-fcc) to get started with VGate, deploy your first agent, and join the community building the future of autonomous agent infrastructure.
+Ready to build with agent-native identity? Check out our [GitHub repository](https://github.com/chatek) to get started with VGate, deploy your first agent, and join the community building the future of autonomous agent infrastructure.
 
-Join us on this journey. Follow [@chance_fcc](https://x.com/chance_fcc) on X for updates and announcements.
+Join us on this journey. Follow [@chancejiang](https://x.com/chancejiang) on X for updates and announcements.

@@ -65,14 +65,14 @@ export const SOCIALS: Socials = [
   {
     NAME: "GitHub",
     ICON: "github",
-    TEXT: "chance-fcc",
-    HREF: "https://github.com/chance-fcc",
+    TEXT: "chatek",
+    HREF: "https://github.com/chatek",
   },
   {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "@chance_fcc",
-    HREF: "https://x.com/chance_fcc",
+    TEXT: "@chancejiang",
+    HREF: "https://x.com/chancejiang",
   },
   {
     NAME: "Email",

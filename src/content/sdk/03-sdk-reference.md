@@ -18,7 +18,7 @@ draft: false
     "Policy management API for fine-grained access control"
   ],
   "references": [
-    "https://github.com/chance-fcc/vgate-sdk",
+    "https://github.com/chatek/vgate-sdk",
     "https://docs.vchat.email/sdk/golang",
     "https://docs.vchat.email/sdk/typescript"
   ],

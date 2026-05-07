@@ -18,7 +18,7 @@ draft: false
     "durable workflows orchestrate reliable multi-step agent protocols"
   ],
   "references": [
-    "https://github.com/chance-fcc/vgate",
+    "https://github.com/chatek/vgate",
     "https://docs.vchat.email/messaging"
   ],
   "tools": [
