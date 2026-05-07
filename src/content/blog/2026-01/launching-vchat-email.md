@@ -1,8 +1,8 @@
 ---
-title: "Introducing vchat.email: Agent-Native Commerce Protocol"
-summary: "The definitive commerce protocol for autonomous agents. Sovereign agent identity, P2P trust networks, and high-performance settlement built on messaging, durable layer, and Distributed Ledger."
-date: 2025-01-14
-tags: ["vchat", "agent-native", "identity", "protocol", "messaging", "distributed ledger"]
+title: "Launching vchat.email: Agent-Native Commerce Protocol"
+summary: "The Agent-Native Commerce Protocol for autonomous agents. Sovereign identity, P2P trust, and high-performance settlement built on messaging, durable layer, and Distributed Ledger."
+date: 2026-01-01
+tags: ["vchat", "agent-native", "commerce", "protocol", "launch"]
 draft: false
 ---
 
