@@ -9,9 +9,9 @@ const features = [
     title: "Sovereign Agent Identity",
     icon: "shield",
     description:
-      "Every agent gets a cryptographically verifiable identity using NATS Nkey/JWT authentication. Decentralized identity management ensures agents can authenticate and authorize without any central authority.",
+      "Every agent gets a cryptographically verifiable identity using VKey/JWT authentication. Decentralized identity management ensures agents can authenticate and authorize without any central authority.",
     details:
-      "Nkey-based Ed25519 key pairs provide strong cryptographic identity. JWT authentication enables scoped, time-limited authorization. Agents can prove their identity to any other agent in the network without relying on a third party.",
+      "VKey-based Ed25519 key pairs provide strong cryptographic identity. JWT authentication enables scoped, time-limited authorization. Agents can prove their identity to any other agent in the network without relying on a third party.",
   },
   {
     title: "P2P Trust Network",
@@ -22,20 +22,20 @@ const features = [
       "Trust is established through verifiable credential exchange and attestation. Reputation scoring provides a quantitative measure of agent reliability. The trust graph evolves organically as agents interact and vouch for each other.",
   },
   {
-    title: "TigerBeetle High-Performance Ledger",
+    title: "Distributed High-Performance Ledger",
     icon: "zap",
     description:
       "Financial-grade double-entry accounting engine capable of 100,000+ transactions per second. Built for the demanding requirements of autonomous agent settlement and resource accounting.",
     details:
-      "TigerBeetle provides sub-millisecond latency with deterministic accounting guarantees. Each transaction is cryptographically verified and auditable. The ledger supports complex multi-agent settlement scenarios with full integrity guarantees.",
+      "The Distributed Ledger provides sub-millisecond latency with deterministic accounting guarantees. Each transaction is cryptographically verified and auditable. The ledger supports complex multi-agent settlement scenarios with full integrity guarantees.",
   },
   {
-    title: "Temporal Workflow Orchestration",
+    title: "Durable Workflow Orchestration",
     icon: "code",
     description:
-      "Reliable, durable workflow execution for multi-step agent protocols. Temporal ensures that complex agent interactions complete successfully, even in the face of failures.",
+      "Reliable, durable workflow execution for multi-step agent protocols. The durable layer ensures that complex agent interactions complete successfully, even in the face of failures.",
     details:
-      "Temporal provides durable execution with automatic retries, timeouts, and state persistence. Complex multi-agent workflows can be modeled as simple code. Workflow history provides complete audit trails for all agent interactions.",
+      "The durable layer provides durable execution with automatic retries, timeouts, and state persistence. Complex multi-agent workflows can be modeled as simple code. Workflow history provides complete audit trails for all agent interactions.",
   },
   {
     title: "VGate Agent Management API",
@@ -43,7 +43,7 @@ const features = [
     description:
       "Comprehensive API for agent lifecycle management, identity issuance, and policy enforcement. The VGate orchestrator provides a unified control plane for all agents in your ecosystem.",
     details:
-      "RESTful and NATS-based APIs for agent registration, authentication, and authorization. Policy-based access control with fine-grained permissions. Real-time monitoring and management of agent activity across the network.",
+      "RESTful and messaging-based APIs for agent registration, authentication, and authorization. Policy-based access control with fine-grained permissions. Real-time monitoring and management of agent activity across the network.",
   },
   {
     title: "One-Click Agent Templates",
@@ -51,7 +51,7 @@ const features = [
     description:
       "Pre-built agent templates for common use cases. Deploy agents for identity verification, settlement processing, trust scoring, and more with a single command.",
     details:
-      "Templates include pre-configured NATS subjects, TigerBeetle account schemas, and Temporal workflow definitions. Customizable for specific business logic. Open-source and community-contributed templates available on GitHub.",
+      "Templates include pre-configured messaging subjects, Distributed Ledger account schemas, and durable workflow definitions. Customizable for specific business logic. Open-source and community-contributed templates available on GitHub.",
   },
 ];
 ---

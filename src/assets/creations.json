@@ -6,8 +6,8 @@
     "items": [
       {
         "name": "Agent Registration & Identity",
-        "description": "Register agents with Ed25519 key pairs and issue NATS Nkey/JWT identities with scoped permissions",
-        "features": ["Nkey Generation", "JWT Issuance", "Key Rotation"]
+        "description": "Register agents with Ed25519 key pairs and issue VKey/JWT identities with scoped permissions",
+        "features": ["VKey Generation", "JWT Issuance", "Key Rotation"]
       },
       {
         "name": "Policy Management",
@@ -24,9 +24,9 @@
         "features": ["Live Dashboard", "Alert Rules", "Metrics Export"]
       },
       {
-        "name": "REST & NATS API",
-        "description": "Programmatic access to all VGate functionality via RESTful endpoints and NATS subjects",
-        "features": ["REST API", "NATS API", "SDK Libraries"]
+        "name": "REST & messaging API",
+        "description": "Programmatic access to all VGate functionality via RESTful endpoints and messaging subjects",
+        "features": ["REST API", "messaging API", "SDK Libraries"]
       }
     ]
   },
@@ -37,8 +37,8 @@
     "items": [
       {
         "name": "Identity Creation",
-        "description": "Generate cryptographically verifiable agent identities with Ed25519 key pairs and NATS Nkey format",
-        "features": ["Ed25519 Keys", "Nkey Format", "Self-Sovereign"]
+        "description": "Generate cryptographically verifiable agent identities with Ed25519 key pairs and messaging VKey format",
+        "features": ["Ed25519 Keys", "VKey Format", "Self-Sovereign"]
       },
       {
         "name": "Authorization Scopes",
@@ -76,12 +76,12 @@
       },
       {
         "name": "Settlement Agent",
-        "description": "Deploy an agent that manages TigerBeetle transfers and settlement workflows",
+        "description": "Deploy an agent that manages Distributed Ledger transfers and settlement workflows",
         "features": ["Transfer Management", "Balance Queries", "Audit Logging"]
       },
       {
         "name": "Bridge Agent",
-        "description": "Deploy an agent that bridges between NATS subjects and external systems via webhooks",
+        "description": "Deploy an agent that bridges between messaging subjects and external systems via webhooks",
         "features": ["Webhook Relay", "Subject Bridge", "Protocol Translation"]
       }
     ]

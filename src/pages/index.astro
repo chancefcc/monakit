@@ -7,19 +7,19 @@ import PageLayout from "@layouts/PageLayout.astro";
 
 const stack = [
   {
-    text: "NATS",
+    text: "Messaging Layer",
     icon: "stack",
-    href: "https://nats.io",
+    href: "https://vchat.email",
   },
   {
-    text: "TigerBeetle",
+    text: "Distributed Ledger",
     icon: "stack",
-    href: "https://tigerbeetle.com",
+    href: "https://vchat.email",
   },
   {
-    text: "Temporal",
+    text: "Durable Layer",
     icon: "stack",
-    href: "https://temporal.io",
+    href: "https://vchat.email",
   },
 ];
 ---
@@ -67,17 +67,17 @@ const stack = [
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            Agent-Native Identity &amp; Ledger Protocol
+            Agent-Native Commerce Protocol
           </div>
           <h1 class='animated text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6'>
-            Sovereign Identity for <br/>
+            Sovereign Identity for<br/>
             <span class="bg-gradient-to-r from-blue-400 via-violet-500 to-purple-600 text-transparent bg-clip-text">
               Autonomous Agents
             </span>
           </h1>
           <p class='animated text-lg md:text-xl opacity-75 mb-8 max-w-2xl mx-auto'>
             Decentralized agent-to-agent communication, P2P trust, and high-performance settlement.
-            Built on NATS, Temporal, and TigerBeetle for the next generation of autonomous agent infrastructure.
+            Built on messaging, durable layer, and Distributed Ledger for the next generation of autonomous agent infrastructure.
           </p>
           <div id="ctaButtons" class='animated flex flex-col md:flex-row items-center justify-center gap-4'>
             <a href='/features' class='py-3 px-8 bg-white dark:bg-slate-900 text-black dark:text-white font-bold rounded-2xl hover:opacity-90 transition text-center'>
@@ -116,7 +116,7 @@ const stack = [
             </div>
             <h3 class="text-xl font-bold text-black dark:text-white">Sovereign Agent Identity</h3>
             <p class="text-sm opacity-75 leading-relaxed">
-              Decentralized identity for every agent using NATS Nkey/JWT authentication. Each agent gets its own cryptographic identity, enabling verifiable, non-repudiable agent-to-agent communication.
+              Decentralized identity for every agent using VKey/JWT authentication. Each agent gets its own cryptographic identity, enabling verifiable, non-repudiable agent-to-agent communication.
             </p>
           </div>
 
@@ -136,14 +136,14 @@ const stack = [
             </p>
           </div>
 
-          <!-- Feature 3: TigerBeetle Ledger -->
+          <!-- Feature 3: Distributed Ledger -->
           <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl space-y-4 hover:border-emerald-500/50 transition">
             <div class="w-12 h-12 bg-emerald-500/10 dark:bg-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-black dark:text-white">TigerBeetle Ledger</h3>
+            <h3 class="text-xl font-bold text-black dark:text-white">Distributed Ledger</h3>
             <p class="text-sm opacity-75 leading-relaxed">
               High-performance double-entry accounting engine capable of 100,000+ transactions per second. Financial-grade integrity for agent settlements, resource accounting, and value exchange.
             </p>
@@ -158,9 +158,9 @@ const stack = [
             Powered By
           </p>
           <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            <span class="font-bold text-2xl text-black dark:text-white">NATS</span>
-            <span class="font-bold text-2xl text-black dark:text-white">TIGERBEETLE</span>
-            <span class="font-bold text-2xl text-black dark:text-white">TEMPORAL</span>
+            <span class="font-bold text-2xl text-black dark:text-white">MESSAGING</span>
+            <span class="font-bold text-2xl text-black dark:text-white">DISTRIBUTED LEDGER</span>
+            <span class="font-bold text-2xl text-black dark:text-white">DURABLE LAYER</span>
           </div>
         </div>
       </section>
@@ -181,7 +181,7 @@ const stack = [
             ))}
           </div>
           <p class="text-sm opacity-75">
-            A modern stack combining NATS for messaging, TigerBeetle for accounting, and Temporal for workflow orchestration.
+            A modern stack combining messaging, Distributed Ledger for accounting, and durable layer for workflow orchestration.
           </p>
         </div>
       </section>
@@ -198,7 +198,7 @@ const stack = [
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">NATS Nkey/JWT-based agent identity and authentication</span>
+              <span class="text-sm text-black dark:text-white">VKey/JWT-based agent identity and authentication</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">✓</span>
@@ -206,7 +206,7 @@ const stack = [
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">Temporal workflows for reliable agent orchestration</span>
+              <span class="text-sm text-black dark:text-white">Durable workflows for reliable agent orchestration</span>
             </li>
           </ul>
         </div>
@@ -219,7 +219,7 @@ const stack = [
             For Developers
           </h2>
           <p class="text-base opacity-75 mb-6 max-w-3xl">
-            Build agent-native applications with the VGate SDK. Comprehensive APIs, NATS-based messaging, and Temporal workflow integration.
+            Build agent-native applications with the VGate SDK. Comprehensive APIs, messaging, and durable workflow integration.
           </p>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
@@ -228,11 +228,11 @@ const stack = [
             </li>
             <li class="flex items-start gap-3">
               <span class="text-purple-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">NATS JetStream for persistent agent messaging</span>
+              <span class="text-sm text-black dark:text-white">Persistent agent messaging</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-purple-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">TigerBeetle client libraries for high-performance accounting</span>
+              <span class="text-sm text-black dark:text-white">Distributed Ledger client libraries for high-performance accounting</span>
             </li>
           </ul>
         </div>
@@ -268,6 +268,6 @@ const stack = [
   </div>
 
   <footer class="py-12 px-6 text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800">
-    <p>&copy; 2026 vchat.email — Agent-Native Identity &amp; Ledger Protocol.</p>
+    <p>&copy; 2026 vchat.email — Agent-Native Commerce Protocol.</p>
   </footer>
 </PageLayout>

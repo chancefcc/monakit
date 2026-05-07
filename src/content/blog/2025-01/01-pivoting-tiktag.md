@@ -1,14 +1,14 @@
 ---
-title: "Introducing vchat.email: Agent-Native Identity & Ledger Protocol"
-summary: "The definitive identity and ledger protocol for autonomous agents. Sovereign agent identity, P2P trust networks, and high-performance settlement built on NATS, Temporal, and TigerBeetle."
+title: "Introducing vchat.email: Agent-Native Commerce Protocol"
+summary: "The definitive commerce protocol for autonomous agents. Sovereign agent identity, P2P trust networks, and high-performance settlement built on messaging, durable layer, and Distributed Ledger."
 date: 2025-01-14
-tags: ["vchat", "agent-native", "identity", "protocol", "NATS", "TigerBeetle"]
+tags: ["vchat", "agent-native", "identity", "protocol", "messaging", "distributed ledger"]
 draft: false
 ---
 
-We're excited to introduce **vchat.email** — the Agent-Native Identity & Ledger Protocol. Our mission is to provide sovereign identity for autonomous agents, enabling decentralized agent-to-agent communication, P2P trust, and high-performance settlement.
+We're excited to introduce **vchat.email** — the Agent-Native Commerce Protocol. Our mission is to provide sovereign identity for autonomous agents, enabling decentralized agent-to-agent communication, P2P trust, and high-performance settlement.
 
-## What Is Agent-Native Identity?
+## What Is Agent-Native Commerce?
 
 In the emerging agent economy, autonomous AI agents need a way to:
 
@@ -22,21 +22,21 @@ Traditional identity systems were designed for humans, not agents. They require 
 
 vchat.email combines three battle-tested infrastructure components into a unified agent-native protocol:
 
-### 1. NATS Nkey/JWT Identity (Agent SOUL)
+### 1. VKey/JWT Identity (Agent SOUL)
 
-Every agent gets a cryptographically verifiable identity using NATS Nkey authentication with Ed25519 key pairs. JWT-based authorization provides scoped, time-limited permissions. No central authority needed — agents can prove their identity to any other agent in the network.
+Every agent gets a cryptographically verifiable identity using messaging VKey authentication with Ed25519 key pairs. JWT-based authorization provides scoped, time-limited permissions. No central authority needed — agents can prove their identity to any other agent in the network.
 
 ### 2. P2P Trust Network
 
 Agents establish peer-to-peer trust relationships through verifiable credential exchange and decentralized reputation scoring. The trust graph evolves organically as agents interact, vouch for each other, and build reputation over time.
 
-### 3. TigerBeetle High-Performance Ledger
+### 3. Distributed High-Performance Ledger
 
-Financial-grade double-entry accounting with 100,000+ transactions per second. TigerBeetle provides sub-millisecond latency with deterministic accounting guarantees, making it ideal for autonomous agent settlement and resource accounting.
+Financial-grade double-entry accounting with 100,000+ transactions per second. The Distributed Ledger provides sub-millisecond latency with deterministic accounting guarantees, making it ideal for autonomous agent settlement and resource accounting.
 
-### 4. Temporal Workflow Orchestration
+### 4. Durable Workflow Orchestration
 
-Reliable, durable execution for multi-step agent protocols. Temporal ensures that complex agent interactions complete successfully, even in the face of failures — with automatic retries, timeouts, and state persistence.
+Reliable, durable execution for multi-step agent protocols. The durable layer ensures that complex agent interactions complete successfully, even in the face of failures — with automatic retries, timeouts, and state persistence.
 
 ## Key Concepts
 
@@ -47,7 +47,7 @@ The Agent SOUL (Sovereign On-chain Universal Ledger) is the foundational identit
 The VGate API provides a unified control plane for agent lifecycle management, identity issuance, policy enforcement, and network monitoring. Manage thousands of agents from a single interface.
 
 ### One-Click Templates
-Deploy fully configured agents in seconds with pre-built templates. Each template includes NATS subject configuration, TigerBeetle account schemas, and Temporal workflow definitions.
+Deploy fully configured agents in seconds with pre-built templates. Each template includes messaging subject configuration, Distributed Ledger account schemas, and durable workflow definitions.
 
 ## Deployment Tracks
 
@@ -59,9 +59,9 @@ vchat.email offers two deployment tracks:
 
 ## Roadmap
 
-1. **Phase 1: Unified SSO** — Deploy VGate with Single Sign-On integration. Agents get SOUL identity through OIDC providers with NATS Nkey/JWT backing.
-2. **Phase 2: A2A Protocols** — Establish agent-to-agent communication protocols over NATS. Agents discover each other, exchange credentials, and negotiate trust autonomously.
-3. **Phase 3: Segmented Delegation** — Enable hierarchical agent delegation with scoped permissions and Temporal workflow integration.
+1. **Phase 1: Unified SSO** — Deploy VGate with Single Sign-On integration. Agents get SOUL identity through OIDC providers with VKey/JWT backing.
+2. **Phase 2: A2A Protocols** — Establish agent-to-agent communication protocols over messaging. Agents discover each other, exchange credentials, and negotiate trust autonomously.
+3. **Phase 3: Segmented Delegation** — Enable hierarchical agent delegation with scoped permissions and durable workflow integration.
 
 ## Getting Started
 

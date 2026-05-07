@@ -9,13 +9,13 @@ draft: false
 ```json
 {
   "title": "Tutorials & Use Cases",
-  "description": "Practical tutorials and real-world use cases demonstrating VGate SDK capabilities. Learn how to deploy identity verification agents, establish P2P trust networks, implement automated settlement workflows with TigerBeetle, and orchestrate multi-step agent protocols with Temporal.",
+  "description": "Practical tutorials and real-world use cases demonstrating VGate SDK capabilities. Learn how to deploy identity verification agents, establish P2P trust networks, implement automated settlement workflows with a Distributed Ledger, and orchestrate multi-step agent protocols with durable layer.",
   "keyPoints": [
     "Identity Verification Agent deployable as a one-click template for credential issuance",
     "P2P Trust Network enables autonomous agent collaboration without central authority",
-    "Automated Settlement workflows using TigerBeetle for financial-grade accounting",
-    "Multi-step agent protocols orchestrated with Temporal for reliable execution",
-    "Bridge agents connect NATS subjects to external systems via webhooks"
+    "Automated Settlement workflows using a Distributed Ledger for financial-grade accounting",
+    "Multi-step agent protocols orchestrated with durable layer for reliable execution",
+    "Bridge agents connect messaging subjects to external systems via webhooks"
   ],
   "references": [
     "https://docs.vchat.email/tutorials/identity",
@@ -25,10 +25,10 @@ draft: false
   "tools": [
     "VGate SDK",
     "VGate CLI",
-    "NATS CLI",
-    "Temporal CLI"
+    "VGate CLI",
+    "Durable Workflow CLI"
   ],
-  "mermaidMarkdown": "mindmap\n  root((Tutorials & Use Cases))\n    Identity Verification\n      Agent Registration\n      Credential Issuance\n      Identity Verification\n      Trust Scoring\n    P2P Trust Network\n      Credential Exchange\n      Trust Establishment\n      Reputation Building\n      Autonomous Collaboration\n    Settlement Workflows\n      Account Setup\n      Transfer Execution\n      Balance Monitoring\n      Audit Reporting\n    Multi-Step Protocols\n      Workflow Definition\n      Activity Chaining\n      Error Recovery\n      State Persistence\n    Integration Patterns\n      NATS Bridge\n      Webhook Relay\n      External Systems\n      Event-Driven Architecture",
+  "mermaidMarkdown": "mindmap\n  root((Tutorials & Use Cases))\n    Identity Verification\n      Agent Registration\n      Credential Issuance\n      Identity Verification\n      Trust Scoring\n    P2P Trust Network\n      Credential Exchange\n      Trust Establishment\n      Reputation Building\n      Autonomous Collaboration\n    Settlement Workflows\n      Account Setup\n      Transfer Execution\n      Balance Monitoring\n      Audit Reporting\n    Multi-Step Protocols\n      Workflow Definition\n      Activity Chaining\n      Error Recovery\n      State Persistence\n    Integration Patterns\n      messaging Bridge\n      Webhook Relay\n      External Systems\n      Event-Driven Architecture",
   "url": ""
 }
 ```

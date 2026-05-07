@@ -5,7 +5,7 @@ import PageLayout from "@layouts/PageLayout.astro";
 const metadata = {
   title: `Products | ${SITE_TITLE}`,
   description:
-    "vchat.email product suite: VGate Agent Orchestrator, Agent SOUL identity protocol, One-Click Agent Templates, and the TigerBeetle-powered settlement ledger for autonomous agents.",
+    "vchat.email product suite: VGate Agent Orchestrator, Agent SOUL identity protocol, One-Click Agent Templates, and the Distributed Ledger-powered settlement for the Agent-Native Commerce Protocol.",
 };
 ---
 
@@ -15,10 +15,10 @@ const metadata = {
     <div class="max-w-7xl mx-auto mb-20">
       <div class="text-center max-w-4xl mx-auto">
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white mb-6">
-          The Agent-Native Identity &amp; Ledger Protocol
+          The Agent-Native Commerce Protocol
         </h1>
         <p class="text-xl leading-relaxed opacity-75 mb-10">
-          Sovereign identity for autonomous agents. Decentralized agent-to-agent communication, P2P trust, and high-performance settlement built on NATS, Temporal, and TigerBeetle.
+          Sovereign identity for autonomous agents. Decentralized agent-to-agent communication, P2P trust, and high-performance settlement built on messaging, durable layer, and Distributed Ledger.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
@@ -49,7 +49,7 @@ const metadata = {
         <div class="text-center max-w-3xl mx-auto">
           <h2 class="text-3xl font-bold text-black dark:text-white mb-4">Protocol Architecture</h2>
           <p class="text-lg opacity-75 mb-8">
-            vchat.email combines three core infrastructure components into a unified agent-native protocol: NATS Nkey/JWT identity, TigerBeetle accounting, and Temporal workflow orchestration.
+            vchat.email combines three core infrastructure components into a unified agent-native protocol: VKey/JWT identity, Distributed Ledger accounting, and durable workflow orchestration.
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
@@ -61,7 +61,7 @@ const metadata = {
               </svg>
             </div>
             <h3 class="text-lg font-semibold text-black dark:text-white mb-2">Agent SOUL Identity</h3>
-            <p class="text-sm opacity-75">NATS Nkey/JWT-based sovereign identity with Ed25519 key pairs</p>
+            <p class="text-sm opacity-75">VKey/JWT-based sovereign identity with Ed25519 key pairs</p>
           </div>
           <div class="text-center">
             <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-purple-500/20 flex items-center justify-center">
@@ -81,7 +81,7 @@ const metadata = {
                 <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
-            <h3 class="text-lg font-semibold text-black dark:text-white mb-2">TigerBeetle Ledger</h3>
+            <h3 class="text-lg font-semibold text-black dark:text-white mb-2">Distributed Ledger</h3>
             <p class="text-sm opacity-75">100,000+ TPS double-entry accounting with cryptographic integrity</p>
           </div>
         </div>
@@ -122,7 +122,7 @@ const metadata = {
                 <svg class="h-4 w-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                Agent registration and Nkey/JWT issuance
+                Agent registration and VKey/JWT issuance
               </li>
               <li class="flex items-start">
                 <svg class="h-4 w-4 text-blue-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
@@ -150,7 +150,7 @@ const metadata = {
               <div class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Core</div>
             </div>
             <p class="opacity-75 mb-4">
-              The Agent SOUL is the foundational identity primitive &mdash; a cryptographically verifiable agent identity backed by NATS Nkey/JWT with full lifecycle management.
+              The Agent SOUL is the foundational identity primitive &mdash; a cryptographically verifiable agent identity backed by VKey/JWT with full lifecycle management.
             </p>
             <div class="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 mb-4">
               <code class="text-xs font-mono text-black dark:text-white">
@@ -190,7 +190,7 @@ const metadata = {
               <div class="bg-purple-500 text-white px-3 py-1 rounded-full text-xs font-medium">Advanced</div>
             </div>
             <p class="opacity-75 mb-4">
-              Deploy fully configured agents in seconds with pre-built templates. Includes NATS subject configuration, TigerBeetle account schemas, and Temporal workflow definitions.
+              Deploy fully configured agents in seconds with pre-built templates. Includes messaging subject configuration, Distributed Ledger account schemas, and durable workflow definitions.
             </p>
             <div class="bg-slate-100 dark:bg-slate-800 rounded-lg p-4 mb-4">
               <code class="text-xs font-mono text-black dark:text-white">
@@ -226,7 +226,7 @@ const metadata = {
           <div class="p-6">
             <div class="flex items-center justify-between mb-4">
               <div>
-                <h3 class="text-xl font-bold text-black dark:text-white">TigerBeetle Ledger</h3>
+                <h3 class="text-xl font-bold text-black dark:text-white">Distributed Ledger</h3>
                 <div class="text-sm opacity-75">High-Performance Accounting Engine</div>
               </div>
               <div class="bg-blue-500 text-white px-3 py-1 rounded-full text-xs font-medium">Core</div>
@@ -293,7 +293,7 @@ const metadata = {
                 <svg class="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                Single-node NATS + TigerBeetle deployment
+                Single-node messaging + Distributed Ledger deployment
               </li>
               <li class="flex items-start gap-2">
                 <svg class="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -334,7 +334,7 @@ const metadata = {
                 <svg class="h-4 w-4 text-blue-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
                 </svg>
-                Clustered NATS + TigerBeetle deployment
+                Clustered messaging + Distributed Ledger deployment
               </li>
               <li class="flex items-start gap-2">
                 <svg class="h-4 w-4 text-blue-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -377,7 +377,7 @@ const metadata = {
           <div class="flex-1">
             <h4 class="text-xl font-semibold text-black dark:text-white mb-2">Phase 1: Unified SSO</h4>
             <p class="opacity-75">
-              Deploy the VGate orchestrator with unified Single Sign-On integration. Agents get their SOUL identity through OIDC-compatible identity providers, with NATS Nkey/JWT backing.
+              Deploy the VGate orchestrator with unified Single Sign-On integration. Agents get their SOUL identity through OIDC-compatible identity providers, with VKey/JWT backing.
             </p>
           </div>
         </div>
@@ -386,7 +386,7 @@ const metadata = {
           <div class="flex-1">
             <h4 class="text-xl font-semibold text-black dark:text-white mb-2">Phase 2: A2A Protocols</h4>
             <p class="opacity-75">
-              Establish agent-to-agent communication protocols over NATS. Agents discover each other, exchange verifiable credentials, and negotiate trust relationships autonomously.
+              Establish agent-to-agent communication protocols over messaging. Agents discover each other, exchange verifiable credentials, and negotiate trust relationships autonomously.
             </p>
           </div>
         </div>
@@ -395,7 +395,7 @@ const metadata = {
           <div class="flex-1">
             <h4 class="text-xl font-semibold text-black dark:text-white mb-2">Phase 3: Segmented Delegation</h4>
             <p class="opacity-75">
-              Enable hierarchical agent delegation where agents can delegate authority to sub-agents with scoped permissions. Full Temporal workflow integration for reliable multi-step delegation protocols.
+              Enable hierarchical agent delegation where agents can delegate authority to sub-agents with scoped permissions. Full durable workflow integration for reliable multi-step delegation protocols.
             </p>
           </div>
         </div>
@@ -405,7 +405,7 @@ const metadata = {
     <!-- CTA Section -->
     <div class="max-w-4xl mx-auto">
       <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl p-8 md:p-12 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Ready to Build with Agent-Native Identity?</h2>
+        <h2 class="text-3xl font-bold text-white mb-4">Ready to Build with Agent-Native Commerce?</h2>
         <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
           Join the agent-native revolution. Get started with VGate, deploy your first agent, and join the community building the future of autonomous agent infrastructure.
         </p>

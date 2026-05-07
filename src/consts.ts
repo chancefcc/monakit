@@ -4,7 +4,7 @@ import type { Links, Page, Site, Socials } from "@types";
 export const SITE: Site = {
   TITLE: "vchat.email",
   DESCRIPTION:
-    "Agent-Native Identity & Ledger Protocol. Sovereign identity for autonomous agents. Decentralized agent-to-agent communication, P2P trust, and high-performance settlement built on NATS, Temporal, and TigerBeetle.",
+    "Agent-Native Commerce Protocol. Sovereign identity, P2P trust, and high-performance settlement for autonomous agents — built on messaging, durable layer, and Distributed Ledger.",
   AUTHOR: "vchat.email",
 };
 
@@ -16,14 +16,14 @@ export const SITE_DESCRIPTION = SITE.DESCRIPTION;
 export const FEATURES: Page = {
   TITLE: "Features",
   DESCRIPTION:
-    "Explore vchat.email features: Sovereign Agent Identity with NATS Nkey/JWT, P2P Trust Network, TigerBeetle High-Performance Ledger, Temporal Workflow Orchestration, and the VGate Agent Management API.",
+    "Explore vchat.email features: Agent-Native Commerce Protocol with VKey/JWT identity, P2P Trust Network, Distributed High-Performance Ledger, Durable Workflow Orchestration, and the VGate Agent Management API.",
 };
 
 // SDK Page
 export const SDK: Page = {
   TITLE: "SDK",
   DESCRIPTION:
-    "Developer documentation and API references for the VGate SDK. Build autonomous agents with the Agent-Native Identity & Ledger Protocol. NATS, TigerBeetle, and Temporal integrations.",
+    "Developer documentation and API references for the VGate SDK. Build autonomous agents with the Agent-Native Commerce Protocol. Messaging, Distributed Ledger, and durable layer integrations.",
 };
 
 // Blog Page
