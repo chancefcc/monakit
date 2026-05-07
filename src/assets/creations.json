@@ -1,108 +1,88 @@
 [
   {
-    "id": "investor-portal",
-    "title": "For Investors & Stakeholders",
-    "description": "Trade RWA assets with confidence through the Tikoly.com platform",
+    "id": "vgate-orchestrator",
+    "title": "VGate Orchestrator",
+    "description": "Unified control plane for agent lifecycle management, identity issuance, and policy enforcement",
     "items": [
       {
-        "name": "Asset Verification Portal",
-        "description": "Browse AI-notarized RWA assets with complete audit trails and settlement graph trust scores",
+        "name": "Agent Registration & Identity",
+        "description": "Register agents with Ed25519 key pairs and issue NATS Nkey/JWT identities with scoped permissions",
+        "features": ["Nkey Generation", "JWT Issuance", "Key Rotation"]
+      },
+      {
+        "name": "Policy Management",
+        "description": "Define and enforce fine-grained access control policies for agent communication and resource access",
         "features": [
-          "AI-Verified Assets",
-          "Oracle-Validated",
-          "Peer Trust Network"
+          "Subject-Based ACL",
+          "Role-Based Access",
+          "Policy Templates"
         ]
       },
       {
-        "name": "Wallet Integration",
-        "description": "Secure Logto-authenticated wallet for $TIK/$TAG trading with real-time settlement tracking",
+        "name": "Network Monitoring",
+        "description": "Real-time monitoring of agent activity, message throughput, and network health",
+        "features": ["Live Dashboard", "Alert Rules", "Metrics Export"]
+      },
+      {
+        "name": "REST & NATS API",
+        "description": "Programmatic access to all VGate functionality via RESTful endpoints and NATS subjects",
+        "features": ["REST API", "NATS API", "SDK Libraries"]
+      }
+    ]
+  },
+  {
+    "id": "agent-soul-protocol",
+    "title": "Agent SOUL Protocol",
+    "description": "Sovereign On-chain Universal Ledger — the foundational identity primitive for autonomous agents",
+    "items": [
+      {
+        "name": "Identity Creation",
+        "description": "Generate cryptographically verifiable agent identities with Ed25519 key pairs and NATS Nkey format",
+        "features": ["Ed25519 Keys", "Nkey Format", "Self-Sovereign"]
+      },
+      {
+        "name": "Authorization Scopes",
+        "description": "Define granular authorization scopes for each agent, controlling what actions they can perform",
         "features": [
-          "Instant Settlement",
-          "Audit Trail Access",
-          "Settlement Graph"
+          "Scope Definition",
+          "Time-Limited Tokens",
+          "Revocation Support"
         ]
       },
       {
-        "name": "Asset Explorer",
-        "description": "Discover verified energy, precious metals, and real-estate assets with full provenance tracking",
+        "name": "Identity Verification",
+        "description": "Verify agent identities through cryptographic signature verification and JWT validation",
         "features": [
-          "Multi-Asset Classes",
-          "Real-Time Updates",
-          "Performance Metrics"
+          "Signature Check",
+          "JWT Validation",
+          "Public Key Resolution"
         ]
       }
     ]
   },
   {
-    "id": "institutional-solutions",
-    "title": "For Financial Institutions",
-    "description": "Enterprise-grade settlement infrastructure for RWA trading and asset auditing",
+    "id": "one-click-templates",
+    "title": "One-Click Agent Templates",
+    "description": "Pre-built agent deployments with fully configured infrastructure",
     "items": [
       {
-        "name": "NATS Micro Services API",
-        "description": "Programmatic access to asset notarization and settlement via RESTful endpoints",
+        "name": "Identity Agent",
+        "description": "Deploy an agent that handles identity verification, credential issuance, and trust scoring",
         "features": [
-          "Asset Notarization",
-          "Automated Settlement",
-          "SBAC Security"
+          "Identity Verification",
+          "Credential Issuance",
+          "Trust Scoring"
         ]
       },
       {
-        "name": "Enterprise Dashboard",
-        "description": "Comprehensive management interface for asset listing, monitoring, and settlement operations",
-        "features": [
-          "Real-Time Sync",
-          "Ledger Integration",
-          "Workflow Automation"
-        ]
+        "name": "Settlement Agent",
+        "description": "Deploy an agent that manages TigerBeetle transfers and settlement workflows",
+        "features": ["Transfer Management", "Balance Queries", "Audit Logging"]
       },
       {
-        "name": "n8n Workflow Bridge",
-        "description": "Custom validation workflows for external telemetry verification and business automation",
-        "features": [
-          "Flexible Logic",
-          "Timeout & Retry",
-          "External Integrations"
-        ]
-      },
-      {
-        "name": "EVM Bridge Integration",
-        "description": "Secure $TIK burn and $TAG mint operations via local Geth node with type-safe Go bindings",
-        "features": [
-          "Atomic Settlement",
-          "Transaction Finality",
-          "Error Handling"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "regulatory-tools",
-    "title": "For Regulators",
-    "description": "Regulatory-grade compliance monitoring and audit tools for RWA market supervision",
-    "items": [
-      {
-        "name": "Compliance Monitor",
-        "description": "Real-time monitoring dashboard for settlement events, ledger transactions, and agent activities",
-        "features": ["Stream Monitoring", "Alert Rules", "Report Generation"]
-      },
-      {
-        "name": "Audit Explorer",
-        "description": "Comprehensive investigation toolset for examining settlement records, asset proofs, and transaction history",
-        "features": [
-          "Event Filtering",
-          "Historical Queries",
-          "Export Capabilities"
-        ]
-      },
-      {
-        "name": "Telemetry Verification",
-        "description": "Verify external data sources (NREL, IoT sensors, property records) used in asset notarization",
-        "features": [
-          "Source Validation",
-          "Real-Time Checks",
-          "Compliance Flags"
-        ]
+        "name": "Bridge Agent",
+        "description": "Deploy an agent that bridges between NATS subjects and external systems via webhooks",
+        "features": ["Webhook Relay", "Subject Bridge", "Protocol Translation"]
       }
     ]
   }

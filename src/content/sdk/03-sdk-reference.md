@@ -1,33 +1,33 @@
 ---
 title: "SDK Reference"
-summary: "Authentication, AP2 Proxy Management, x402 Transaction Engine, and High-Performance Ledger Integration."
+summary: "VGate SDK for agent registration, identity issuance, policy management, and TigerBeetle ledger integration."
 date: 2025-01-14
-tags: ["sdk", "golang", "typescript", "reference"]
+tags: ["sdk", "golang", "typescript", "reference", "VGate"]
 draft: false
 ---
 
 ```json
 {
-  "title": "SDK Reference (Golang & TypeScript)",
-  "description": "Comprehensive SDK reference for both Golang and TypeScript implementations. Learn about secure authentication and handshake protocols, AP2 proxy management (RegisterProxy, RevokeProxy), x402 transaction engine operations (InitializeStream, SettleMomentary), and high-performance ledger integration for syncing Shadow Ledger with on-chain events.",
+  "title": "VGate SDK Reference (Golang & TypeScript)",
+  "description": "Comprehensive SDK reference for both Golang and TypeScript implementations. Learn about agent registration and Nkey/JWT identity issuance, policy management for access control, TigerBeetle ledger integration for transfers and balance queries, and Temporal workflow orchestration for reliable agent protocols.",
   "keyPoints": [
-    "Authentication & Handshake provides secure connection between TikoVM and Tiktag Wallet",
-    "RegisterProxy() assigns an agent to an asset (e.g., Battery, Fleet)",
-    "RevokeProxy() implements owner-side override and security protocols",
-    "InitializeStream() starts continuous value flow between agents",
-    "SettleMomentary() handles one-off agentic purchases",
-    "High-Performance Ledger Integration syncs Shadow Ledger with on-chain events"
+    "RegisterAgent() creates a new agent with Ed25519 key pair and issues NATS Nkey/JWT identity",
+    "IssueCredential() issues verifiable credentials for P2P trust establishment",
+    "CreateTransfer() executes a TigerBeetle transfer between agent accounts",
+    "StartWorkflow() initiates a Temporal workflow for multi-step agent protocols",
+    "Policy management API for fine-grained access control"
   ],
   "references": [
-    "https://github.com/tiktagapp/tiktag-sdk",
-    "https://docs.tiktag.app/sdk/golang",
-    "https://docs.tiktag.app/sdk/typescript"
+    "https://github.com/chance-fcc/vgate-sdk",
+    "https://docs.vchat.email/sdk/golang",
+    "https://docs.vchat.email/sdk/typescript"
   ],
   "tools": [
-    "Tiktag SDK Go",
-    "Tiktag SDK TS",
-    "High-Performance Ledger"
+    "VGate SDK Go",
+    "VGate SDK TS",
+    "VGate CLI"
   ],
-  "mermaidMarkdown": "mindmap\n  root((SDK Reference))\n    Authentication & Handshake\n      Secure Connection\n      TikoVM Integration\n      Tiktag Wallet\n      Protocol Security\n    AP2 Proxy Management\n      RegisterProxy()\n      Assign Agent to Asset\n      RevokeProxy()\n      Owner Override\n      Security Protocols\n    x402 Transaction Engine\n      InitializeStream()\n      Continuous Value Flow\n      SettleMomentary()\n      One-off Purchases\n      Agentic Transactions\n    High-Performance Ledger Integration\n      Shadow Ledger\n      On-Chain Events\n      Event Syncing\n      Ledger Consistency",
+  "mermaidMarkdown": "mindmap\n  root((SDK Reference))\n    Agent Registration\n      RegisterAgent()\n      Ed25519 Key Gen\n      Nkey Identity\n      JWT Authorization\n    Credential Management\n      IssueCredential()\n      VerifyCredential()\n      RevokeCredential()\n    TigerBeetle Ledger\n      CreateTransfer()\n      GetBalance()\n      ListTransfers()\n      Audit Query\n    Temporal Workflows\n      StartWorkflow()\n      SignalWorkflow()\n      QueryWorkflow()\n      Workflow History\n    Policy Management\n      CreatePolicy()\n      UpdatePolicy()\n      DeletePolicy()",
   "url": ""
 }
+```

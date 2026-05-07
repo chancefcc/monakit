@@ -1,33 +1,34 @@
 ---
-title: "Integration with Tikoly.com"
-summary: "Oracle Verification, ZK-Proof Schemas, and Metadata Indexing with Typesense."
+title: "Integration Guide"
+summary: "Integrating VGate SDK with NATS, TigerBeetle, and Temporal for complete agent-native infrastructure."
 date: 2025-01-14
-tags: ["sdk", "tikoly", "oracle", "zk-proofs", "typesense"]
+tags: ["sdk", "integration", "NATS", "TigerBeetle", "Temporal"]
 draft: false
 ---
 
 ```json
 {
-  "title": "Integration with Tikoly.com",
-  "description": "Learn how to integrate Tiktag SDK with Tikoly.com for oracle verification, ZK-proof schema mapping, and metadata indexing. Use the SDK to verify Polygon ID credentials before x402 execution, map energy/logistics data to commercial settlement triggers, and fetch marketable proofs via Typesense.",
+  "title": "Integration with NATS, TigerBeetle & Temporal",
+  "description": "Learn how to integrate the VGate SDK with NATS for messaging, TigerBeetle for accounting, and Temporal for workflow orchestration. Configure NATS subjects for agent communication, set up TigerBeetle accounts for settlement, and deploy Temporal workflows for reliable agent protocols.",
   "keyPoints": [
-    "Oracle Verification uses SDK to verify Polygon ID credentials before x402 execution",
-    "ZK-Proof Schemas map energy/logistics data to commercial settlement triggers",
-    "Metadata Indexing enables fetching marketable proofs via Typesense",
-    "Polygon ID integration provides secure credential verification",
-    "Energy and logistics data drives automated settlement triggers",
-    "Typesense indexing enables efficient proof discovery and retrieval"
+    "NATS integration provides subject-based messaging for agent-to-agent communication",
+    "TigerBeetle integration enables financial-grade double-entry accounting for agent settlement",
+    "Temporal integration ensures reliable execution of multi-step agent protocols",
+    "VGate orchestrates all three components through a unified API",
+    "Subject-Based Access Control (SBAC) provides fine-grained security"
   ],
   "references": [
-    "https://tikoly.com/docs/oracle",
-    "https://docs.tiktag.app/integration/tikoly",
-    "https://typesense.org/docs"
+    "https://nats.io/documentation/",
+    "https://tigerbeetle.com/docs",
+    "https://temporal.io/docs"
   ],
   "tools": [
-    "Tiktag SDK",
-    "Polygon ID",
-    "Typesense"
+    "VGate SDK",
+    "NATS CLI",
+    "TigerBeetle CLI",
+    "Temporal CLI"
   ],
-  "mermaidMarkdown": "mindmap\n  root((Integration with Tikoly))\n    Oracle Verification\n      Polygon ID\n      Credential Verification\n      Pre-x402 Execution\n      Security Checks\n    ZK-Proof Schemas\n      Energy Data Mapping\n      Logistics Data Mapping\n      Settlement Triggers\n      Commercial Automation\n    Metadata Indexing\n      Typesense Integration\n      Marketable Proofs\n      Proof Discovery\n      Efficient Retrieval\n    Data Flow\n      Telemetry Collection\n      Proof Generation\n      Settlement Triggering\n      Financial Execution",
+  "mermaidMarkdown": "mindmap\n  root((Integration Guide))\n    NATS Integration\n      Subject Configuration\n      Agent-to-Agent Messaging\n      JetStream Persistence\n      Security Policies\n    TigerBeetle Integration\n      Account Setup\n      Transfer Execution\n      Balance Queries\n      Audit Trails\n    Temporal Integration\n      Workflow Definition\n      Activity Registration\n      Error Handling\n      State Persistence\n    VGate Orchestration\n      Unified API\n      Cross-Component Coordination\n      Monitoring & Alerting\n      Policy Enforcement",
   "url": ""
 }
+```

@@ -1,32 +1,24 @@
-# Tiktag Web - tiktag.app Landing Site
+# vchat.email Landing Site
 
-The `tiktagweb` project serves as the official landing site for tiktag.app - **"Settlement for Agentic Commerce"**.
+The `vchat-landing` project serves as the official landing site for vchat.email — **"Agent-Native Identity & Ledger Protocol"**.
 
-This site is built with the [astro-sphere](https://github.com/tiktagapp/astro-sphere) theme and Astro 5, it acts as the front-end layer for the Tiktag ecosystem, connecting autonomous agents to the tiktag-cli settlement layer backend.
+This site is built with Astro 5 and acts as the front-end layer for the vchat.email ecosystem, providing sovereign identity for autonomous agents with decentralized A2A communication, P2P trust, and high-performance settlement.
 
 ## Project Overview
 
-**Purpose**: Tiktagweb is the public-facing website for the Tiktag ecosystem, designed to showcase and promote the **Agentic Commerce** settlement platform. The site serves as:
+**Purpose**: vchat-landing is the public-facing website for the vchat.email ecosystem, designed to showcase and promote the **Agent-Native Identity & Ledger Protocol**. The site serves as:
 
-- An **open-source Taho-fork wallet** designed for autonomous agents
-- **Instant, private, and high-integrity settlement** for the DePIN economy
-- **Developer portal** for the Agentic SDK and NATS-based wallet signature triggers
-- **Integration hub** for Tikoly ZK-proofs, High-Performance Ledger's Shadow Ledger, and X Layer infrastructure
+- **Protocol documentation** for the Agent SOUL identity and VGate orchestrator
+- **Developer portal** for the VGate SDK and agent deployment templates
+- **Knowledge base** for agent-native identity, P2P trust, and settlement concepts
+- **Integration hub** for NATS, TigerBeetle, and Temporal infrastructure
 
 **Key Value Propositions**:
-- 🤖 **Agentic SDK** - Go-based SDK for NATS-based wallet signature triggers
-- 🔒 **Privacy-First** - ZK-proofs from Tikoly keep merchant data private while ensuring agents get paid
-- ⚡ **High-Performance Ledger** - 1,000,000+ TPS capability for micro-settlements
-- 🌐 **Open Source Heritage** - Community-driven Taho fork, non-custodial alternative to proprietary wallets
-- 💰 **ASEAN Settlement** - Native OKB gas support on X Layer for ultra-low fees
-
-**Integration with tiktag-cli**:
-The website connects to the tiktag-cli daemon via documented NATS API endpoints for:
-- Asset notarization requests (`$SRV.SETTLE.PROVE`)
-- Settlement status queries (`$SRV.SETTLE.LIST`)
-- Ledger balance synchronization (`$SRV.LEDGER.SYNC`)
-- Agent authorization management (`$SRV.AGENTS.AUTHORIZE`)
-- Social graph operations (`$SRV.SOCIAL.FOLLOW`)
+- 🔐 **Sovereign Agent Identity** - NATS Nkey/JWT-based cryptographic identity for every agent
+- 🤝 **P2P Trust Network** - Verifiable credentials and decentralized reputation scoring
+- ⚡ **TigerBeetle Ledger** - 100,000+ TPS double-entry accounting with financial-grade integrity
+- 🔄 **Temporal Workflows** - Reliable orchestration of multi-step agent protocols
+- 🎛️ **VGate Orchestrator** - Unified control plane for agent lifecycle management
 
 ---
 
@@ -34,17 +26,15 @@ The website connects to the tiktag-cli daemon via documented NATS API endpoints 
 
 - **Full-text Search** - Client-side fuzzy search using Fuse.js with SolidJS reactivity
 - **Blog/Articles** - Long-form blog content for SDK documentation and updates
-- **Presentations** - Interactive content with Mermaid diagrams
-- **Releases** - Release logs and announcements
-- **Responsive Design** - Mobile-first with TailwindCSS 4
+- **Responsive Design** - Mobile-first with TailwindCSS
 - **Dark Mode** - Toggle between light and dark themes
+- **Particle Animations** - Interactive star and meteor effects on the home page
 
 ## Tech Stack
 
-- Astro 5 (SSR)
-- React 19
+- Astro 5 (SSG)
 - SolidJS (for interactive components)
-- TailwindCSS 4
+- TailwindCSS 3
 - Fuse.js (fuzzy search)
 - Biome (linting and formatting)
 
@@ -70,13 +60,10 @@ pnpm format             # Format code with Biome
 
 ```
 src/content/
-├── blogs/    # Blog articles / SDK Documentation (Markdown)
-├── cards/    # Knowledge cards (Markdown)
-├── slides/   # Presentations (Markdown)
-└── doodles/  # Announcements (Markdown)
+├── blog/     # Blog articles (Markdown)
+├── sdk/      # SDK documentation (Markdown)
+└── legal/    # Legal pages (Markdown)
 ```
-
-Content organized by year/month subdirectories.
 
 ## Product Data
 
@@ -84,31 +71,30 @@ All products data is defined in `src/assets/creations.json`.
 
 ## Site Structure
 
-- **`/`** - Landing page with "Settlement for Agentic Commerce" hero
-- **`/features`** - Core features page (Agentic SDK, Privacy-First, High-Performance Ledger, etc.)
-- **`/blog`** - Blog posts and updates from the Tiktag team
+- **`/`** - Landing page with "Agent-Native Identity & Ledger Protocol" hero
+- **`/features`** - Core features page (Sovereign Identity, P2P Trust, TigerBeetle Ledger, etc.)
+- **`/blog`** - Blog posts and updates from the vchat.email team
 - **`/search`** - Full-text search across all content
 
 ## Branding Guidelines
 
 ### Core Messaging
-- **Tagline**: "Settlement for Agentic Commerce"
-- **Description**: "An open-source Taho-fork wallet designed for autonomous agents. Instant, private, and high-integrity settlement for DePIN economy."
+- **Tagline**: "Agent-Native Identity & Ledger Protocol"
+- **Description**: "Sovereign identity for autonomous agents. Decentralized agent-to-agent communication, P2P trust, and high-performance settlement built on NATS, Temporal, and TigerBeetle."
 
 ### Key Technologies to Highlight
-- **X Layer** - Native OKB gas support, ultra-low fees
-- **Taho** - Open-source wallet fork, community-driven
-- **High-Performance Ledger** - 1,000,000+ TPS, sub-millisecond double-entry accounting
-- **NATS.io** - Micro service architecture for agent-to-settlement communication
-- **Polygon ID** - ZK-proof verification for privacy-first design
+- **NATS** - Nkey/JWT-based agent identity and messaging infrastructure
+- **TigerBeetle** - High-performance double-entry accounting engine
+- **Temporal** - Durable workflow orchestration for agent protocols
+- **VGate** - Agent lifecycle management and identity issuance platform
 
 ### Target Personas
-- **Go Developers** - Building autonomous agents with the Agentic SDK
-- **DePIN Projects** - Requiring high-performance settlement for micro-transactions
-- **ASEAN Commerce** - Leveraging X Layer's regional liquidity and OKB gas
+- **Agent Developers** - Building autonomous agents with sovereign identity
+- **Platform Engineers** - Deploying agent-native infrastructure
+- **Enterprise Architects** - Integrating agent protocols into existing systems
 
 ### Visual Style
-- Premium-dark aesthetic with blue/purple gradient accents
-- High-tech, industrial, and professional
-- Clean, high-conversion landing page design
-- Emphasis on performance, privacy, and open-source values
+- Dark theme with #0A0A0F background
+- Blue-to-purple gradient accents
+- Clean, professional, and technical
+- Emphasis on security, autonomy, and decentralization

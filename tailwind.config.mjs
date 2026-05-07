@@ -7,19 +7,25 @@ export default {
   theme: {
     extend: {
       colors: {
-        teahouse: {
-          primary: '#E91E63',
-          dark: '#1A1A1A',
-          text: '#333333',
-          'text-secondary': '#666666',
-          bg: '#FAFAFA',
-          'bg-secondary': '#F5F5F5',
-          border: '#E5E5E5',
+        vchat: {
+          primary: "#3B82F6",
+          "primary-dark": "#1D4ED8",
+          dark: "#0A0A0F",
+          text: "#1E1E2E",
+          "text-secondary": "#6B7280",
+          bg: "#FAFAFA",
+          "bg-secondary": "#F3F4F6",
+          border: "#E5E7EB",
+          accent: "#8B5CF6",
+          "accent-dark": "#7C3AED",
+          success: "#10B981",
+          warning: "#F59E0B",
         },
       },
       fontFamily: {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
         heading: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
+        mono: ["JetBrains Mono", "Fira Code", ...defaultTheme.fontFamily.mono],
       },
       typography: {
         DEFAULT: {

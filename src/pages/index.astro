@@ -7,19 +7,19 @@ import PageLayout from "@layouts/PageLayout.astro";
 
 const stack = [
   {
-    text: "X Layer",
+    text: "NATS",
     icon: "stack",
-    href: "https://www.okx.com/web3/x-layer",
+    href: "https://nats.io",
   },
   {
-    text: "Taho",
-    icon: "brand",
-    href: "https://tahowallet.app",
+    text: "TigerBeetle",
+    icon: "stack",
+    href: "https://tigerbeetle.com",
   },
   {
-    text: "Polygon ID",
+    text: "Temporal",
     icon: "stack",
-    href: "https://polygon.technology/identity",
+    href: "https://temporal.io",
   },
 ];
 ---
@@ -36,25 +36,25 @@ const stack = [
   </div>
 
   <!-- Dark Theme: Stars -->
-  <div class='absolute inset-0 bg-black hidden dark:block'>
+  <div class='absolute inset-0 bg-[#0A0A0F] hidden dark:block'>
     <div id='stars1' class='fixed inset-0'></div>
     <div id='stars2' class='fixed inset-0'></div>
     <div id='stars3' class='fixed inset-0'></div>
   </div>
 
-  <!-- Dark Theme: Twinkling Stars / Metors -->
+  <!-- Dark Theme: Twinkling Stars / Meteors -->
   <div id="galaxy" class="fixed inset-0">
     <div class="hidden dark:block">
       <TwinklingStars/>
       <MeteorShower/>
     </div>
   </div>
-  
+
   <!-- HERO -->
   <section class="relative h-screen w-full">
     <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
       <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
-        <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center'>
+        <div id="planet" class='w-full h-full bg-white dark:bg-[#0A0A0F] rounded-full p-[1px] overflow-hidden flex justify-center'>
           <div id="blur" class='w-full h-20 rounded-full bg-neutral-900/25 dark:bg-white/25 blur-3xl'/>
         </div>
       </div>
@@ -67,23 +67,23 @@ const stack = [
               <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
               <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
-            Powered by X Layer AggLayer
+            Agent-Native Identity &amp; Ledger Protocol
           </div>
           <h1 class='animated text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6'>
-            Settlement for <br/>
-            <span class="bg-gradient-to-r from-green-400 via-[#73c732] to-green-600 text-transparent bg-clip-text">
-              Agentic Commerce
+            Sovereign Identity for <br/>
+            <span class="bg-gradient-to-r from-blue-400 via-violet-500 to-purple-600 text-transparent bg-clip-text">
+              Autonomous Agents
             </span>
           </h1>
           <p class='animated text-lg md:text-xl opacity-75 mb-8 max-w-2xl mx-auto'>
-            Enterprise-grade real-world asset settlement for institutions and banking operations. 
-            Instant, private, and high-integrity settlement with compliant audit trails.
+            Decentralized agent-to-agent communication, P2P trust, and high-performance settlement.
+            Built on NATS, Temporal, and TigerBeetle for the next generation of autonomous agent infrastructure.
           </p>
           <div id="ctaButtons" class='animated flex flex-col md:flex-row items-center justify-center gap-4'>
             <a href='/features' class='py-3 px-8 bg-white dark:bg-slate-900 text-black dark:text-white font-bold rounded-2xl hover:opacity-90 transition text-center'>
               Explore Features
             </a>
-            <a href='https://github.com/tiktagapp' target='_blank' class='py-3 px-8 border border-black/25 dark:border-white/25 font-bold rounded-2xl hover:bg-black/5 dark:hover:bg-white/15 transition text-center'>
+            <a href='https://github.com/chance-fcc' target='_blank' class='py-3 px-8 border border-black/25 dark:border-white/25 font-bold rounded-2xl hover:bg-black/5 dark:hover:bg-white/15 transition text-center'>
               View on GitHub
             </a>
           </div>
@@ -92,59 +92,60 @@ const stack = [
     </div>
   </section>
 
-  <div class="relative bg-white dark:bg-black">
+  <div class="relative bg-white dark:bg-[#0A0A0F]">
     <div class="mx-auto max-w-screen-xl p-5 space-y-24 pb-16">
 
       <!-- Core Features Section -->
       <section class="animate">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">
-            Built for the Agentic Economy
+            The Agent-Native Protocol Stack
           </h2>
           <p class="text-lg opacity-75 max-w-2xl mx-auto">
-            Tiktag combines zero-knowledge proofs, high-performance ledger, and open-source & auditable wallet for institutional-grade settlement.
+            vchat.email combines sovereign agent identity, P2P trust networks, and a high-performance ledger to create the definitive infrastructure for autonomous agents.
           </p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-          <!-- Feature 1: Privacy-First Architecture -->
+          <!-- Feature 1: Sovereign Agent Identity -->
           <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl space-y-4 hover:border-blue-500/50 transition">
             <div class="w-12 h-12 bg-blue-500/10 dark:bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
-                <path d="m9 12 2 2 4-4"/>
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-black dark:text-white">Privacy-First Architecture</h3>
+            <h3 class="text-xl font-bold text-black dark:text-white">Sovereign Agent Identity</h3>
             <p class="text-sm opacity-75 leading-relaxed">
-              Zero-knowledge proof verification with Polygon ID. Privacy-first design keeps merchant data secure while ensuring compliant settlements for institutions.
+              Decentralized identity for every agent using NATS Nkey/JWT authentication. Each agent gets its own cryptographic identity, enabling verifiable, non-repudiable agent-to-agent communication.
             </p>
           </div>
 
-          <!-- Feature 2: High-Performance Ledger -->
+          <!-- Feature 2: P2P Trust Network -->
           <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl space-y-4 hover:border-purple-500/50 transition">
             <div class="w-12 h-12 bg-purple-500/10 dark:bg-purple-500/20 rounded-2xl flex items-center justify-center text-purple-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 14.71 13.18 3l-1.35 7.71h7.45l-9.18 11.71 1.35-7.71H4Z"/>
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-black dark:text-white">High-Performance Ledger</h3>
+            <h3 class="text-xl font-bold text-black dark:text-white">P2P Trust Network</h3>
             <p class="text-sm opacity-75 leading-relaxed">
-              Sub-millisecond double-entry accounting with financial-grade integrity. Capable of 1,000,000+ TPS for micro-settlements and enterprise-scale operations.
+              Agents establish peer-to-peer trust relationships through verifiable credentials and reputation scoring. Decentralized trust graph enables autonomous collaboration without centralized authorities.
             </p>
           </div>
 
-          <!-- Feature 3: ASEAN Settlement -->
-          <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl space-y-4 hover:border-green-500/50 transition">
-            <div class="w-12 h-12 bg-green-500/10 dark:bg-green-500/20 rounded-2xl flex items-center justify-center text-green-500 mb-4">
+          <!-- Feature 3: TigerBeetle Ledger -->
+          <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl space-y-4 hover:border-emerald-500/50 transition">
+            <div class="w-12 h-12 bg-emerald-500/10 dark:bg-emerald-500/20 rounded-2xl flex items-center justify-center text-emerald-500 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/>
-                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/>
-                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z"/>
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
               </svg>
             </div>
-            <h3 class="text-xl font-bold text-black dark:text-white">ASEAN Settlement</h3>
+            <h3 class="text-xl font-bold text-black dark:text-white">TigerBeetle Ledger</h3>
             <p class="text-sm opacity-75 leading-relaxed">
-              Native OKB gas support on X Layer for ultra-low fees and deep regional liquidity. Optimized for Southeast Asian commerce.
+              High-performance double-entry accounting engine capable of 100,000+ transactions per second. Financial-grade integrity for agent settlements, resource accounting, and value exchange.
             </p>
           </div>
         </div>
@@ -154,12 +155,12 @@ const stack = [
       <section class="animate py-12 bg-slate-50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
         <div class="text-center">
           <p class="text-xs font-mono uppercase tracking-[0.3em] opacity-50 mb-8">
-            Integrated With The Best
+            Powered By
           </p>
           <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-            <span class="font-bold text-2xl text-black dark:text-white">X LAYER</span>
-            <span class="font-bold text-2xl text-black dark:text-white">TAHO</span>
-            <span class="font-bold text-2xl text-black dark:text-white">POLYGON ID</span>
+            <span class="font-bold text-2xl text-black dark:text-white">NATS</span>
+            <span class="font-bold text-2xl text-black dark:text-white">TIGERBEETLE</span>
+            <span class="font-bold text-2xl text-black dark:text-white">TEMPORAL</span>
           </div>
         </div>
       </section>
@@ -172,7 +173,7 @@ const stack = [
           </p>
           <div class="flex flex-wrap items-center gap-2 mt-5">
             {stack.map(item => (
-              <StackCard 
+              <StackCard
                 text={item.text}
                 icon={item.icon}
                 href={item.href}
@@ -180,58 +181,58 @@ const stack = [
             ))}
           </div>
           <p class="text-sm opacity-75">
-            A Taho fork combining the best of open-source wallets with enterprise-grade infrastructure.
+            A modern stack combining NATS for messaging, TigerBeetle for accounting, and Temporal for workflow orchestration.
           </p>
         </div>
       </section>
 
-      <!-- For Operations Section -->
+      <!-- For Agents Section -->
       <section class="animate">
         <div class="p-8 bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-3xl">
           <h2 class="text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white">
-            For Operations Teams
+            For Autonomous Agents
           </h2>
           <p class="text-base opacity-75 mb-6 max-w-3xl">
-            Comprehensive oversight and compliance tools for banking operations and institutional settlement management.
+            Give your agents sovereign identity and the ability to communicate, transact, and collaborate with other agents in a trustless environment.
           </p>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">Real-time settlement monitoring and audit trails</span>
+              <span class="text-sm text-black dark:text-white">NATS Nkey/JWT-based agent identity and authentication</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">Compliant verification with zero-knowledge proofs</span>
+              <span class="text-sm text-black dark:text-white">P2P trust establishment through verifiable credentials</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-blue-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">Automated compliance reporting and risk management</span>
+              <span class="text-sm text-black dark:text-white">Temporal workflows for reliable agent orchestration</span>
             </li>
           </ul>
         </div>
       </section>
 
-      <!-- For Tech Integration Section -->
+      <!-- For Developers Section -->
       <section class="animate">
         <div class="p-8 bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-3xl">
           <h2 class="text-2xl md:text-3xl font-bold mb-4 text-black dark:text-white">
-            For Tech Integration Teams
+            For Developers
           </h2>
           <p class="text-base opacity-75 mb-6 max-w-3xl">
-            Developer-friendly APIs and protocols for seamless integration with existing banking infrastructure.
+            Build agent-native applications with the VGate SDK. Comprehensive APIs, NATS-based messaging, and Temporal workflow integration.
           </p>
           <ul class="space-y-3">
             <li class="flex items-start gap-3">
               <span class="text-purple-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">Agent Payment Protocol (AP2) and x402 Payment Streaming</span>
+              <span class="text-sm text-black dark:text-white">VGate SDK for agent management and identity issuance</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-purple-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">Comprehensive SDK with Protobuf schemas</span>
+              <span class="text-sm text-black dark:text-white">NATS JetStream for persistent agent messaging</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="text-purple-500 mt-1">✓</span>
-              <span class="text-sm text-black dark:text-white">NATS-based microservices architecture</span>
+              <span class="text-sm text-black dark:text-white">TigerBeetle client libraries for high-performance accounting</span>
             </li>
           </ul>
         </div>
@@ -244,7 +245,7 @@ const stack = [
             Get Started
           </p>
           <p class="mb-4">
-            Join the agentic commerce revolution. Connect with us on GitHub, Twitter, or email.
+            Join the agent-native revolution. Connect with us on GitHub, X, or email.
           </p>
           <div class="grid grid-cols-4 gap-y-2 mt-4 auto-cols-min">
             {SOCIALS.map(social => (
@@ -267,6 +268,6 @@ const stack = [
   </div>
 
   <footer class="py-12 px-6 text-center text-slate-500 dark:text-slate-400 text-sm border-t border-slate-200 dark:border-slate-800">
-    <p>&copy; 2026 Tiktag.app - Built for the Agentic Economy.</p>
+    <p>&copy; 2026 vchat.email — Agent-Native Identity &amp; Ledger Protocol.</p>
   </footer>
 </PageLayout>

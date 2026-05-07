@@ -1,1 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><g/><clipPath id="f1d9cd30a0"><rect x="0" width="332" y="0" height="290"/></clipPath></defs><rect x="-37.5" width="450" fill="#ffffff" y="-37.499999" height="449.999989" fill-opacity="1"/><rect x="-37.5" width="450" fill="#73c732" y="-37.499999" height="449.999989" fill-opacity="1"/><g transform="matrix(1, 0, 0, 1, 26, 42)"><g clip-path="url(#f1d9cd30a0)"><g fill="#ffffff" fill-opacity="1"><g transform="translate(1.007988, 230.9239)"><g><path d="M 55.296875 -135.21875 L 5.03125 -135.21875 L 5.03125 -163.109375 L 144.515625 -163.109375 L 144.515625 -135.21875 L 94.5 -135.21875 L 94.5 0 L 55.296875 0 Z M 55.296875 -135.21875 "/></g></g></g><g fill="#ffffff" fill-opacity="1"><g transform="translate(150.531831, 230.9239)"><g><path d="M 17.59375 -163.109375 L 56.796875 -163.109375 L 56.796875 0 L 17.59375 0 Z M 57.8125 -86.453125 L 118.875 -163.109375 L 164.875 -163.109375 L 103.046875 -87.203125 L 171.65625 0 L 123.90625 0 Z M 57.8125 -86.453125 "/></g></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.0">
+  <defs>
+    <linearGradient id="vchat-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="-37.5" width="450" fill="#0A0A0F" y="-37.499999" height="449.999989" fill-opacity="1"/>
+  <g transform="matrix(1, 0, 0, 1, 52, 42)">
+    <g fill="url(#vchat-gradient)" fill-opacity="1">
+      <path d="M 50 270 L 50 0 L 90 0 L 90 230 L 220 230 L 220 270 Z"/>
+      <path d="M 140 0 L 185 0 Q 270 0 270 85 L 270 115 Q 270 175 210 195 L 210 155 Q 230 145 230 115 L 230 85 Q 230 40 185 40 L 140 40 Z"/>
+      <path d="M 110 95 L 155 95 Q 190 95 190 130 L 190 145 Q 190 165 175 170 L 175 135 Q 185 130 185 130 L 185 95 Q 185 70 155 70 L 110 70 Z"/>
+    </g>
+  </g>
+</svg>

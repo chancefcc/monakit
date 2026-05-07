@@ -2,10 +2,10 @@ import type { Links, Page, Site, Socials } from "@types";
 
 // Global
 export const SITE: Site = {
-  TITLE: "tiktag",
+  TITLE: "vchat.email",
   DESCRIPTION:
-    "Settlement for Agentic Commerce. Enterprise-grade real-world asset settlement for institutions and banking operations. Instant, private, and high-integrity settlement with compliant audit trails.",
-  AUTHOR: "Tiktag.app",
+    "Agent-Native Identity & Ledger Protocol. Sovereign identity for autonomous agents. Decentralized agent-to-agent communication, P2P trust, and high-performance settlement built on NATS, Temporal, and TigerBeetle.",
+  AUTHOR: "vchat.email",
 };
 
 // Export individual constants for easier imports
@@ -16,28 +16,28 @@ export const SITE_DESCRIPTION = SITE.DESCRIPTION;
 export const FEATURES: Page = {
   TITLE: "Features",
   DESCRIPTION:
-    "Enterprise-grade settlement features for institutions: Privacy-First Architecture, High-Performance Ledger, Agentic SDK with AP2 and x402 Payment Streaming.",
+    "Explore vchat.email features: Sovereign Agent Identity with NATS Nkey/JWT, P2P Trust Network, TigerBeetle High-Performance Ledger, Temporal Workflow Orchestration, and the VGate Agent Management API.",
 };
 
 // SDK Page
 export const SDK: Page = {
   TITLE: "SDK",
   DESCRIPTION:
-    "Developer documentation and API references for Tiktag's Agentic SDK. Build autonomous agents with Agent Payment Protocol (AP2) and x402 Payment Streaming.",
+    "Developer documentation and API references for the VGate SDK. Build autonomous agents with the Agent-Native Identity & Ledger Protocol. NATS, TigerBeetle, and Temporal integrations.",
 };
 
 // Blog Page
 export const BLOG: Page = {
   TITLE: "Blog",
   DESCRIPTION:
-    "Articles and updates on agentic commerce settlement, enterprise blockchain solutions, and institutional DePIN applications.",
+    "Articles and updates on agent-native identity, decentralized agent-to-agent protocols, P2P trust networks, and the future of autonomous agent infrastructure.",
 };
 
 // Search Page
 export const SEARCH: Page = {
   TITLE: "Search",
   DESCRIPTION:
-    "Search through Tiktag's SDK documentation, API references, and blog articles on agentic commerce settlement.",
+    "Search through vchat.email documentation, SDK references, and blog articles on agent-native identity and ledger protocols.",
 };
 
 // Links
@@ -65,19 +65,19 @@ export const SOCIALS: Socials = [
   {
     NAME: "GitHub",
     ICON: "github",
-    TEXT: "tiktagapp",
-    HREF: "https://github.com/tiktagapp",
+    TEXT: "chance-fcc",
+    HREF: "https://github.com/chance-fcc",
   },
   {
     NAME: "Twitter",
     ICON: "twitter-x",
-    TEXT: "@tiktagapp",
-    HREF: "https://twitter.com/tiktagus",
+    TEXT: "@chance_fcc",
+    HREF: "https://x.com/chance_fcc",
   },
   {
     NAME: "Email",
     ICON: "email",
-    TEXT: "contact@tiktag.app",
-    HREF: "mailto:contact@tiktag.app",
+    TEXT: "chance@vchat.email",
+    HREF: "mailto:chance@vchat.email",
   },
 ];

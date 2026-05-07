@@ -6,44 +6,52 @@ import TopLayout from "@layouts/TopLayout.astro";
 
 const features = [
   {
-    title: "Agentic SDK",
-    icon: "code",
-    description:
-      "SDK for Agent Payment Protocol (AP2) wallet signature triggers with x402 Payment Streaming. Build autonomous agents that can transact seamlessly with real-time flow-based settlement.",
-    details:
-      "Full micro service integration with Protobuf schemas. Easy-to-use client libraries for agent-to-settlement communication.",
-  },
-  {
-    title: "Privacy-First Architecture",
+    title: "Sovereign Agent Identity",
     icon: "shield",
     description:
-      "ZK-proofs from private merchant data while ensuring the agent gets paid.",
+      "Every agent gets a cryptographically verifiable identity using NATS Nkey/JWT authentication. Decentralized identity management ensures agents can authenticate and authorize without any central authority.",
     details:
-      "Zero-knowledge proof verification with Polygon ID. No sensitive merchant data is ever exposed on-chain.",
+      "Nkey-based Ed25519 key pairs provide strong cryptographic identity. JWT authentication enables scoped, time-limited authorization. Agents can prove their identity to any other agent in the network without relying on a third party.",
   },
   {
-    title: "Open Source Heritage",
-    icon: "github",
-    description:
-      "Community-driven Taho fork providing a non-custodial alternative to proprietary wallets.",
-    details:
-      "Fully auditable codebase. MIT-licensed for maximum transparency. Community governance through GitHub.",
-  },
-  {
-    title: "X Layer Integration",
-    icon: "stack",
-    description:
-      "Native OKB gas support on X Layer for ultra-low fees and deep regional liquidity.",
-    details:
-      "Seamless cross-chain settlements. Optimized for ASEAN commerce and DePIN applications.",
-  },
-  {
-    title: "Settlement Graph",
+    title: "P2P Trust Network",
     icon: "network",
     description:
-      "P2P trust network where nodes vouch for the validity of asset data.",
+      "Agents establish peer-to-peer trust relationships through verifiable credentials and decentralized reputation scoring. Build a trust graph that enables autonomous collaboration.",
     details:
-      "Decentralized reputation system. Follow/unfollow mechanisms for establishing mutual settlement trust.",
+      "Trust is established through verifiable credential exchange and attestation. Reputation scoring provides a quantitative measure of agent reliability. The trust graph evolves organically as agents interact and vouch for each other.",
+  },
+  {
+    title: "TigerBeetle High-Performance Ledger",
+    icon: "zap",
+    description:
+      "Financial-grade double-entry accounting engine capable of 100,000+ transactions per second. Built for the demanding requirements of autonomous agent settlement and resource accounting.",
+    details:
+      "TigerBeetle provides sub-millisecond latency with deterministic accounting guarantees. Each transaction is cryptographically verified and auditable. The ledger supports complex multi-agent settlement scenarios with full integrity guarantees.",
+  },
+  {
+    title: "Temporal Workflow Orchestration",
+    icon: "code",
+    description:
+      "Reliable, durable workflow execution for multi-step agent protocols. Temporal ensures that complex agent interactions complete successfully, even in the face of failures.",
+    details:
+      "Temporal provides durable execution with automatic retries, timeouts, and state persistence. Complex multi-agent workflows can be modeled as simple code. Workflow history provides complete audit trails for all agent interactions.",
+  },
+  {
+    title: "VGate Agent Management API",
+    icon: "stack",
+    description:
+      "Comprehensive API for agent lifecycle management, identity issuance, and policy enforcement. The VGate orchestrator provides a unified control plane for all agents in your ecosystem.",
+    details:
+      "RESTful and NATS-based APIs for agent registration, authentication, and authorization. Policy-based access control with fine-grained permissions. Real-time monitoring and management of agent activity across the network.",
+  },
+  {
+    title: "One-Click Agent Templates",
+    icon: "github",
+    description:
+      "Pre-built agent templates for common use cases. Deploy agents for identity verification, settlement processing, trust scoring, and more with a single command.",
+    details:
+      "Templates include pre-configured NATS subjects, TigerBeetle account schemas, and Temporal workflow definitions. Customizable for specific business logic. Open-source and community-contributed templates available on GitHub.",
   },
 ];
 ---
@@ -63,9 +71,9 @@ const features = [
               <div class="w-16 h-16 bg-blue-500/10 dark:bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-500 mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   {feature.icon === "code" && <><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></>}
-                  {feature.icon === "shield" && <><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></>}
-                  {feature.icon === "zap" && <><path d="M4 14.71 13.18 3l-1.35 7.71h7.45l-9.18 11.71 1.35-7.71H4Z"/></>}
-                  {feature.icon === "github" && <><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></>}
+                  {feature.icon === "shield" && <><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></>}
+                  {feature.icon === "zap" && <><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></>}
+                  {feature.icon === "github" && <><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></>}
                   {feature.icon === "stack" && <><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></>}
                   {feature.icon === "network" && <><circle cx="12" cy="12" r="3"/><path d="M12 21v-6"/><path d="M12 3v6"/><path d="M3 12h6"/><path d="M15 12h6"/><path d="M7 7l4 4"/><path d="M13 13l4 4"/><path d="M7 17l4-4"/><path d="M13 11l4-4"/></>}
                 </svg>

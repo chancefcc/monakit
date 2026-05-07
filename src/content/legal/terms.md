@@ -4,7 +4,7 @@ date: "2024-11-07"
 ---
 
 
-These Terms of Service ("Terms") govern your access to and use of the tiktag.app platform, including its website, mobile applications, software, hardware, and services (collectively, the "Services"). Please read these Terms carefully before accessing or using the Services. By accessing or using the Services, you agree to be bound by these Terms.
+These Terms of Service ("Terms") govern your access to and use of the vchat.email platform, including its website, mobile applications, software, and services (collectively, the "Services"). Please read these Terms carefully before accessing or using the Services. By accessing or using the Services, you agree to be bound by these Terms.
 
 #### 1. User Obligations
 
@@ -24,49 +24,48 @@ These Terms of Service ("Terms") govern your access to and use of the tiktag.app
   - Compliance with Laws: You are responsible for complying with all applicable laws and regulations in your use of the Services.
 
 #### 2. Gathering of Personal Information
-- **Information Collected**: tiktag.app may collect personal information from you when you:
+- **Information Collected**: vchat.email may collect personal information from you when you:
   - Create an account.
   - Use the Services.
   - Contact customer support.
 
-- **Types of Information Collected**: The types of personal information tiktag.app may collect include:
+- **Types of Information Collected**: The types of personal information vchat.email may collect include:
   - Contact information, such as your name, email address, and phone number.
   - Account information, such as your username and password.
  - Usage data, such as your IP address, browser type, and operating system.
-  - Information about your memecoin holdings, which may be inferred from your use of the Tiktag scanner.
 
 #### 3. Protection of Personal Information
 
-- Security Measures: Tiktag.app employs appropriate security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or method of electronic storage is 100% secure, and tiktag.app cannot guarantee absolute security.
-- Data Retention: Tiktag.app will retain your personal information for as long as necessary to provide you with the Services and to comply with its legal obligations.
-- Data Sharing: Tiktag.app may share your personal information with third-party service providers who assist in providing the Services. These providers are obligated to protect your information and to use it only for the purposes for which it was disclosed. Tiktag.app may also disclose your information if required by law or to protect the rights, property, or safety of itself or others.
+- Security Measures: vchat.email employs appropriate security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction. However, no method of transmission over the internet or method of electronic storage is 100% secure, and vchat.email cannot guarantee absolute security.
+- Data Retention: vchat.email will retain your personal information for as long as necessary to provide you with the Services and to comply with its legal obligations.
+- Data Sharing: vchat.email may share your personal information with third-party service providers who assist in providing the Services. These providers are obligated to protect your information and to use it only for the purposes for which it was disclosed. vchat.email may also disclose your information if required by law or to protect the rights, property, or safety of itself or others.
 
 #### 4. Privacy Policy
-tiktag.app's Privacy Policy, which is incorporated into these Terms, explains in more detail how tiktag.app collects, uses, and discloses your personal information. You should carefully review the Privacy Policy to understand tiktag.app's practices.
+vchat.email's Privacy Policy, which is incorporated into these Terms, explains in more detail how vchat.email collects, uses, and discloses your personal information. You should carefully review the Privacy Policy to understand vchat.email's practices.
 
 #### 5. Intellectual Property
 
-- **Ownership**: The Services and all content and materials included therein, including but not limited to text, graphics, logos, images, software, and code, are the property of tiktag.app or its licensors and are protected by copyright, trademark, and other intellectual property laws.
-- **Limited License**: tiktag.app grants you a limited, non-exclusive, non-transferable license to access and use the Services for your personal, non-commercial use. You may not modify, reproduce, distribute, create derivative works of, publicly display, or publicly perform any part of the Services without tiktag.app's prior written consent.
+- **Ownership**: The Services and all content and materials included therein, including but not limited to text, graphics, logos, images, software, and code, are the property of vchat.email or its licensors and are protected by copyright, trademark, and other intellectual property laws.
+- **Limited License**: vchat.email grants you a limited, non-exclusive, non-transferable license to access and use the Services for your personal, non-commercial use. You may not modify, reproduce, distribute, create derivative works of, publicly display, or publicly perform any part of the Services without vchat.email's prior written consent.
 
 #### 6. Disclaimer of Warranties
 
-THE SERVICES ARE PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. Tiktag.app does not warrant that the Services will be uninterrupted or error-free, that defects will be corrected, or that the Services are free of viruses or other harmful components.
+THE SERVICES ARE PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. vchat.email does not warrant that the Services will be uninterrupted or error-free, that defects will be corrected, or that the Services are free of viruses or other harmful components.
 
 #### 7. Limitation of Liability
-IN NO EVENT SHALL TIKTAG.APP BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH THE SERVICES, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, EVEN IF TIKTAG.APP HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+IN NO EVENT SHALL VCHAT.EMAIL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH THE SERVICES, WHETHER BASED ON CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE, EVEN IF VCHAT.EMAIL HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
 #### 8. Termination
-tiktag.app may terminate your access to the Services at any time for any reason, with or without notice. You may also terminate your account at any time. Upon termination, your right to use the Services will immediately cease.
+vchat.email may terminate your access to the Services at any time for any reason, with or without notice. You may also terminate your account at any time. Upon termination, your right to use the Services will immediately cease.
 
 #### 9. Governing Law and Dispute Resolution
 These Terms shall be governed by and construed in accordance with the laws of [insert governing jurisdiction], without regard to its conflict of law provisions. Any dispute arising out of or in connection with these Terms shall be resolved exclusively by the courts of [insert jurisdiction].
 
 #### 10. Entire Agreement
-These Terms constitute the entire agreement between you and tiktag.app relating to your access to and use of the Services and supersede all prior or contemporaneous communications and proposals, whether oral or written.
+These Terms constitute the entire agreement between you and vchat.email relating to your access to and use of the Services and supersede all prior or contemporaneous communications and proposals, whether oral or written.
 
 #### 11. Amendments
-Tiktag.app may amend these Terms at any time by posting the amended Terms on the Services. Your continued use of the Services following the posting of the amended Terms will constitute your acceptance of the amended Terms.
+vchat.email may amend these Terms at any time by posting the amended Terms on the Services. Your continued use of the Services following the posting of the amended Terms will constitute your acceptance of the amended Terms.
 
 #### 12. Contact Us
-If you have any questions about these Terms, please contact tiktag.app at tos@tiktag.app.
+If you have any questions about these Terms, please contact vchat.email at chance@vchat.email.

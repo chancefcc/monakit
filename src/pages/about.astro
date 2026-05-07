@@ -1,46 +1,46 @@
 ---
-import { SITE_TITLE } from "@/consts";
-import PageLayout from "@/layouts/PageLayout.astro";
+import { SITE_TITLE } from "@consts";
+import PageLayout from "@layouts/PageLayout.astro";
 
 const metadata = {
   title: `About | ${SITE_TITLE}`,
   description:
-    "The sovereign settlement layer for RWA Oracle Networks. AI-verified asset notarization, transparent token settlement, and regulatory-grade audit trails for energy, precious metals, and real-estate assets.",
+    "vchat.email is an Agent-Native Identity & Ledger Protocol. Sovereign identity for autonomous agents with decentralized A2A communication, P2P trust, and high-performance settlement built on NATS, Temporal, and TigerBeetle.",
 };
 ---
 
-<PageLayout> title={metadata.title} description={metadata.description}>
+<PageLayout title={metadata.title} description={metadata.description}>
   <div class="w-full px-4 md:px-6 py-16">
     <!-- Hero Section -->
     <div class="max-w-7xl mx-auto mb-20">
       <div class="text-center max-w-4xl mx-auto">
-        <div class="inline-flex items-center px-4 py-2 rounded-full bg-teahouse-primary/10 text-teahouse-primary text-sm font-medium mb-6">
-          <span class="mr-2">🏝️</span> Operating in Virgin Islands Jurisdiction
+        <div class="inline-flex items-center px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium mb-6">
+          <span class="mr-2">●</span> Agent-Native Identity &amp; Ledger Protocol
         </div>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-teahouse-dark mb-6">
-          The Sovereign Settlement Layer for Real World Assets
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-black dark:text-white mb-6">
+          The Sovereign Identity Protocol for Autonomous Agents
         </h1>
-        <p class="text-xl leading-relaxed text-teahouse-text-secondary max-w-3xl mx-auto">
-          AI-verified asset notarization, transparent token settlement, and regulatory-grade audit trails for energy, precious metals, and real-estate assets operating in Virgin Islands jurisdiction.
+        <p class="text-xl leading-relaxed opacity-75 max-w-3xl mx-auto">
+          vchat.email provides the foundational infrastructure for the agent-native economy — decentralized identity, P2P trust networks, and high-performance settlement — enabling autonomous agents to communicate, transact, and collaborate without human intervention.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8">
           <a
             href="#mission"
-            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+            class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
           >
             Our Mission
           </a>
           <a
-            href="/products"
-            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+            href="/features"
+            class="inline-flex items-center justify-center px-6 py-3 border border-black/20 dark:border-white/20 text-base font-medium rounded-md text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
           >
-            Products
+            Explore Features
           </a>
           <a
-            href="https://github.com/tiktagapp"
+            href="https://github.com/chance-fcc"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center justify-center px-6 py-3 border border-teahouse-border text-base font-medium rounded-md text-teahouse-text bg-teahouse-bg hover:bg-teahouse-bg-secondary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+            class="inline-flex items-center justify-center px-6 py-3 border border-black/20 dark:border-white/20 text-base font-medium rounded-md text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
           >
             GitHub Repository
           </a>
@@ -51,56 +51,60 @@ const metadata = {
     <!-- Mission Section -->
     <div id="mission" class="max-w-7xl mx-auto mb-20">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-4xl md:text-5xl font-bold text-teahouse-dark mb-4">Our Mission</h2>
-        <p class="text-lg leading-relaxed text-teahouse-text-secondary max-w-3xl mx-auto">
-          To establish a Clearing & Settlement House for RWA Oracle Networks that provides the most secure, transparent, and regulatory-grade infrastructure for tokenizing and trading real world assets on-chain.
+        <h2 class="text-4xl md:text-5xl font-bold text-black dark:text-white mb-4">Our Mission</h2>
+        <p class="text-lg leading-relaxed opacity-75 max-w-3xl mx-auto">
+          To establish the definitive identity and ledger protocol for autonomous agents — a decentralized, trustless infrastructure that enables any agent to prove its identity, establish trust relationships, and settle value with financial-grade integrity.
         </p>
       </div>
 
       <!-- Core Value Propositions -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        <div class="bg-slate-50 dark:bg-slate-900 rounded-lg shadow-md p-6 border border-slate-200 dark:border-slate-800">
+          <div class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-teahouse-dark mb-2">AI-Verified Asset Notarization</h3>
-          <p class="text-teahouse-text-secondary">
-            Every asset undergoes oracle-validated notarization via external telemetry data (NREL for energy, supply chain records for metals, property registries for real estate) before being tokenized.
+          <h3 class="text-xl font-semibold text-black dark:text-white mb-2">Sovereign Agent Identity</h3>
+          <p class="opacity-75">
+            Every agent receives a cryptographically verifiable identity using NATS Nkey/JWT authentication. Decentralized and self-sovereign — no central authority needed.
           </p>
-          <p class="text-sm text-teahouse-text-secondary mt-4">
-            <span class="font-semibold text-teahouse-dark">Key Benefit:</span> Cryptographic asset proofs with Merkle root hashes stored in immutable settlement registry.
+          <p class="text-sm mt-4">
+            <span class="font-semibold text-black dark:text-white">Key Benefit:</span> Ed25519 key pairs, JWT authorization, self-sovereign identity management.
           </p>
         </div>
 
-        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <div class="bg-slate-50 dark:bg-slate-900 rounded-lg shadow-md p-6 border border-slate-200 dark:border-slate-800">
+          <div class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-teahouse-dark mb-2">Atomic Token Settlement</h3>
-          <p class="text-teahouse-text-secondary">
-            Settlement transactions execute atomic $TIK burn → $TAG mint operations via our embedded EVM Bridge, ensuring instant finality and complete transparency with on-chain transaction records.
+          <h3 class="text-xl font-semibold text-black dark:text-white mb-2">P2P Trust Network</h3>
+          <p class="opacity-75">
+            Agents establish trust relationships through verifiable credentials and decentralized reputation. No central authority required — trust is built organically.
           </p>
-          <p class="text-sm text-teahouse-text-secondary mt-4">
-            <span class="font-semibold text-teahouse-dark">Key Benefit:</span> JetStream audit streams provide complete settlement history and cold data archival for long-term regulatory compliance.
+          <p class="text-sm mt-4">
+            <span class="font-semibold text-black dark:text-white">Key Benefit:</span> Verifiable credentials, reputation scoring, organic trust graph evolution.
           </p>
         </div>
 
-        <div class="bg-teahouse-bg-secondary rounded-lg shadow-md p-6 border border-teahouse-border">
-          <div class="w-12 h-12 rounded-lg bg-teahouse-primary/10 flex items-center justify-center mb-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teahouse-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012 2h2a2 2 0 012 2" />
+        <div class="bg-slate-50 dark:bg-slate-900 rounded-lg shadow-md p-6 border border-slate-200 dark:border-slate-800">
+          <div class="w-12 h-12 rounded-lg bg-emerald-500/10 flex items-center justify-center mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
             </svg>
           </div>
-          <h3 class="text-xl font-semibold text-teahouse-dark mb-2">Regulatory-Grade Audit Trails</h3>
-          <p class="text-teahouse-text-secondary">
-            All settlement events are published to JetStream streams with cryptographic proofs and timestamps, creating an immutable audit trail for regulatory supervision and compliance verification.
+          <h3 class="text-xl font-semibold text-black dark:text-white mb-2">High-Performance Settlement</h3>
+          <p class="opacity-75">
+            TigerBeetle-powered double-entry accounting with 100,000+ TPS. Financial-grade integrity for autonomous agent settlements and resource accounting.
           </p>
-          <p class="text-sm text-teahouse-text-secondary mt-4">
-            <span class="font-semibold text-teahouse-dark">Key Benefit:</span> Subject-Based Access Control (SBAC) enforced at the server level via Logto OIDC authentication and NKey mapping.
+          <p class="text-sm mt-4">
+            <span class="font-semibold text-black dark:text-white">Key Benefit:</span> Sub-millisecond latency, deterministic accounting, cryptographic audit trails.
           </p>
         </div>
       </div>
@@ -108,35 +112,36 @@ const metadata = {
 
     <!-- Technical Architecture Section -->
     <div class="max-w-7xl mx-auto mb-20">
-      <div class="bg-gradient-to-r from-teahouse-primary/10 to-teahouse-primary/5 rounded-xl p-8 md:p-12 border border-teahouse-border">
+      <div class="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl p-8 md:p-12 border border-blue-200 dark:border-blue-800">
         <div class="text-center max-w-3xl mx-auto">
-          <h2 class="text-3xl font-bold text-teahouse-dark mb-4">Built on Trust, Verified by AI, Secured by Design</h2>
-          <p class="text-lg text-teahouse-text-secondary mb-8">
-            Our Clearing & Settlement House leverages NATS Micro Services, embedded EVM Bridge, n8n Workflow Automation, and oracle-validated telemetry to provide the most secure and transparent RWA settlement infrastructure.
+          <h2 class="text-3xl font-bold text-black dark:text-white mb-4">Built on Open Protocols, Secured by Design</h2>
+          <p class="text-lg opacity-75 mb-8">
+            Our protocol stack leverages NATS for messaging, TigerBeetle for accounting, and Temporal for workflow orchestration — combining battle-tested infrastructure with cutting-edge agent-native design.
           </p>
         </div>
       </div>
     </div>
 
     <!-- Call to Action -->
-    <div class="max-w-4xl mx-auto bg-teahouse-primary/5 rounded-xl p-8 border border-teahouse-border">
+    <div class="max-w-4xl mx-auto bg-blue-500/5 rounded-xl p-8 border border-blue-200 dark:border-blue-800">
       <div class="text-center">
-        <h2 class="text-2xl font-bold text-white mb-4">Explore Tiktag Solutions</h2>
-        <p class="text-teahouse-text-secondary mb-6">
-          Discover our sovereign settlement infrastructure and services for the RWA Oracle Networks ecosystem.
+        <h2 class="text-2xl font-bold text-black dark:text-white mb-4">Explore vchat.email</h2>
+        <p class="opacity-75 mb-6">
+          Discover the agent-native identity and ledger protocol. Build autonomous agents with sovereign identity, P2P trust, and high-performance settlement.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="/products"
-            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-teahouse-primary hover:bg-teahouse-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teahouse-primary transition-colors"
+            href="/features"
+            class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
           >
-            Tiktag Products
+            View Features
           </a>
           <a
-            href="/slides"
-            class="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-colors"
+            href="https://github.com/chance-fcc"
+            target="_blank"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-black/20 dark:border-white/20 text-base font-medium rounded-md text-black dark:text-white hover:bg-black/5 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
           >
-            Case Study
+            GitHub
           </a>
         </div>
       </div>

@@ -3,7 +3,7 @@ title: "Privacy Policy"
 date: "2025-04-27"
 ---
 
-Welcome to Tiktag! This Privacy Policy explains how Tiktag ("we," "us," or "our") collects, uses, discloses, and protects your information when you visit our website located at `https://tiktag.app/` (the "Site") or use our related services, features, and applications (collectively, the "Service").
+Welcome to vchat.email! This Privacy Policy explains how vchat.email ("we," "us," or "our") collects, uses, discloses, and protects your information when you visit our website located at `https://vchat.email/` (the "Site") or use our related services, features, and applications (collectively, the "Service").
 
 By accessing or using our Service, you agree to the terms of this Privacy Policy. If you do not agree with the terms of this policy, please do not access or use our Service.
 
@@ -37,10 +37,10 @@ We use the information we collect for various purposes, including:
 
 * **Providing and Maintaining the Service:** To operate, provide, and maintain our Service, including processing transactions, managing your account, and providing customer support.
 * **Improving and Personalizing the Service:** To understand how you use the Service, analyze trends, develop new features, and customize your experience.
-* **Communication:** To send you important updates, notifications, technical notices, security alerts, and support and administrative messages. We may also send promotional communications about products, services, offers, and events offered by Tiktag or others, which you can opt out of.
+* **Communication:** To send you important updates, notifications, technical notices, security alerts, and support and administrative messages. We may also send promotional communications about products, services, offers, and events that may interest you, which you can opt out of.
 * **Safety and Security:** To detect, prevent, and address fraud, spam, abuse, security risks, and other harmful activities.
 * **Analytics and Research:** To monitor and analyze usage and trends, conduct research, and perform statistical analysis to understand our user base and improve the Service.
-* **Marketing and Advertising:** To provide, personalize, measure, and improve our advertising and marketing efforts (you may see personalized ads based on your activity).
+* **Marketing and Advertising:** To provide, personalize, measure, and improve our advertising and marketing efforts.
 * **Compliance with Law:** To comply with applicable laws, regulations, legal processes, and governmental requests.
 * **Enforcement:** To enforce our Terms of Service and other policies.
 
@@ -83,7 +83,7 @@ Your information may be stored and processed in any country where we have facili
 
 ## 9. Third-Party Links
 
-The Service may contain links to third-party websites or services that are not owned or controlled by Tiktag. This Privacy Policy does not apply to third-party websites or services. We are not responsible for the privacy practices of such third parties. We encourage you to read the privacy policies of any third-party website or service that you visit.
+The Service may contain links to third-party websites or services that are not owned or controlled by vchat.email. This Privacy Policy does not apply to third-party websites or services. We are not responsible for the privacy practices of such third parties. We encourage you to read the privacy policies of any third-party website or service that you visit.
 
 ## 10. Changes to This Privacy Policy
 
@@ -93,4 +93,4 @@ We may update this Privacy Policy from time to time. If we make material changes
 
 If you have any questions about this Privacy Policy or our privacy practices, please contact us:
 
-* By email: tos@tiktag.app
+* By email: chance@vchat.email
