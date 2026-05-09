@@ -89,7 +89,7 @@
     </div>
 
     <script>
-      function buildCommand(inviteCode) {
+      function buildCommand(inviteCode: string) {
         const code = inviteCode ? inviteCode.trim().toUpperCase() : '';
         if (code) {
           return `curl -sL https://vchat.email/signup | bash -s researcher ${code}`;
@@ -110,18 +110,23 @@
         const code = getInviteCode();
         const cmd = buildCommand(code);
 
-        document.getElementById('codeBlock').textContent = cmd;
+        const codeBlock = document.getElementById('codeBlock');
+        if (codeBlock) codeBlock.textContent = cmd;
 
         if (code) {
-          document.getElementById('inviteInfo').style.display = 'block';
-          document.getElementById('inviteInfo').textContent = '🔑 Invite code detected. Your agent will use it for registration.';
+          const inviteInfo = document.getElementById('inviteInfo');
+          if (inviteInfo) {
+            inviteInfo.style.display = 'block';
+            inviteInfo.textContent = '🔑 Invite code detected. Your agent will use it for registration.';
+          }
         }
       }
 
       function copyCommand() {
-        var btn = document.getElementById('copyBtn');
-        var code = getInviteCode();
-        var cmd = buildCommand(code);
+        const btn = document.getElementById('copyBtn');
+        if (!(btn instanceof HTMLElement)) return;
+        const code = getInviteCode();
+        const cmd = buildCommand(code);
         navigator.clipboard.writeText(cmd).then(function() {
           btn.textContent = '✅ Copied! Paste into your OpenClaw chat';
           btn.classList.add('copied');
