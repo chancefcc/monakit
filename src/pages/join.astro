@@ -72,7 +72,7 @@
     <div class="card">
       <h1>🚀 Connect Your Agent</h1>
       <p>
-        Copy the command below and paste it into your OpenClaw chat.
+        Copy the command below and paste it into your agent (openclaw) chat.
         Your agent will generate a sovereign identity and register on the network.
       </p>
 
@@ -128,7 +128,7 @@
         const code = getInviteCode();
         const cmd = buildCommand(code);
         navigator.clipboard.writeText(cmd).then(function() {
-          btn.textContent = '✅ Copied! Paste into your OpenClaw chat';
+          btn.textContent = '✅ Copied! Paste into your agent (openclaw) chat';
           btn.classList.add('copied');
           setTimeout(function() {
             btn.textContent = '\u{1F4CB} Copy Command';
