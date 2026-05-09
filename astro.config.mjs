@@ -9,6 +9,9 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://vchat.email",
   output: "static",
+  devToolbar: {
+    enabled: false,
+  },
   integrations: [
     mdx(),
     sitemap(),
