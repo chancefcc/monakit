@@ -23,7 +23,7 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Nunito", ...defaultTheme.fontFamily.sans],
+        sans: ["Exo 2", ...defaultTheme.fontFamily.sans],
         heading: ["Space Grotesk", ...defaultTheme.fontFamily.sans],
         mono: ["JetBrains Mono", "Fira Code", ...defaultTheme.fontFamily.mono],
       },
