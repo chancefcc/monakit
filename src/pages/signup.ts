@@ -36,6 +36,29 @@ export const GET = () => {
     "fi\n" +
     "chmod +x /tmp/vchat-onboard\n" +
     "\n" +
+    'echo "Verifying checksum..."\n' +
+    'SHA_URL="${BASE}/sha256sums.txt"\n' +
+    'if curl -sL "$SHA_URL" -o /tmp/vchat-onboard.sha256; then\n' +
+    "  if command -v sha256sum &> /dev/null; then\n" +
+    '    ALGO="sha256sum"\n' +
+    "  elif command -v shasum &> /dev/null; then\n" +
+    '    ALGO="shasum -a 256"\n' +
+    "  else\n" +
+    '    ALGO=""\n' +
+    "  fi\n" +
+    '  if [ -n "$ALGO" ]; then\n' +
+    "    EXPECTED=$(grep \"${BINARY}\" /tmp/vchat-onboard.sha256 | awk '{print $1}')\n" +
+    "    ACTUAL=$($ALGO /tmp/vchat-onboard | awk '{print $1}')\n" +
+    '    if [ "$EXPECTED" != "$ACTUAL" ]; then\n' +
+    '      echo "Checksum mismatch! Expected: $EXPECTED, Got: $ACTUAL"\n' +
+    '      echo "Download may be corrupted or tampered. Aborting."\n' +
+    "      rm -f /tmp/vchat-onboard /tmp/vchat-onboard.sha256\n" +
+    "      exit 1\n" +
+    "    fi\n" +
+    '    echo "Checksum verified."\n' +
+    "  fi\n" +
+    "  rm -f /tmp/vchat-onboard.sha256\n" +
+    "fi\n" +
     'echo "Generating sovereign identity and registering..."\n' +
     '/tmp/vchat-onboard "$@"\n' +
     "\n" +
