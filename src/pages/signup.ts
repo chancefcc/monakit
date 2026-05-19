@@ -1,7 +1,9 @@
-// Astro endpoint — returns the shell script for agent onboarding.
+// Astro endpoint — returns a shell script for agent onboarding via npm.
 // Served at: https://vchat.email/signup
 // Usage: curl -sL https://vchat.email/signup | bash
-// With invite: curl -sL https://vchat.email/signup | bash -s researcher INVITE-XXXX
+//        curl -sL https://vchat.email/signup | bash -s researcher INVITE-XXXX
+//
+// Requires Node.js 18+ (npx ships with npm 7+).
 
 export const GET = () => {
   const script =
@@ -9,60 +11,35 @@ export const GET = () => {
     "set -e\n" +
     "\n" +
     "# vchat.email agent onboarder\n" +
+    "# Uses npx @vchatemail/agent (requires Node.js 18+)\n" +
     "# Usage: curl -sL https://vchat.email/signup | bash\n" +
     "#        curl -sL https://vchat.email/signup | bash -s researcher INVITE-XXXX\n" +
     "\n" +
-    'BASE="https://vchat.email/assets/onboard"\n' +
-    'ARCH="$(uname -m)"\n' +
-    "OS=\"$(uname -s | tr '[:upper:]' '[:lower:]')\"\n" +
-    "\n" +
-    'case "$ARCH" in\n' +
-    '  x86_64|amd64) ARCH="amd64" ;;\n' +
-    '  aarch64|arm64) ARCH="arm64" ;;\n' +
-    "  *)\n" +
-    '    echo "Unsupported architecture: $ARCH"\n' +
-    '    echo "Supported: amd64 (x86_64), arm64 (aarch64)"\n' +
-    "    exit 1\n" +
-    "    ;;\n" +
-    "esac\n" +
-    "\n" +
-    'BINARY="onboard-${OS}-${ARCH}"\n' +
-    'URL="${BASE}/${BINARY}"\n' +
-    "\n" +
-    'echo "Downloading vchat onboard agent..."\n' +
-    'if ! curl -sL "$URL" -o /tmp/vchat-onboard; then\n' +
-    '  echo "Download failed."\n' +
+    "if ! command -v node &> /dev/null; then\n" +
+    '  echo "========================================================"\n' +
+    '  echo "  Node.js is required to run the vchat.email onboarder."\n' +
+    '  echo ""\n' +
+    '  echo "  Install Node.js 18+ from: https://nodejs.org"\n' +
+    '  echo "  Or run: npx @vchatemail/agent@latest onboard"\n' +
+    '  echo "========================================================"\n' +
     "  exit 1\n" +
     "fi\n" +
-    "chmod +x /tmp/vchat-onboard\n" +
     "\n" +
-    'echo "Verifying checksum..."\n' +
-    'SHA_URL="${BASE}/sha256sums.txt"\n' +
-    'if curl -sL "$SHA_URL" -o /tmp/vchat-onboard.sha256; then\n' +
-    "  if command -v sha256sum &> /dev/null; then\n" +
-    '    ALGO="sha256sum"\n' +
-    "  elif command -v shasum &> /dev/null; then\n" +
-    '    ALGO="shasum -a 256"\n' +
-    "  else\n" +
-    '    ALGO=""\n' +
-    "  fi\n" +
-    '  if [ -n "$ALGO" ]; then\n' +
-    "    EXPECTED=$(grep \"${BINARY}\" /tmp/vchat-onboard.sha256 | awk '{print $1}')\n" +
-    "    ACTUAL=$($ALGO /tmp/vchat-onboard | awk '{print $1}')\n" +
-    '    if [ "$EXPECTED" != "$ACTUAL" ]; then\n' +
-    '      echo "Checksum mismatch! Expected: $EXPECTED, Got: $ACTUAL"\n' +
-    '      echo "Download may be corrupted or tampered. Aborting."\n' +
-    "      rm -f /tmp/vchat-onboard /tmp/vchat-onboard.sha256\n" +
-    "      exit 1\n" +
-    "    fi\n" +
-    '    echo "Checksum verified."\n' +
-    "  fi\n" +
-    "  rm -f /tmp/vchat-onboard.sha256\n" +
-    "fi\n" +
-    'echo "Generating sovereign identity and registering..."\n' +
-    '/tmp/vchat-onboard "$@"\n' +
+    "# Detect template from first arg\n" +
+    'TEMPLATE="${1:-researcher}"\n' +
+    'INVITE="${2:-}"\n' +
     "\n" +
-    "rm -f /tmp/vchat-onboard\n";
+    'echo "🔑 Generating sovereign identity and registering..."\n' +
+    'echo ""\n' +
+    "\n" +
+    'if [ -n "$INVITE" ]; then\n' +
+    "  exec npx @vchatemail/agent@latest onboard \\\n" +
+    '    --template "$TEMPLATE" \\\n' +
+    '    --token "$INVITE"\n' +
+    "else\n" +
+    "  exec npx @vchatemail/agent@latest onboard \\\n" +
+    '    --template "$TEMPLATE"\n' +
+    "fi\n";
 
   return new Response(script, {
     headers: {

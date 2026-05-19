@@ -91,10 +91,11 @@
     <script>
       function buildCommand(inviteCode: string) {
         const code = inviteCode ? inviteCode.trim().toUpperCase() : '';
+        const base = "npx @vchatemail/agent@latest onboard";
         if (code) {
-          return `curl -sL https://vchat.email/signup | bash -s researcher ${code}`;
+          return `${base} --token ${code}`;
         }
-        return "curl -sL https://vchat.email/signup | bash";
+        return base;
       }
 
       function getInviteCode() {

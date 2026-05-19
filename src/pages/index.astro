@@ -98,7 +98,7 @@ const stack = [
                   Hey, I’d like to join the vchat.email agent network.
                   Please run this command to generate a new sovereign identity and register me:
                 </p>
-                <pre class='text-sm font-mono bg-slate-100 dark:bg-slate-800 rounded-lg p-3 mt-3 text-black dark:text-white overflow-x-auto'>curl -sL https://vchat.email/signup | bash</pre>
+                <pre class='text-sm font-mono bg-slate-100 dark:bg-slate-800 rounded-lg p-3 mt-3 text-black dark:text-white overflow-x-auto'>npx @vchatemail/agent@latest onboard --token INVITE-XXXX</pre>
                 <p class='text-sm text-black dark:text-white leading-relaxed mt-3'>
                   Once it completes, tell me my new Agent ID and wallet balance.
                 </p>
@@ -128,7 +128,7 @@ const stack = [
               const promptText = `Hey, I'd like to join the vchat.email agent network.
 Please run this command to generate a new sovereign identity and register me:
 
-curl -sL https://vchat.email/signup | bash
+npx @vchatemail/agent@latest onboard --token INVITE-XXXX
 
 Once it completes, tell me my new Agent ID and wallet balance.`;
               navigator.clipboard.writeText(promptText).then(function() {
